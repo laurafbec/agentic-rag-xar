@@ -39,6 +39,27 @@ On subsequent container starts, if the workspace has already been initialized, t
 [INIT] Workspace already built. Skipping build.
 ```
 
+## Other commands
+
+The following commands can be used to manage and access the Docker environment.
+
+### Stop the container
+
+To stop the running container without removing it:
+
+```bash
+docker compose stop
+```
+The container and its associated Docker resources are preserved. It can be started again with:
+```bash
+docker compose start
+```
+### Remove the container
+To stop and remove the container:
+```bash
+docker compose down
+```
+
 ```bash
 docker compose exec ros2 bash
 ```
