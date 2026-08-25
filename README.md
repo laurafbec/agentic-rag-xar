@@ -1,69 +1,25 @@
-# Docker-ROS2
+## Requirements
 
-## What is this?
+- Docker
+- Docker Compose
 
-* A Docker container for ROS2 and Gazebo.
-* GUI is enabled if WSLg is installed.
+- git clone https://github.com/laurafbec/agentic-rag-xar.git
 
+# ROS 2 Docker Environment
 
-## Prerequisites
+Docker environment for reproducing the ROS 2 and Gazebo experiments associated with the paper.
 
-* docker, docker-compose
-* (Optional) WSLg
-
+The environment provides a containerized ROS 2 Humble setup with Gazebo, Nav2, and the required dependencies for the experimental ROS 2 workspace.
 
 ## Getting started
 
+Build the Docker image:
+
 ```bash
-git clone {this-repository}
-cd {this-repository}
+cd agentic-rag-xar/ros2-gazebo-docker
+
 docker compose build
-docker compose up -d
-docker compose exec ros2 bash
-```
-
-* If your user id is not 1000, add `--build-arg user_id=$(id -u)` to `docker compose build` command.
-
-### ROS2
-
-From [Introducing turtlesim and rqt — ROS 2 Documentation: Galactic documentation](https://docs.ros.org/en/galactic/Tutorials/Turtlesim/Introducing-Turtlesim.html#start-turtlesim)
-
-```bash
-ros2 run turtlesim turtlesim_node
-```
-
-### Gazebo
-
-From [Testing Gazebo and ROS 2 integration | Gazebo : Tutorial](https://gazebosim.org/tutorials?tut=ros2_installing&cat=connect_ros#TestingGazeboandROS2integration)
-
-
-```bash
-gazebo --verbose /opt/ros/galactic/share/gazebo_plugins/worlds/gazebo_ros_diff_drive_demo.world
-```
-
-Open another terminal
-
-```bash
-ros2 topic pub /demo/cmd_demo geometry_msgs/Twist '{linear: {x: 1.0}, angular: {z: 1.0}}' -1
-```
-
-
-## Set up your workspace
-
-You may better to follow this steps to set up your workspace.
-[Creating a workspace — ROS 2 Documentation: Galactic documentation](https://docs.ros.org/en/galactic/Tutorials/Workspace/Creating-A-Workspace.html)
-
-
-## Other commands
-
-### docker-compose
-
-```bash
-docker compose stop
-```
-
-```bash
-docker compose down
+docker compose up
 ```
 
 ```bash
