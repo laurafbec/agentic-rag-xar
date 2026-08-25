@@ -48,6 +48,22 @@ To launch the [AWS RoboMaker hospital scenario](https://github.com/aws-robotics/
 ```bash
 ros2 launch rb1_sandbox hospital_door_fullmap.launch.py
 ```
+This launches the hospital environment in Gazebo together with the RB-1 robot and the navigation components required for the experiment.
+
+The launch process starts Gazebo, loads the hospital world and map, and initializes the robot navigation stack.
+
+Wait until the Gazebo window and the required ROS 2 nodes have started before interacting with the scenario.
+
+### Running the message processing and Kafka producer
+The `rt_recorder_explainer` package provides the service responsible for processing the ROS 2 messages, establishing causal relationships between them, and publishing the resulting messages to Kafka.
+
+The service is launched with:
+
+```bash
+ros2 launch rt_recorder_explainer rt_recorder_explainer_srv.launch.py
+```
+
+
 ## Other commands
 
 The following commands can be used to manage and access the Docker environment.
