@@ -56,13 +56,23 @@ Wait until the Gazebo window and the required ROS 2 nodes have started before in
 
 ### Running the message processing and Kafka producer
 The `rt_recorder_explainer` package provides the service responsible for processing the ROS 2 messages, establishing causal relationships between them, and publishing the resulting messages to Kafka.
-
-The service is launched with:
+In a second terminal, access the running container:
+```bash
+docker compose exec ros2 bash
+```
+Then launch the service:
 
 ```bash
 ros2 launch rt_recorder_explainer rt_recorder_explainer_srv.launch.py
 ```
-
+Once the service has been started, the Kafka producer can be enabled by calling in a new terminal:
+```bash
+ros2 service call /kafka_producer_srv std_srvs/srv/SetBool data:\ true
+```
+To stop the Kafka producer run:
+```bash
+ros2 service call /kafka_producer_srv std_srvs/srv/SetBool data:\ false
+```
 
 ## Other commands
 
