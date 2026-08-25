@@ -1,0 +1,639 @@
+[INFO] [1787309222.176514108] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[INFO] [1787309223.012017055] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[INFO] [1787309223.012071796] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[INFO] [1787309223.012083168] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[INFO] [1787309223.012093379] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[INFO] [1787309223.131600427] [map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.131670532] [map_server]: Creating
+[INFO] [1787309223.136126816] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[INFO] [1787309223.238986004] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[INFO] [1787309223.239899858] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[INFO] [1787309223.249982049] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.264261219] [controller_server]: Creating controller server
+[INFO] [1787309223.278294077] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.280134547] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1787309223.286477163] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[INFO] [1787309223.328937044] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[INFO] [1787309223.329033373] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[INFO] [1787309223.344556043] [amcl]: 
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.345370181] [amcl]: Creating
+[INFO] [1787309223.348919129] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[INFO] [1787309223.353333640] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [1787309223.353874696] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [1787309223.374701972] [smoother_server]: 
+	smoother_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.378233697] [smoother_server]: Creating smoother server
+[INFO] [1787309223.379942831] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[INFO] [1787309223.427875990] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1787309223.427948435] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1787309223.518408986] [lifecycle_manager_localization]: Creating
+[INFO] [1787309223.527310638] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1787309223.527633605] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[INFO] [1787309223.529606235] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [1787309223.529661897] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [1787309223.546196923] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1787309223.546268482] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[INFO] [1787309223.548253554] [map_server]: Configuring
+[INFO] [1787309223.548399351] [map_io]: Loading yaml file: /home/dockeruser/dev_ws/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/maps/hospital_maps/hospital_floor_1_map.yaml
+[INFO] [1787309223.568416780] [map_io]: resolution: 0.1
+[INFO] [1787309223.568464152] [map_io]: origin[0]: -50
+[INFO] [1787309223.568473170] [map_io]: origin[1]: -50
+[INFO] [1787309223.568481244] [map_io]: origin[2]: 0
+[INFO] [1787309223.568493587] [map_io]: free_thresh: 0.196
+[INFO] [1787309223.568502616] [map_io]: occupied_thresh: 0.65
+[INFO] [1787309223.568512457] [map_io]: mode: trinary
+[INFO] [1787309223.568521831] [map_io]: negate: 0
+[INFO] [1787309223.568905776] [map_io]: Loading image_file: /home/dockeruser/dev_ws/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/maps/hospital_maps/./hospital_floor_1_map.pgm
+[INFO] [1787309223.595214815] [planner_server]: 
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.601612651] [planner_server]: Creating
+[INFO] [1787309223.652374525] [global_costmap.global_costmap]: 
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.653306376] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [1787309223.667272134] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[INFO] [1787309223.887242803] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [1787309223.887302325] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [1787309223.923565601] [behavior_server]: 
+	behavior_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.940322210] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[INFO] [1787309223.946509072] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[INFO] [1787309223.946592722] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[INFO] [1787309223.998941451] [bt_navigator]: 
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309223.999066352] [bt_navigator]: Creating
+[INFO] [1787309224.006917967] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[INFO] [1787309224.007704251] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[INFO] [1787309224.009787540] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[INFO] [1787309224.052472275] [waypoint_follower]: 
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787309224.053406205] [waypoint_follower]: Creating
+[INFO] [1787309224.061116533] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1787309224.061161495] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1787309224.117670873] [lifecycle_manager_navigation]: Creating
+[INFO] [1787309224.123524971] [map_io]: Read map /home/dockeruser/dev_ws/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/maps/hospital_maps/./hospital_floor_1_map.pgm: 1000 X 1000 map @ 0.1 m/cell
+[INFO] [1787309224.132504718] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1787309224.145687620] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[INFO] [1787309224.145878474] [amcl]: Configuring
+[INFO] [1787309224.145968308] [amcl]: initTransforms
+[INFO] [1787309224.183202467] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1787309224.183250652] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[INFO] [1787309224.183434121] [controller_server]: Configuring controller interface
+[INFO] [1787309224.185542902] [controller_server]: getting goal checker plugins..
+[INFO] [1787309224.187272005] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1787309224.187369560] [local_costmap.local_costmap]: Configuring
+[INFO] [1787309224.211559131] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[INFO] [1787309224.289995431] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1787309224.293693699] [amcl]: initPubSub
+[INFO] [1787309224.299365489] [amcl]: Subscribed to map topic.
+[INFO] [1787309224.310525033] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[INFO] [1787309224.310654532] [map_server]: Activating
+[INFO] [1787309224.311686536] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1787309224.312945003] [amcl]: Received a 1000 X 1000 map @ 0.100 m/pix
+[INFO] [1787309224.315560010] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[INFO] [1787309224.315594347] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1787309224.325862393] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1787309224.406287471] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1787309224.407378243] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1787309224.409406731] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[INFO] [1787309224.426578183] [lifecycle_manager_localization]: Server map_server connected with bond.
+[INFO] [1787309224.426623634] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[INFO] [1787309224.427170738] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[INFO] [1787309224.427338502] [amcl]: Activating
+[INFO] [1787309224.427374231] [amcl]: initialPoseReceived
+[INFO] [1787309224.427497206] [amcl]: Setting pose (0.000000): 0.000 10.000 -1.570
+[INFO] [1787309224.430072887] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1787309224.433794653] [controller_server]: Setting transform_tolerance to 0.200000
+[INFO] [1787309224.540769082] [lifecycle_manager_localization]: Server amcl connected with bond.
+[INFO] [1787309224.540855840] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1787309224.540877951] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1787309224.558043906] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[INFO] [1787309224.561611780] [controller_server]: Critic plugin initialized
+[INFO] [1787309224.562174329] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1787309224.565270809] [controller_server]: Critic plugin initialized
+[INFO] [1787309224.566055619] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[INFO] [1787309224.567491189] [controller_server]: Critic plugin initialized
+[INFO] [1787309224.567836643] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1787309224.568374554] [controller_server]: Critic plugin initialized
+[INFO] [1787309224.568578506] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1787309224.571824680] [controller_server]: Critic plugin initialized
+[INFO] [1787309224.572852573] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1787309224.574578536] [controller_server]: Critic plugin initialized
+[INFO] [1787309224.574920249] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1787309224.576270690] [controller_server]: Critic plugin initialized
+[INFO] [1787309224.576300443] [controller_server]: Controller Server has FollowPath  controllers available.
+[INFO] [1787309224.598208880] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[INFO] [1787309224.598355807] [smoother_server]: Configuring smoother server
+[INFO] [1787309224.619132393] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[INFO] [1787309224.624405384] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[INFO] [1787309224.642147251] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[INFO] [1787309224.642377979] [planner_server]: Configuring
+[INFO] [1787309224.642460512] [global_costmap.global_costmap]: Configuring
+[INFO] [1787309224.656581586] [global_costmap.global_costmap]: Using plugin "static_layer"
+[INFO] [1787309224.658549176] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[INFO] [1787309224.659400378] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[INFO] [1787309224.659427177] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[INFO] [1787309224.660750535] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[INFO] [1787309224.678516383] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1787309224.678561929] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[INFO] [1787309224.679497013] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1787309224.704435471] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[INFO] [1787309224.704526206] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[INFO] [1787309224.706192561] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 1000 X 1000 at 0.100000 m/pix
+[INFO] [1787309224.711696466] [planner_server]: Planner Server has GridBased  planners available.
+[INFO] [1787309224.737071383] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[INFO] [1787309224.738584711] [behavior_server]: Configuring
+[INFO] [1787309224.756101731] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[INFO] [1787309224.759381879] [behavior_server]: Configuring spin
+[INFO] [1787309224.772036865] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[INFO] [1787309224.779074885] [behavior_server]: Configuring backup
+[INFO] [1787309224.802154691] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[INFO] [1787309224.805385614] [behavior_server]: Configuring drive_on_heading
+[INFO] [1787309224.827614321] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[INFO] [1787309224.830082599] [behavior_server]: Configuring wait
+[INFO] [1787309225.046904062] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[INFO] [1787309225.047289235] [bt_navigator]: Configuring
+[INFO] [1787309225.414865417] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[INFO] [1787309225.415043838] [waypoint_follower]: Configuring
+[INFO] [1787309225.449262942] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[INFO] [1787309225.451769488] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[INFO] [1787309225.452319749] [controller_server]: Activating
+[INFO] [1787309225.452361983] [local_costmap.local_costmap]: Activating
+[INFO] [1787309225.452381172] [local_costmap.local_costmap]: Checking transform
+[INFO] [1787309225.452402170] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309225.953919658] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309226.455047359] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309226.952926054] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309227.453243983] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309227.954286975] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309228.452695112] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309228.953436113] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309229.452439501] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309229.955012779] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309230.452587194] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309230.953832637] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309231.452981117] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309231.952807503] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309232.456090304] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309232.956901029] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309233.455880611] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309233.952809647] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309234.453309172] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309234.952951104] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309235.453105097] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309235.954630673] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309236.453390360] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309236.953097274] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309237.452527349] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309237.952666070] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309238.452593108] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309238.955258102] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309239.452950527] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309239.952495290] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309240.452671561] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309240.952575527] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309241.452697886] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309241.952525537] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309242.454864140] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309242.952491426] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309243.452751869] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309243.952735130] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309244.452596805] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309244.952445523] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309245.453177412] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309245.952446093] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309246.453732961] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309246.954524553] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309247.452493214] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309247.952554093] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309248.453289528] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309248.953791169] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309249.452563310] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309249.953163979] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309250.452499618] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309250.952771307] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309251.452604349] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309251.952536388] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309252.453776760] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309252.952510452] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309253.453769197] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309253.952770944] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309254.452820957] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309254.953008657] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309255.452761585] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309255.952461147] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309256.452725202] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309256.952441065] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309257.453161745] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309257.955162014] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309258.452492922] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309258.952489097] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309259.452612708] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309259.952698262] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309260.452664206] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309260.952465537] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309261.453783170] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309261.952516116] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309262.452448880] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309262.952560749] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309263.455334535] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309263.952743028] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309264.452464892] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309264.952652704] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309265.454762301] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309265.952571557] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309266.452698638] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309266.952492132] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309267.452916882] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309267.952999617] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309268.452757950] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309268.953812830] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309269.453237796] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309269.952427208] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309270.452780128] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309270.953066350] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309271.453702114] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309271.953108203] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309272.452777134] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309272.954370134] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309273.452656601] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309273.958315570] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309274.453760590] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309274.952549845] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309275.453097598] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309275.952588568] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309276.453002972] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309276.718318001] [amcl]: createLaserObject
+[INFO] [1787309276.957784833] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787309277.452653911] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.241000 but the earliest data is at time 1.023000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787309277.952544751] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.451000 but the earliest data is at time 1.023000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787309278.452675014] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.641000 but the earliest data is at time 1.023000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787309278.952922975] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.831000 but the earliest data is at time 1.023000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787309279.452935146] [local_costmap.local_costmap]: start
+[INFO] [1787309279.823378852] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1787309279.939958261] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[INFO] [1787309279.940036015] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[INFO] [1787309279.940392450] [smoother_server]: Activating
+[INFO] [1787309279.940451395] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[INFO] [1787309280.053546206] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[INFO] [1787309280.053616685] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[INFO] [1787309280.054231860] [planner_server]: Activating
+[INFO] [1787309280.054319574] [global_costmap.global_costmap]: Activating
+[INFO] [1787309280.054344849] [global_costmap.global_costmap]: Checking transform
+[INFO] [1787309280.054616474] [global_costmap.global_costmap]: start
+[INFO] [1787309281.111655124] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[INFO] [1787309281.114617576] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[INFO] [1787309281.238779869] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[INFO] [1787309281.238834066] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[INFO] [1787309281.239789654] [behavior_server]: Activating
+[INFO] [1787309281.239823995] [behavior_server]: Activating spin
+[INFO] [1787309281.239858893] [behavior_server]: Activating backup
+[INFO] [1787309281.239875624] [behavior_server]: Activating drive_on_heading
+[INFO] [1787309281.239893770] [behavior_server]: Activating wait
+[INFO] [1787309281.239913092] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[INFO] [1787309281.354232352] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[INFO] [1787309281.354309217] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[INFO] [1787309281.355030911] [bt_navigator]: Activating
+[INFO] [1787309282.519559655] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[INFO] [1787309282.645787754] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[INFO] [1787309282.645864223] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[INFO] [1787309282.646908499] [waypoint_follower]: Activating
+[INFO] [1787309282.647066207] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[INFO] [1787309282.783972320] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[INFO] [1787309282.784027570] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1787309282.784041120] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1787309288.212846744] [local_costmap.local_costmap]: Message Filter dropping message: frame 'front_laser_link' at time 5.847 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1787309419.790246955] [global_costmap.global_costmap]: Message Filter dropping message: frame 'front_laser_link' at time 73.155 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1787309419.932283525] [amcl]: Message Filter dropping message: frame 'front_laser_link' at time 73.195 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1787309420.660121453] [amcl]: Message Filter dropping message: frame 'front_laser_link' at time 77.101 for reason 'discarding message because the queue is full'
+[INFO] [1787309420.702822124] [global_costmap.global_costmap]: Message Filter dropping message: frame 'front_laser_link' at time 77.101 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[ERROR] [1787309448.831792093] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 86.791000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309449.156782231] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 87.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309449.327343128] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 87.391000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309449.789471353] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 87.691000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309450.267055571] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 87.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309450.610210214] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 88.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309450.778153586] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 88.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309451.261365420] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 88.591000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309451.802968821] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 88.881000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309451.982281582] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 88.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309452.332541685] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 89.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309452.801083642] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 89.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309453.019809580] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 89.591000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309453.363191110] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 89.791000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309453.797780561] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 90.081000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309453.952391551] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 90.181000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309454.278292573] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 90.381000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309454.805207485] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 90.691000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309455.110790001] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 90.881000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309455.285466501] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 90.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309455.786574919] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 91.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309455.963004564] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 91.381000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309456.305953296] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 91.591000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309456.758618772] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 91.881000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309457.074814503] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 92.091000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309457.243210437] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 92.181000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309457.740166573] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 92.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309458.163067339] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 92.681000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309458.360452940] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 92.791000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309458.809343885] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 93.081000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309458.984218331] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 93.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309459.364144936] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 93.391000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309459.863774113] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 93.681000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309460.031616314] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 93.781000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309460.446604274] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 93.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309460.998270515] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 94.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309460.999248304] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 94.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309461.517940143] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 94.591000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309461.997830890] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 94.881000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309462.001600159] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 94.881000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309462.443390491] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 95.181000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309462.974283229] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 95.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309462.977142545] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 95.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309463.561786172] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 95.781000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309464.095265686] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 96.081000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309464.095688583] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 96.081000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309464.628629964] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 96.391000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309464.957219763] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 96.581000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309465.140442408] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 96.681000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309465.603216848] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 96.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309466.110607328] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 97.281000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309466.110867937] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 97.281000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309466.643664176] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 97.581000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309466.947113212] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 97.781000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309467.122938150] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 97.891000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309467.650322686] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 98.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309467.990849463] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 98.381000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309468.162799110] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 98.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309468.585294947] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 98.781000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309469.131023332] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 99.081000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309469.134988085] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 99.091000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309469.666134330] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 99.381000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309470.064258697] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 99.591000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309470.248778301] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 99.681000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309470.732337302] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 99.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309471.047756566] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 100.181000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309471.252781145] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 100.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309471.844424701] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 100.581000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309472.016273942] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 100.681000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309472.370162749] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 100.891000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309472.891846443] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 101.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309473.086407734] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 101.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309473.385571448] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 101.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309473.863351872] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 101.781000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309474.035566304] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 101.881000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309474.421488892] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 102.091000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309474.798118773] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 102.391000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309474.919722278] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 102.481000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309475.239828022] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 102.691000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309475.721653281] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 102.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309476.016593597] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 103.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309476.213462328] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 103.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309476.736076195] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 103.591000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309477.088037899] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 103.781000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309477.258874812] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 103.891000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309477.814497326] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 104.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309477.990904196] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 104.281000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309478.378547286] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 104.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309478.949595404] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 104.781000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309478.950561444] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 104.781000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309479.476619126] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 105.091000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309480.018196970] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 105.381000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309480.028784739] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 105.391000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309480.520706732] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 105.691000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309481.049985354] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 105.981000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309481.052551826] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 105.981000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309481.578581299] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 106.281000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309482.198100975] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 106.581000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309482.201664933] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 106.601000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309482.699788354] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 106.881000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309483.076885112] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 107.091000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309483.252246062] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 107.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309483.744447886] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 107.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309484.090162474] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 107.691000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309484.271669399] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 107.791000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309484.797636832] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 108.081000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309484.984801861] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 108.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309485.306636817] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 108.391000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309485.846671104] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 108.691000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309486.020132586] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 108.791000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309486.403690627] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 108.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309486.832260038] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 109.291000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309487.003291521] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 109.391000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309487.362550733] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 109.591000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309487.898264594] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 109.891000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309488.066798689] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 109.991000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309488.394350413] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 110.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309488.864718871] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 110.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309489.049199149] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 110.581000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309489.435520483] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 110.791000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309490.014886306] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 111.081000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309490.016821703] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 111.091000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309490.598152444] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 111.381000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309491.139815736] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 111.691000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309491.140123995] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 111.691000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309491.726090109] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 111.981000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309492.118921940] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 112.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309492.326816285] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 112.281000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309492.893235544] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 112.591000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309493.090171952] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 112.681000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309493.462257760] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 112.881000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309494.017823340] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 113.181000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309494.027907334] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 113.191000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309494.583098274] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 113.491000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309495.068388447] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 113.791000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309495.072226880] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 113.791000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309495.566195385] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 114.081000, when looking up transform from frame [base_footprint] to frame [map]
+
+[INFO] [1787309495.964289302] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[ERROR] [1787309496.095548134] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 114.381000, when looking up transform from frame [base_footprint] to frame [map]
+
+[ERROR] [1787309496.104823747] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the past.  Requested time 86.507000 but the earliest data is at time 114.391000, when looking up transform from frame [base_footprint] to frame [map]
+
+[INFO] [1787309496.309131583] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[INFO] [1787309496.512688428] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[INFO] [1787309507.006582892] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[INFO] [1787309507.800270880] [waypoint_follower]: Deactivating
+[INFO] [1787309507.800586287] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[INFO] [1787309507.813328025] [waypoint_follower]: Cleaning up
+[INFO] [1787309519.135985473] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[INFO] [1787309519.136050399] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[INFO] [1787309519.168637901] [bt_navigator]: Deactivating
+[INFO] [1787309519.424931544] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [1787309519.435647697] [bt_navigator]: Cleaning up
+[INFO] [1787309526.198368778] [bt_navigator]: Completed Cleaning up
+[INFO] [1787309526.198415713] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [1787309526.198431529] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[INFO] [1787309526.198474751] [behavior_server]: Deactivating
+[INFO] [1787309526.391869846] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[INFO] [1787309526.476735179] [behavior_server]: Cleaning up
+[INFO] [1787309527.616653538] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[INFO] [1787309527.616707626] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[INFO] [1787309527.616752335] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[INFO] [1787309528.262054414] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[INFO] [1787309528.567628828] [smoother_server]: Deactivating
+[INFO] [1787309528.611684802] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[INFO] [1787309528.622248297] [smoother_server]: Cleaning up
+[INFO] [1787309529.738823830] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[INFO] [1787309529.738875562] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[INFO] [1787309529.739025599] [planner_server]: Deactivating
+[INFO] [1787309529.915581754] [global_costmap.global_costmap]: Deactivating

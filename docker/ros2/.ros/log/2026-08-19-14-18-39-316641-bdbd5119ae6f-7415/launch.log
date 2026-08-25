@@ -1,0 +1,126 @@
+1787149119.3298306 [INFO] [launch]: All log files can be found below /home/dockeruser/.ros/log/2026-08-19-14-18-39-316641-bdbd5119ae6f-7415
+1787149119.3306174 [INFO] [launch]: Default logging verbosity is set to INFO
+1787149123.0111084 [INFO] [component_container_isolated-1]: process started with pid [7429]
+1787149123.0158296 [INFO] [rviz2-2]: process started with pid [7431]
+1787149123.0160267 [INFO] [gzserver-3]: process started with pid [7433]
+1787149123.0161767 [INFO] [gzclient-4]: process started with pid [7435]
+1787149123.0162785 [INFO] [robot_state_publisher-5]: process started with pid [7437]
+1787149123.0167911 [INFO] [spawn_entity.py-6]: process started with pid [7439]
+1787149123.0178766 [INFO] [spawner-7]: process started with pid [7441]
+1787149123.0182884 [INFO] [spawner-8]: process started with pid [7443]
+1787149123.0222256 [INFO] [spawner-9]: process started with pid [7445]
+1787149123.3563387 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container 'nav2_container'
+1787149123.4392197 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container 'nav2_container'
+1787149123.5057039 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container 'nav2_container'
+1787149123.5976322 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/amcl' in container 'nav2_container'
+1787149123.7517140 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container 'nav2_container'
+1787149123.8354886 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container 'nav2_container'
+1787149123.9887242 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container 'nav2_container'
+1787149124.1077807 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container 'nav2_container'
+1787149124.1974804 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container 'nav2_container'
+1787149124.2876518 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container 'nav2_container'
+1787149124.6396470 [spawner-8] [INFO] [1787149124.638192706] [torso_controller_spawner]: waiting for service /controller_manager/list_controllers to become available...
+1787149124.9985719 [spawner-9] [INFO] [1787149124.995996311] [head_controller_spawner]: waiting for service /controller_manager/list_controllers to become available...
+1787149125.1882813 [rviz2-2] [INFO] [1787149125.183365622] [rviz2]: Stereo is NOT SUPPORTED
+1787149125.1884756 [rviz2-2] [INFO] [1787149125.183552836] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+1787149125.5370569 [spawner-7] [INFO] [1787149125.535359803] [joint_state_broadcaster_spawner]: waiting for service /controller_manager/list_controllers to become available...
+1787149125.6152561 [rviz2-2] [INFO] [1787149125.614443694] [rviz2]: Stereo is NOT SUPPORTED
+1787149126.3062615 [rviz2-2] Warning: link 'imu_link' material 'blue' undefined.
+1787149126.3064358 [rviz2-2]          at line 84 in ./urdf_parser/src/model.cpp
+1787149126.3067007 [rviz2-2] Warning: link 'imu_link' material 'blue' undefined.
+1787149126.3068233 [rviz2-2]          at line 84 in ./urdf_parser/src/model.cpp
+1787149127.0527987 [rviz2-2] [INFO] [1787149127.052436092] [rviz2]: Stereo is NOT SUPPORTED
+1787149127.3339369 [rviz2-2] [INFO] [1787149127.333664851] [rviz2]: Trying to create a map of size 1000 x 1000 using 1 swatches
+1787149127.3462150 [rviz2-2] [ERROR] [1787149127.344601022] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+1787149127.3473384 [rviz2-2] active samplers with a different type refer to the same texture image unit
+1787149137.0723629 [gzserver-3] Warning: link 'imu_link' material 'blue' undefined.
+1787149137.0736756 [gzserver-3]          at line 84 in ./urdf_parser/src/model.cpp
+1787149137.0739732 [gzserver-3] Warning: link 'imu_link' material 'blue' undefined.
+1787149137.0742652 [gzserver-3]          at line 84 in ./urdf_parser/src/model.cpp
+1787149138.5713589 [gzserver-3] [WARN] [1787149138.565527935] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
+1787149138.5792203 [gzserver-3] [WARN] [1787149138.578667294] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
+1787149138.9547038 [INFO] [spawn_entity.py-6]: process has finished cleanly [pid 7439]
+1787149139.5939889 [gzserver-3] [INFO] [1787149139.591671577] [depth_camera_controller]: Publishing camera info to [/camera/camera_info]
+1787149139.5969868 [gzserver-3] [INFO] [1787149139.593625716] [depth_camera_controller]: Publishing depth camera info to [/camera/depth/camera_info]
+1787149139.5978539 [gzserver-3] [INFO] [1787149139.594626914] [depth_camera_controller]: Publishing pointcloud to [/camera/points]
+1787149139.7551003 [gzserver-3] [INFO] [1787149139.752096257] [diff_base_controller]: Wheel pair 1 separation set to [0.433000m]
+1787149139.7552731 [gzserver-3] [INFO] [1787149139.752148657] [diff_base_controller]: Wheel pair 1 diameter set to [0.076200m]
+1787149139.7720695 [gzserver-3] [INFO] [1787149139.766587513] [diff_base_controller]: Subscribed to [/cmd_vel]
+1787149139.7863367 [gzserver-3] [INFO] [1787149139.782874919] [diff_base_controller]: Advertise odometry on [/odom]
+1787149139.7936711 [gzserver-3] [INFO] [1787149139.793116573] [diff_base_controller]: Publishing odom transforms between [odom] and [base_footprint]
+1787149139.7941709 [gzserver-3] [INFO] [1787149139.793171606] [diff_base_controller]: Publishing wheel transforms between [base_footprint], [left_wheel_joint] and [right_wheel_joint]
+1787149139.8720343 [gzserver-3] [INFO] [1787149139.870028803] [rb1_torso_joint_state]: Going to publish joint [j2_head]
+1787149139.8724174 [gzserver-3] [INFO] [1787149139.870078879] [rb1_torso_joint_state]: Going to publish joint [j1_head]
+1787149139.8731115 [gzserver-3] [INFO] [1787149139.870093084] [rb1_torso_joint_state]: Going to publish joint [j1_torso]
+1787149139.9428990 [gzserver-3] [INFO] [1787149139.942642191] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+1787149139.9828734 [gzserver-3] [INFO] [1787149139.981088099] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+1787149139.9830902 [gzserver-3] [INFO] [1787149139.981138459] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+1787149139.9831965 [gzserver-3] [INFO] [1787149139.982006067] [gazebo_ros2_control]: Loading parameter files /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/config/rb1_control.yaml
+1787149140.0184603 [gzserver-3] [INFO] [1787149140.017186947] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+1787149140.0307868 [gzserver-3] [INFO] [1787149140.027837963] [gazebo_ros2_control]: Recieved urdf from param server, parsing...
+1787149140.0789018 [gzserver-3] [INFO] [1787149140.077368973] [gazebo_ros2_control]: Loading joint: j1_torso
+1787149140.0795557 [gzserver-3] [INFO] [1787149140.077604227] [gazebo_ros2_control]: 	State:
+1787149140.0800366 [gzserver-3] [INFO] [1787149140.077653332] [gazebo_ros2_control]: 		 position
+1787149140.0804656 [gzserver-3] [INFO] [1787149140.077997559] [gazebo_ros2_control]: 			 found initial value: 0.000000
+1787149140.0810215 [gzserver-3] [INFO] [1787149140.078018216] [gazebo_ros2_control]: 		 velocity
+1787149140.0813258 [gzserver-3] [INFO] [1787149140.078178347] [gazebo_ros2_control]: 		 effort
+1787149140.0815852 [gzserver-3] [INFO] [1787149140.078244745] [gazebo_ros2_control]: 	Command:
+1787149140.0820911 [gzserver-3] [INFO] [1787149140.078261680] [gazebo_ros2_control]: 		 position
+1787149140.0860748 [gzserver-3] [INFO] [1787149140.084448032] [gazebo_ros2_control]: Loading joint: j1_head
+1787149140.0866022 [gzserver-3] [INFO] [1787149140.084500156] [gazebo_ros2_control]: 	State:
+1787149140.0908263 [gzserver-3] [INFO] [1787149140.084516262] [gazebo_ros2_control]: 		 position
+1787149140.0910623 [gzserver-3] [INFO] [1787149140.084557970] [gazebo_ros2_control]: 			 found initial value: 0.000000
+1787149140.0927408 [gzserver-3] [INFO] [1787149140.084579645] [gazebo_ros2_control]: 		 velocity
+1787149140.0929518 [gzserver-3] [INFO] [1787149140.084599727] [gazebo_ros2_control]: 		 effort
+1787149140.0932593 [gzserver-3] [INFO] [1787149140.084615525] [gazebo_ros2_control]: 	Command:
+1787149140.0957749 [gzserver-3] [INFO] [1787149140.084628893] [gazebo_ros2_control]: 		 position
+1787149140.0960667 [gzserver-3] [INFO] [1787149140.084793127] [gazebo_ros2_control]: Loading joint: j2_head
+1787149140.0962777 [gzserver-3] [INFO] [1787149140.084812979] [gazebo_ros2_control]: 	State:
+1787149140.0965085 [gzserver-3] [INFO] [1787149140.084826572] [gazebo_ros2_control]: 		 position
+1787149140.0986099 [gzserver-3] [INFO] [1787149140.084840341] [gazebo_ros2_control]: 			 found initial value: 0.000000
+1787149140.0988996 [gzserver-3] [INFO] [1787149140.084855294] [gazebo_ros2_control]: 		 velocity
+1787149140.0991206 [gzserver-3] [INFO] [1787149140.084869786] [gazebo_ros2_control]: 		 effort
+1787149140.1004252 [gzserver-3] [INFO] [1787149140.084889560] [gazebo_ros2_control]: 	Command:
+1787149140.1007040 [gzserver-3] [INFO] [1787149140.084903952] [gazebo_ros2_control]: 		 position
+1787149140.1019106 [gzserver-3] [INFO] [1787149140.085367001] [resource_manager]: Initialize hardware 'GazeboSystem' 
+1787149140.1023459 [gzserver-3] [INFO] [1787149140.097145280] [resource_manager]: Successful initialization of hardware 'GazeboSystem'
+1787149140.1048295 [gzserver-3] [INFO] [1787149140.097456472] [resource_manager]: 'configure' hardware 'GazeboSystem' 
+1787149140.1050532 [gzserver-3] [INFO] [1787149140.097471793] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
+1787149140.1062098 [gzserver-3] [INFO] [1787149140.097533988] [resource_manager]: 'activate' hardware 'GazeboSystem' 
+1787149140.1075923 [gzserver-3] [INFO] [1787149140.097548316] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
+1787149140.1077945 [gzserver-3] [INFO] [1787149140.098137545] [gazebo_ros2_control]: Loading controller_manager
+1787149140.1762097 [gzserver-3] [INFO] [1787149140.173054419] [controller_manager]: Subscribing to '~/robot_description' topic for robot description file.
+1787149140.1838813 [gzserver-3] [WARN] [1787149140.180445405] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+1787149140.1903043 [gzserver-3] [INFO] [1787149140.188443224] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+1787149142.5785763 [rviz2-2] [INFO] [1787149142.578188637] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+1787149143.8612971 [rviz2-2] [INFO] [1787149143.859446240] [rviz2]: Trying to create a map of size 1000 x 1000 using 1 swatches
+1787149160.3946831 [rviz2-2] [INFO] [1787149160.394122193] [rviz2]: Message Filter dropping message: frame 'front_laser_link' at time 0.699 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+1787149182.2633648 [rviz2-2] [INFO] [1787149182.261813371] [rviz2]: Setting estimate pose: Frame:map, Position(0.036994, 9.97975, 0), Orientation(0, 0, -0.760845, 0.648934) = Angle: -1.72923
+1787149190.4795747 [rviz2-2] Start navigation
+1787149190.4956667 [rviz2-2] [INFO] [1787149190.487759839] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+1787149245.9478986 [spawner-8] [FATAL] [1787149245.922006200] [torso_controller_spawner]: Could not contact service /controller_manager/list_controllers
+1787157471.8450665 [spawner-9] [FATAL] [1787157471.829673963] [head_controller_spawner]: Could not contact service /controller_manager/list_controllers
+1787157472.5973296 [spawner-7] [FATAL] [1787157472.574522939] [joint_state_broadcaster_spawner]: Could not contact service /controller_manager/list_controllers
+1787157475.6227615 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1787157477.2915180 [ERROR] [spawner-9]: process has died [pid 7445, exit code -2, cmd '/opt/ros/humble/lib/controller_manager/spawner head_controller --controller-manager /controller_manager --controller-manager-timeout 120 --ros-args -r __node:=head_controller_spawner'].
+1787157477.3072391 [ERROR] [spawner-7]: process has died [pid 7441, exit code -2, cmd '/opt/ros/humble/lib/controller_manager/spawner joint_state_broadcaster --controller-manager /controller_manager --controller-manager-timeout 120 --ros-args -r __node:=joint_state_broadcaster_spawner'].
+1787157477.3180079 [ERROR] [spawner-8]: process has died [pid 7443, exit code -2, cmd '/opt/ros/humble/lib/controller_manager/spawner torso_controller --controller-manager /controller_manager --controller-manager-timeout 120 --ros-args -r __node:=torso_controller_spawner'].
+1787157477.3286235 [INFO] [robot_state_publisher-5]: process has finished cleanly [pid 7437]
+1787157477.4502792 [rviz2-2] [INFO] [1787157475.604389692] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1787157477.4556515 [rviz2-2] terminate called after throwing an instance of 'rclcpp::exceptions::RCLError'
+1787157477.4577799 [rviz2-2]   what():  failed to create guard condition: the given context is not valid, either rcl_init() was not called or rcl_shutdown() was called., at ./src/rcl/guard_condition.c:67
+1787157477.8011653 [ERROR] [rviz2-2]: process has died [pid 7431, exit code -6, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/dockeruser/dev_ws/install/rb1_navigation/share/rb1_navigation/rviz/nav2_view.rviz --ros-args -r __node:=rviz2 --params-file /tmp/launch_params_n19o57si'].
+1787157482.2978642 [ERROR] [gzclient-4]: process[gzclient-4] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1787157482.4052303 [INFO] [gzclient-4]: sending signal 'SIGTERM' to process[gzclient-4]
+1787157482.4810114 [ERROR] [gzserver-3]: process[gzserver-3] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1787157482.5057106 [ERROR] [component_container_isolated-1]: process[component_container_isolated-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1787157482.5509162 [INFO] [gzserver-3]: sending signal 'SIGTERM' to process[gzserver-3]
+1787157482.6267948 [INFO] [component_container_isolated-1]: sending signal 'SIGTERM' to process[component_container_isolated-1]
+1787157482.6387041 [gzserver-3] [INFO] [1787157482.559687820] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+1787157483.3240159 [ERROR] [gzclient-4]: process has died [pid 7435, exit code -15, cmd 'gzclient --gui-client-plugin=libgazebo_ros_eol_gui.so'].
+1787157487.2686341 [ERROR] [gzserver-3]: process[gzserver-3] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1787157487.2739687 [INFO] [gzserver-3]: sending signal 'SIGKILL' to process[gzserver-3]
+1787157487.2957609 [ERROR] [component_container_isolated-1]: process[component_container_isolated-1] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1787157487.3014050 [INFO] [component_container_isolated-1]: sending signal 'SIGKILL' to process[component_container_isolated-1]
+1787157487.3892546 [ERROR] [component_container_isolated-1]: process has died [pid 7429, exit code -9, cmd '/opt/ros/humble/lib/rclcpp_components/component_container_isolated --ros-args -r __node:=nav2_container --params-file /tmp/tmpkbr1_zlm --params-file /tmp/launch_params_7qxb54xn -r /tf:=tf -r /tf_static:=tf_static -r /cmd_vel:=/cmd_vel'].
+1787157487.4763079 [ERROR] [gzserver-3]: process has died [pid 7433, exit code -9, cmd 'gzserver /home/dockeruser/dev_ws/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/worlds/hospital_door.world -slibgazebo_ros_init.so -slibgazebo_ros_factory.so -slibgazebo_ros_force_system.so --ros-args --params-file /home/dockeruser/dev_ws/install/rb1_navigation/share/rb1_navigation/config/nav2_params.yaml --'].

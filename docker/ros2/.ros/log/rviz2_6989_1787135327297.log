@@ -1,0 +1,11 @@
+[INFO] [1787135328.497414140] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1787135328.499321283] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1787135329.090767150] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1787135331.227320571] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1787135347.272683488] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[INFO] [1787135347.761541039] [rviz2]: Trying to create a map of size 145 x 88 using 1 swatches
+[INFO] [1787135349.091484663] [rviz2]: Trying to create a map of size 145 x 88 using 1 swatches
+[INFO] [1787135367.135959277] [rviz2]: Message Filter dropping message: frame 'front_laser_link' at time 0.022 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[ERROR] [1787135387.081794106] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1787135435.205189509] [rclcpp]: signal_handler(SIGINT/SIGTERM)

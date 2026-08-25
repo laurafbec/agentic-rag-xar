@@ -1,0 +1,3 @@
+[INFO] [1787135329.733771781] [torso_controller_spawner]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [1787135345.656854842] [torso_controller_spawner]: [94mLoaded [1mtorso_controller[0m
+[INFO] [1787135346.095967086] [torso_controller_spawner]: [92mConfigured and activated [1mtorso_controller[0m

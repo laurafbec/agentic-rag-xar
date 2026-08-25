@@ -1,0 +1,13 @@
+[INFO] [1787149125.183365622] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1787149125.183552836] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1787149125.614443694] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1787149127.052436092] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1787149127.333664851] [rviz2]: Trying to create a map of size 1000 x 1000 using 1 swatches
+[ERROR] [1787149127.344601022] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1787149142.578188637] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[INFO] [1787149143.859446240] [rviz2]: Trying to create a map of size 1000 x 1000 using 1 swatches
+[INFO] [1787149160.394122193] [rviz2]: Message Filter dropping message: frame 'front_laser_link' at time 0.699 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1787149182.261813371] [rviz2]: Setting estimate pose: Frame:map, Position(0.036994, 9.97975, 0), Orientation(0, 0, -0.760845, 0.648934) = Angle: -1.72923
+[INFO] [1787149190.487759839] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1787157475.604389692] [rclcpp]: signal_handler(SIGINT/SIGTERM)

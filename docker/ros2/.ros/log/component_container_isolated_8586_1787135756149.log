@@ -1,0 +1,862 @@
+[INFO] [1787135756.217321670] [nav2_container]: Load Library: /opt/ros/humble/lib/libmap_server_core.so
+[INFO] [1787135756.335281791] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[INFO] [1787135756.335326987] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[INFO] [1787135756.335339105] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[INFO] [1787135756.335349511] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[INFO] [1787135756.413246650] [map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135756.413299536] [map_server]: Creating
+[INFO] [1787135756.414339773] [nav2_container]: Load Library: /opt/ros/humble/lib/libcontroller_server_core.so
+[INFO] [1787135756.419496865] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[INFO] [1787135756.419542548] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[INFO] [1787135756.457488468] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135756.498104916] [controller_server]: Creating controller server
+[INFO] [1787135756.544209151] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135756.549289792] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1787135756.566358067] [nav2_container]: Load Library: /opt/ros/humble/lib/libamcl_core.so
+[INFO] [1787135756.573240357] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[INFO] [1787135756.579322371] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_amcl::AmclNode>
+[INFO] [1787135756.624692592] [amcl]: 
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135756.631284712] [amcl]: Creating
+[INFO] [1787135756.637618953] [nav2_container]: Load Library: /opt/ros/humble/lib/libsmoother_server_core.so
+[INFO] [1787135756.638918100] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [1787135756.638942121] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [1787135756.707785633] [smoother_server]: 
+	smoother_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135756.725312748] [smoother_server]: Creating smoother server
+[INFO] [1787135756.731944913] [nav2_container]: Load Library: /opt/ros/humble/lib/libnav2_lifecycle_manager_core.so
+[INFO] [1787135756.733648955] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1787135756.733676669] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1787135756.815393223] [lifecycle_manager_localization]: Creating
+[INFO] [1787135756.828384748] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1787135756.835549339] [nav2_container]: Load Library: /opt/ros/humble/lib/libplanner_server_core.so
+[INFO] [1787135756.836850375] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [1787135756.838997821] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [1787135756.845108331] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1787135756.845145162] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[INFO] [1787135756.845295592] [map_server]: Configuring
+[INFO] [1787135756.845349799] [map_io]: Loading yaml file: /home/dockeruser/dev_ws/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/maps/hospital_maps/hospital_floor_1_map.yaml
+[INFO] [1787135756.850135845] [map_io]: resolution: 0.1
+[INFO] [1787135756.850155544] [map_io]: origin[0]: -50
+[INFO] [1787135756.850163792] [map_io]: origin[1]: -50
+[INFO] [1787135756.850171416] [map_io]: origin[2]: 0
+[INFO] [1787135756.850179919] [map_io]: free_thresh: 0.196
+[INFO] [1787135756.850188061] [map_io]: occupied_thresh: 0.65
+[INFO] [1787135756.850197450] [map_io]: mode: trinary
+[INFO] [1787135756.850205846] [map_io]: negate: 0
+[INFO] [1787135756.857338476] [map_io]: Loading image_file: /home/dockeruser/dev_ws/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/maps/hospital_maps/./hospital_floor_1_map.pgm
+[INFO] [1787135756.910352047] [planner_server]: 
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135756.925701790] [planner_server]: Creating
+[INFO] [1787135757.004864211] [global_costmap.global_costmap]: 
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135757.008817095] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [1787135757.038449112] [nav2_container]: Load Library: /opt/ros/humble/lib/libbehavior_server_core.so
+[INFO] [1787135757.051682536] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [1787135757.060175446] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [1787135757.160712747] [behavior_server]: 
+	behavior_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135757.221263814] [nav2_container]: Load Library: /opt/ros/humble/lib/libbt_navigator_core.so
+[INFO] [1787135757.223848995] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[INFO] [1787135757.233726677] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[INFO] [1787135757.294811153] [bt_navigator]: 
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135757.294881857] [bt_navigator]: Creating
+[INFO] [1787135757.309475447] [nav2_container]: Load Library: /opt/ros/humble/lib/libwaypoint_follower_core.so
+[INFO] [1787135757.310833327] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[INFO] [1787135757.310881475] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[INFO] [1787135757.371366768] [waypoint_follower]: 
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1787135757.373814230] [waypoint_follower]: Creating
+[INFO] [1787135757.382166371] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1787135757.382195415] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1787135757.447460510] [lifecycle_manager_navigation]: Creating
+[INFO] [1787135757.465050189] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1787135757.507268958] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1787135757.507314698] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[INFO] [1787135757.507457996] [controller_server]: Configuring controller interface
+[INFO] [1787135757.508268186] [controller_server]: getting goal checker plugins..
+[INFO] [1787135757.511079958] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1787135757.512488924] [local_costmap.local_costmap]: Configuring
+[INFO] [1787135757.564194783] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[INFO] [1787135757.582701344] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1787135757.650604634] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[INFO] [1787135757.650636817] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1787135757.672991764] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1787135757.714037212] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1787135757.715600201] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1787135757.727437495] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[INFO] [1787135757.736030415] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[INFO] [1787135757.748153910] [controller_server]: Setting transform_tolerance to 0.200000
+[INFO] [1787135757.794499478] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[INFO] [1787135757.796011602] [controller_server]: Critic plugin initialized
+[INFO] [1787135757.796909407] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1787135757.798453902] [controller_server]: Critic plugin initialized
+[INFO] [1787135757.798756831] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[INFO] [1787135757.799329337] [controller_server]: Critic plugin initialized
+[INFO] [1787135757.799512227] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1787135757.800840084] [controller_server]: Critic plugin initialized
+[INFO] [1787135757.801013583] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1787135757.802206294] [controller_server]: Critic plugin initialized
+[INFO] [1787135757.802623030] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1787135757.803404120] [controller_server]: Critic plugin initialized
+[INFO] [1787135757.803762545] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1787135757.804568880] [controller_server]: Critic plugin initialized
+[INFO] [1787135757.804593264] [controller_server]: Controller Server has FollowPath  controllers available.
+[INFO] [1787135757.833963164] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[INFO] [1787135757.836825798] [smoother_server]: Configuring smoother server
+[INFO] [1787135757.852446408] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[INFO] [1787135757.857714411] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[INFO] [1787135757.876114124] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[INFO] [1787135757.878329139] [planner_server]: Configuring
+[INFO] [1787135757.878379895] [global_costmap.global_costmap]: Configuring
+[INFO] [1787135757.909895197] [global_costmap.global_costmap]: Using plugin "static_layer"
+[INFO] [1787135757.918302646] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[INFO] [1787135757.918969433] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[INFO] [1787135757.919036862] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[INFO] [1787135757.922732997] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[INFO] [1787135757.934393723] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1787135757.934465076] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[INFO] [1787135757.943112480] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1787135757.968799146] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[INFO] [1787135757.968843853] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[INFO] [1787135757.969499485] [planner_server]: Planner Server has GridBased  planners available.
+[INFO] [1787135758.034060816] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[INFO] [1787135758.034795704] [behavior_server]: Configuring
+[INFO] [1787135758.071006797] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[INFO] [1787135758.071992147] [behavior_server]: Configuring spin
+[INFO] [1787135758.111547287] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[INFO] [1787135758.112694187] [behavior_server]: Configuring backup
+[INFO] [1787135758.144413534] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[INFO] [1787135758.145535047] [behavior_server]: Configuring drive_on_heading
+[INFO] [1787135758.178308108] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[INFO] [1787135758.179011546] [behavior_server]: Configuring wait
+[INFO] [1787135758.218175165] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[INFO] [1787135758.224285735] [bt_navigator]: Configuring
+[INFO] [1787135758.396130375] [map_io]: Read map /home/dockeruser/dev_ws/install/aws_robomaker_hospital_world/share/aws_robomaker_hospital_world/maps/hospital_maps/./hospital_floor_1_map.pgm: 1000 X 1000 map @ 0.1 m/cell
+[INFO] [1787135758.476096912] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[INFO] [1787135758.476642273] [amcl]: Configuring
+[INFO] [1787135758.476748365] [amcl]: initTransforms
+[INFO] [1787135758.917806676] [amcl]: initPubSub
+[INFO] [1787135758.952107940] [amcl]: Subscribed to map topic.
+[INFO] [1787135759.032967749] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[INFO] [1787135759.034916389] [map_server]: Activating
+[INFO] [1787135759.048245713] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1787135759.051690621] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 1000 X 1000 at 0.100000 m/pix
+[INFO] [1787135759.062968547] [amcl]: Received a 1000 X 1000 map @ 0.100 m/pix
+[INFO] [1787135759.345350385] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[INFO] [1787135759.345486350] [waypoint_follower]: Configuring
+[INFO] [1787135759.355802936] [lifecycle_manager_localization]: Server map_server connected with bond.
+[INFO] [1787135759.355842274] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[INFO] [1787135759.357128879] [amcl]: Activating
+[INFO] [1787135759.357182044] [amcl]: initialPoseReceived
+[INFO] [1787135759.357254571] [amcl]: Setting pose (0.000000): 0.000 10.000 -1.570
+[INFO] [1787135759.358033063] [amcl]: Creating bond (amcl) to lifecycle manager.
+[INFO] [1787135759.407597791] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[INFO] [1787135759.412378654] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[INFO] [1787135759.412654198] [controller_server]: Activating
+[INFO] [1787135759.412694343] [local_costmap.local_costmap]: Activating
+[INFO] [1787135759.412713647] [local_costmap.local_costmap]: Checking transform
+[INFO] [1787135759.412734138] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135759.513316487] [lifecycle_manager_localization]: Server amcl connected with bond.
+[INFO] [1787135759.513356478] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1787135759.513382776] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1787135759.912883620] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135760.416159712] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135760.915589300] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135761.412846272] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135761.912827167] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135762.412872367] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135762.914425907] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135763.414179525] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135763.914881621] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135764.412841827] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135764.915178164] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135765.412841566] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135765.912908608] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135766.413329402] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135766.913504642] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135767.412836870] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135767.912965625] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135768.412850751] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135768.912842681] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135769.412837222] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135769.912838893] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135770.412842815] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135770.912831368] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135771.412821883] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135771.913519049] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135772.414169129] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135772.912840339] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135773.412836149] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135773.912830156] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135774.413461946] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135774.912834358] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135775.414030576] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135775.913157148] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135776.413275367] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135776.912885373] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135777.417166559] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135777.914641349] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135778.415162346] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135778.913093919] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135779.412825984] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135779.914704246] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135780.413203317] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135780.917536701] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135781.412812110] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135781.915224636] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135782.412833065] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135782.912850991] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135783.413014868] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135783.912836402] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135784.414960449] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135784.913826128] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135785.412823538] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135785.914214390] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135786.412964738] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135786.912999855] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135787.412911863] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135787.912796707] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135788.138576974] [amcl]: createLaserObject
+[INFO] [1787135788.412833340] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1787135788.913754937] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.231000 but the earliest data is at time 1.022000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787135789.416281548] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.331000 but the earliest data is at time 1.022000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787135789.914167557] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.491000 but the earliest data is at time 1.022000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787135790.413402242] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.671000 but the earliest data is at time 1.022000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787135790.912842007] [local_costmap.local_costmap]: Timed out waiting for transform from base_footprint to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 0.931000 but the earliest data is at time 1.022000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1787135791.416729615] [local_costmap.local_costmap]: start
+[INFO] [1787135791.670291195] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1787135791.790310442] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[INFO] [1787135791.790360194] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[INFO] [1787135791.791319789] [smoother_server]: Activating
+[INFO] [1787135791.791398275] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[INFO] [1787135791.924352681] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[INFO] [1787135791.924408891] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[INFO] [1787135791.924953373] [planner_server]: Activating
+[INFO] [1787135791.925017107] [global_costmap.global_costmap]: Activating
+[INFO] [1787135791.925043969] [global_costmap.global_costmap]: Checking transform
+[INFO] [1787135791.925206127] [global_costmap.global_costmap]: start
+[INFO] [1787135792.981549550] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[INFO] [1787135793.003380951] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[INFO] [1787135793.129748035] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[INFO] [1787135793.129880707] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[INFO] [1787135793.130417119] [behavior_server]: Activating
+[INFO] [1787135793.130456171] [behavior_server]: Activating spin
+[INFO] [1787135793.130483790] [behavior_server]: Activating backup
+[INFO] [1787135793.130503651] [behavior_server]: Activating drive_on_heading
+[INFO] [1787135793.130522867] [behavior_server]: Activating wait
+[INFO] [1787135793.130546982] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[INFO] [1787135793.272229127] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[INFO] [1787135793.272290836] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[INFO] [1787135793.275022616] [bt_navigator]: Activating
+[INFO] [1787135793.943566253] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[INFO] [1787135794.077737276] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[INFO] [1787135794.077789016] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[INFO] [1787135794.083006981] [waypoint_follower]: Activating
+[INFO] [1787135794.083065445] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[INFO] [1787135794.235998601] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[INFO] [1787135794.236058801] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1787135794.236077685] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1787135831.582006495] [local_costmap.local_costmap]: Message Filter dropping message: frame 'front_laser_link' at time 12.089 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1787135831.664351454] [amcl]: Message Filter dropping message: frame 'front_laser_link' at time 12.133 for reason 'discarding message because the queue is full'
+[INFO] [1787135842.477641548] [amcl]: Message Filter dropping message: frame 'front_laser_link' at time 15.057 for reason 'discarding message because the queue is full'
+[INFO] [1787135845.728333455] [bt_navigator]: Begin navigating from current location (0.00, 10.00) to (-4.96, 5.23)
+[WARN] [1787135845.748441155] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135845.837014751] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135845.855167027] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135845.910475188] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135845.927306840] [bt_navigator_navigate_to_pose_rclcpp_node]: Timed out while waiting for action server to acknowledge goal request for follow_path
+[INFO] [1787135845.946226139] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1787135845.952837966] [bt_navigator_navigate_to_pose_rclcpp_node]: Node timed out while executing service call to local_costmap/clear_entirely_local_costmap.
+[WARN] [1787135845.954487666] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[WARN] [1787135845.961914113] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135845.976933607] [bt_navigator_navigate_to_pose_rclcpp_node]: Node timed out while executing service call to local_costmap/clear_entirely_local_costmap.
+[WARN] [1787135845.984070934] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[INFO] [1787135845.987421306] [behavior_server]: Running spin
+[INFO] [1787135845.988677396] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1787135845.989079527] [behavior_server]: Turning 1.57 for spin behavior.
+[WARN] [1787135846.082988706] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[INFO] [1787135846.096823112] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[WARN] [1787135846.101545216] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135846.241742754] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135846.294065551] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135846.530619293] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135846.578831378] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135846.587103442] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135846.595128923] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135846.640106594] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135846.659129418] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[INFO] [1787135846.680107098] [global_costmap.global_costmap]: Message Filter dropping message: frame 'front_laser_link' at time 16.295 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[WARN] [1787135846.733064667] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135846.756684458] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135846.788797027] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135846.801737511] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135846.831024411] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135846.855283457] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.197922507] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.248568138] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.254523530] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135847.296830530] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.438911831] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.473869325] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.545996266] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.707441673] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.749865551] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.854311707] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135847.949632413] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.100379186] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.160267306] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.220383509] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.306441668] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.398320505] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135848.474475308] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.670690892] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.745987723] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.853416190] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135848.977627682] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135849.030557240] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.037701194] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135849.069504996] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.106905480] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.149952709] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135849.174809002] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.246210481] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.297573695] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.338036812] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.365522763] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.505467089] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.532652518] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135849.566564057] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.587922824] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135849.621199766] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.693477057] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.757862919] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.920897644] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135849.981294790] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135850.024257444] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135850.170487278] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135850.234770956] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135850.287283197] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135850.325155487] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135850.366503925] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135850.742565825] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135850.824823302] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135850.884750489] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135850.978877137] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135851.179340965] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135851.265444745] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135851.278673177] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135851.430944510] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135851.442898331] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135851.526571637] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135851.541017109] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135851.587524710] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135851.780868783] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135851.826548209] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135851.855588822] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135851.879031886] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135851.954262972] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.053777185] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.221305734] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.275797001] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135852.287675461] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.343022624] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.405478548] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.579023832] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.666981287] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.819211047] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.862988026] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135852.881397093] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.940543898] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135852.991628789] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.041576897] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.194384782] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.236082029] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135853.244624857] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.324510626] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.479863836] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.532225455] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.679270056] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.739499541] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.802348704] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135853.808287833] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.845222562] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.884997387] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.952555040] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135853.963345682] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135854.019226906] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135854.068579227] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135854.106601984] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135854.141068255] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[INFO] [1787135854.182644038] [amcl]: Message Filter dropping message: frame 'front_laser_link' at time 18.242 for reason 'discarding message because the queue is full'
+[WARN] [1787135854.196797718] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135854.251186484] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135854.303326413] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135854.335516707] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135854.692487520] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135854.804194311] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135854.821361697] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135854.822489065] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135854.855364942] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135854.970193300] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135855.046786888] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135855.124062394] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135855.375808916] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135855.471095331] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135855.527598340] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135855.635549615] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135855.653341777] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135855.767836057] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135855.869112613] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135855.962586555] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135855.977837681] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.035018399] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.064132422] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135856.222547542] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.252514758] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135856.333985827] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.445318795] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135856.537406183] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.666435293] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.699474451] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.740820272] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.788721712] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.876797443] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135856.940627568] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135857.142292696] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135857.250229912] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135857.657314558] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135857.685527906] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135857.694263815] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135857.841394067] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135857.915325353] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135857.973430064] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.044545756] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.244176646] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.245891595] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.255217623] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.353739516] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.356571300] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.432047955] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.481301124] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.503473391] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.559873020] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.631422172] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.667612352] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.702742765] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.736549026] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.798891652] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.866927296] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135858.870986773] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.874132362] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135858.921833010] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135859.011413139] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.102936967] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.315590350] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.370699221] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.427469302] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.481459104] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.544626555] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.577034514] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.720314079] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135859.785910690] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135859.872258202] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135859.974178680] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135860.036440312] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135860.071700698] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135860.293264994] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135860.390220141] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135860.459068073] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135860.496452258] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135860.540372158] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135860.615094035] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135860.682148124] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135860.716840613] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135860.991673076] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135861.034595506] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.130845785] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135861.155357827] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.270575360] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135861.276581316] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135861.290876482] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135861.343598072] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.395719417] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.436888604] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.528431936] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.684416105] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.752661581] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.821915761] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.874816321] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.932915612] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135861.963396364] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135862.107657980] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135862.117507650] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135862.198863376] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135862.212150997] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[INFO] [1787135862.415171893] [global_costmap.global_costmap]: Message Filter dropping message: frame 'front_laser_link' at time 20.586 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[WARN] [1787135862.472651103] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135862.484590014] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135862.584601703] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135862.755458260] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135862.781632262] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135862.828621080] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135862.852449727] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135862.916484171] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135863.251161676] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135863.274289690] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135863.338146904] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135863.404468742] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135863.409539170] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135863.411231781] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135863.477447681] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135863.496683861] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135863.633633335] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135863.713819587] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135863.770467882] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135863.869708727] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.024557570] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.073266264] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.145735975] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.209354225] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.288282379] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.454627837] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.523731573] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.592887940] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.800003136] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135864.802264634] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135864.952332496] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135864.981496037] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.034186776] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135865.045100685] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.081641769] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.139693695] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.140744727] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135865.182350830] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135865.190820014] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.240332790] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135865.300835221] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.382356705] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135865.513792529] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.820973992] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135865.858567748] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.882262499] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135865.915673806] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135865.991346949] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135866.119090208] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135866.203800532] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135866.678581393] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135866.734894747] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135866.755536246] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135866.782332295] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135866.839212816] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135866.935205636] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135866.944065871] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135866.997311000] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135867.043071728] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135867.210697612] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135867.256918097] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135867.303338354] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135867.496355968] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135867.515771577] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135867.589658618] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135867.636637430] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135867.655400723] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135867.679360367] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135867.996188922] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135868.036470638] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.065532997] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135868.109278569] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.290526445] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.316823362] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.480051734] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.562247413] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135868.564468472] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.714518408] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.780070008] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.825666380] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.874724824] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.923727687] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135868.966308578] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135868.976750887] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.022781528] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.089349197] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.156070245] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.181591138] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.274426895] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.435463430] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.475981436] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.517509761] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.518217382] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.536759976] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.576820683] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.585212898] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.625327667] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.676918949] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[INFO] [1787135869.707650692] [amcl]: Message Filter dropping message: frame 'front_laser_link' at time 22.391 for reason 'discarding message because the queue is full'
+[WARN] [1787135869.771029262] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.827339150] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.860834420] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.874326101] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135869.889214770] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.910817186] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.962592233] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135869.979063439] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135870.053033907] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135870.100335106] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135870.165012582] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135870.195353038] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135870.221297883] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135870.295867532] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135870.378736420] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135870.640422764] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135870.690561549] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135870.704872612] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135870.792979522] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135870.840715605] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135870.962632228] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.003610851] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135871.041798327] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.110222110] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.192781792] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135871.265211915] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.268205945] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135871.344373785] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.395255881] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.397174245] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135871.446270031] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.519062243] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.674351085] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.751391165] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.781253937] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.850784994] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135871.926628573] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135872.182055360] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135872.257967551] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135872.329048910] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135872.434507652] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135872.527998453] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135872.554564612] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135872.914900671] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135872.985567636] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135872.992365303] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135873.046551030] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135873.107505877] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135873.147385154] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135873.188485332] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135873.686925468] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135873.731259980] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135873.774528567] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135874.040341334] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135874.094005934] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135874.130746007] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135874.199847700] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135874.207365052] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135874.287088501] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135874.739338166] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135874.785059289] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135874.791444948] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135874.875154083] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135874.955270636] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135875.023396842] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135875.064181355] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135875.162369397] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135875.337112195] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135875.435852948] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135875.753402701] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135875.794753944] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135875.897440044] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.103736779] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.213367122] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.285223940] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.288930386] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135876.390214912] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.575670701] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.639895345] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.716477080] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.878867585] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135876.906901296] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135876.973968361] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.058020680] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135877.084886313] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.166821346] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.285386861] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.294327706] [behavior_server]: Collision Ahead - Exiting Spin
+[WARN] [1787135877.294372578] [behavior_server]: spin failed
+[WARN] [1787135877.294399227] [behavior_server]: [spin] [ActionServer] Aborting handle.
+[WARN] [1787135877.326360623] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135877.335549917] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[INFO] [1787135877.338491752] [behavior_server]: Running wait
+[WARN] [1787135877.409002523] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.508411855] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.580314488] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135877.701841840] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.758085167] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.789403660] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135877.857861225] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135877.861239242] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135877.976026135] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135878.093819043] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135878.184051362] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135878.369906168] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135878.464983106] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135878.637585916] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135878.744324287] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135878.744687924] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135878.845718099] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135878.896233770] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135878.932843856] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.060568650] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.162401679] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.239079788] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.352666410] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.467247449] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.545431711] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.640744538] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.724425928] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135879.836589001] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135879.900911213] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.001833234] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.104864469] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.208670177] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.308507960] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.469663953] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.559522448] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.604928847] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1787135880.637015488] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.704975956] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.754479590] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.831218551] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135880.985432401] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135881.071749944] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135881.157013619] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135881.266418509] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[INFO] [1787135881.289352557] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1787135881.290510790] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[INFO] [1787135881.293047787] [bt_navigator]: Deactivating
+[WARN] [1787135881.293088241] [bt_navigator]: [navigate_to_pose] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
+[WARN] [1787135881.295409816] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[ERROR] [1787135881.329011240] [bt_navigator_navigate_to_pose_rclcpp_node]: Failed to get result for wait in node halt!
+[WARN] [1787135881.329558874] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[INFO] [1787135881.336579895] [bt_navigator]: Goal canceled
+[WARN] [1787135881.336619513] [bt_navigator]: [navigate_to_pose] [ActionServer] Stopping the thread per request.
+[INFO] [1787135881.338652252] [behavior_server]: Canceling wait
+[INFO] [1787135881.339865591] [behavior_server]: [wait] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1787135881.340152342] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [1787135881.366333056] [bt_navigator]: Cleaning up
+[INFO] [1787135881.436643309] [lifecycle_manager_navigation]: [34m[1mHave not received a heartbeat from bt_navigator.[0m[0m
+[ERROR] [1787135881.437624005] [lifecycle_manager_navigation]: CRITICAL FAILURE: SERVER bt_navigator IS DOWN after not receiving a heartbeat for 4000 ms. Shutting down related nodes.
+[INFO] [1787135881.437724883] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[INFO] [1787135881.438223697] [lifecycle_manager_navigation]: [34m[1mResetting managed nodes...[0m[0m
+[INFO] [1787135881.438259917] [lifecycle_manager_navigation]: [34m[1mDeactivating waypoint_follower[0m[0m
+[WARN] [1787135881.475002583] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[INFO] [1787135881.528180113] [waypoint_follower]: Deactivating
+[INFO] [1787135881.530569062] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[WARN] [1787135881.629167106] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135881.773095757] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135881.787204327] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[INFO] [1787135881.895967555] [lifecycle_manager_navigation]: [34m[1mDeactivating bt_navigator[0m[0m
+[WARN] [1787135881.934360858] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135882.142712303] [rcl_lifecycle]: No transition matching 4 found for current state cleaningup
+[WARN] [1787135882.142744926] [rcl_lifecycle]: No transition matching 4 found for current state cleaningup
+[ERROR] [1787135882.142761437] [bt_navigator]: Unable to start transition 4 from current state cleaningup: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[ERROR] [1787135882.147271862] [lifecycle_manager_navigation]: Failed to change state for node: bt_navigator
+[INFO] [1787135882.147346213] [lifecycle_manager_navigation]: [34m[1mDeactivating behavior_server[0m[0m
+[INFO] [1787135882.164806458] [behavior_server]: Deactivating
+[INFO] [1787135882.171671210] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[WARN] [1787135882.217277650] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135882.269469987] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135882.312534488] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[WARN] [1787135882.343643145] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[INFO] [1787135882.369048027] [lifecycle_manager_navigation]: [34m[1mDeactivating planner_server[0m[0m
+[INFO] [1787135882.369744872] [planner_server]: Deactivating
+[INFO] [1787135882.371871230] [global_costmap.global_costmap]: Deactivating
+[INFO] [1787135882.926647199] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[INFO] [1787135882.926745893] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[INFO] [1787135883.077005885] [bt_navigator]: Completed Cleaning up
+[INFO] [1787135883.077080403] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [1787135883.077102179] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[INFO] [1787135883.078117242] [waypoint_follower]: Cleaning up
+[INFO] [1787135883.099824565] [lifecycle_manager_navigation]: [34m[1mDeactivating smoother_server[0m[0m
+[INFO] [1787135883.102480567] [smoother_server]: Deactivating
+[INFO] [1787135883.111313909] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[INFO] [1787135883.213322150] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[INFO] [1787135883.213368235] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[INFO] [1787135883.213400605] [planner_server]: Cleaning up
+[WARN] [1787135883.233453099] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[INFO] [1787135883.293464141] [lifecycle_manager_navigation]: [34m[1mDeactivating controller_server[0m[0m
+[INFO] [1787135883.295293051] [controller_server]: Deactivating
+[WARN] [1787135883.295914169] [controller_server]: [follow_path] [ActionServer] Requested to deactivate server but goal is still executing. Should check if action server is running before deactivating.
+[WARN] [1787135883.329286151] [controller_server]: [follow_path] [ActionServer] Stopping the thread per request.
+[WARN] [1787135883.329340482] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1787135883.339641202] [local_costmap.local_costmap]: Deactivating
+[INFO] [1787135883.420318416] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1787135883.426860255] [global_costmap.global_costmap]: Cleaning up
+[INFO] [1787135883.485199844] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[INFO] [1787135883.486634713] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[INFO] [1787135883.576298891] [lifecycle_manager_navigation]: [34m[1mCleaning up waypoint_follower[0m[0m
+[INFO] [1787135883.672221635] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[INFO] [1787135883.672263493] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[INFO] [1787135883.672997768] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[WARN] [1787135883.679324301] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[WARN] [1787135883.679367426] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[ERROR] [1787135883.679385555] [waypoint_follower]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[INFO] [1787135883.681310213] [lifecycle_manager_navigation]: [34m[1mCleaning up bt_navigator[0m[0m
+[INFO] [1787135883.807188368] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[INFO] [1787135883.807851375] [smoother_server]: Cleaning up
+[WARN] [1787135883.917196537] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[WARN] [1787135883.917224852] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[ERROR] [1787135883.917236055] [bt_navigator]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[INFO] [1787135883.920301937] [lifecycle_manager_navigation]: [34m[1mCleaning up behavior_server[0m[0m
+[INFO] [1787135883.922335737] [behavior_server]: Cleaning up
+[INFO] [1787135884.016728508] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[INFO] [1787135884.017196327] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[INFO] [1787135884.018041920] [amcl]: Deactivating
+[INFO] [1787135884.018078695] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1787135884.028500022] [amcl]: Cleaning up
+[INFO] [1787135884.176384749] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[INFO] [1787135884.176466541] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[INFO] [1787135884.392636015] [lifecycle_manager_navigation]: [34m[1mCleaning up planner_server[0m[0m
+[WARN] [1787135884.392916341] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[WARN] [1787135884.392931900] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[ERROR] [1787135884.392942248] [planner_server]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[INFO] [1787135884.395331684] [lifecycle_manager_navigation]: [34m[1mCleaning up smoother_server[0m[0m
+[WARN] [1787135884.395893894] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[WARN] [1787135884.395911866] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[ERROR] [1787135884.395922878] [smoother_server]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[INFO] [1787135884.396452113] [lifecycle_manager_navigation]: [34m[1mCleaning up controller_server[0m[0m
+[INFO] [1787135884.397030857] [controller_server]: Cleaning up
+[INFO] [1787135884.474321232] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1787135884.679345686] [lifecycle_manager_navigation]: [34m[1mManaged nodes have been reset[0m[0m
+[INFO] [1787135884.753228720] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[INFO] [1787135884.753280618] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[INFO] [1787135884.753299225] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1787135884.753318339] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1787135884.753343138] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[INFO] [1787135884.755098212] [map_server]: Deactivating
+[INFO] [1787135884.755189347] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1787135884.765329996] [map_server]: Cleaning up
+[INFO] [1787135884.766420773] [map_server]: Destroying bond (map_server) to lifecycle manager.

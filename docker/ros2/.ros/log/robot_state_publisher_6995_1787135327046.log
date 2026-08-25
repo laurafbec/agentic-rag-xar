@@ -1,0 +1,22 @@
+[INFO] [1787135327.259249573] [robot_state_publisher]: got segment base_footprint
+[INFO] [1787135327.260474715] [robot_state_publisher]: got segment base_link
+[INFO] [1787135327.260497395] [robot_state_publisher]: got segment base_torso_link
+[INFO] [1787135327.260508079] [robot_state_publisher]: got segment camera_frame
+[INFO] [1787135327.260517737] [robot_state_publisher]: got segment camera_link
+[INFO] [1787135327.260527255] [robot_state_publisher]: got segment eyes_link
+[INFO] [1787135327.260536636] [robot_state_publisher]: got segment front_laser_base_link
+[INFO] [1787135327.260546335] [robot_state_publisher]: got segment front_laser_link
+[INFO] [1787135327.260555951] [robot_state_publisher]: got segment head_link
+[INFO] [1787135327.260565394] [robot_state_publisher]: got segment imu_link
+[INFO] [1787135327.260574734] [robot_state_publisher]: got segment left_speak_link
+[INFO] [1787135327.260584335] [robot_state_publisher]: got segment left_wheel_link
+[INFO] [1787135327.260593686] [robot_state_publisher]: got segment omni_back_wheel_link
+[INFO] [1787135327.260603236] [robot_state_publisher]: got segment omni_front_left_wheel_link
+[INFO] [1787135327.260612791] [robot_state_publisher]: got segment omni_front_right_wheel_link
+[INFO] [1787135327.260622263] [robot_state_publisher]: got segment right_speak_link
+[INFO] [1787135327.260631720] [robot_state_publisher]: got segment right_wheel_link
+[INFO] [1787135327.260641101] [robot_state_publisher]: got segment speak_external_link
+[INFO] [1787135327.260650526] [robot_state_publisher]: got segment torso_arm_link
+[INFO] [1787135327.260659985] [robot_state_publisher]: got segment torso_back_link
+[INFO] [1787135327.260669371] [robot_state_publisher]: got segment torso_front_link
+[INFO] [1787135435.232694924] [rclcpp]: signal_handler(SIGINT/SIGTERM)

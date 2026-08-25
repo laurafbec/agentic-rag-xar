@@ -1,0 +1,8 @@
+[INFO] [1787129381.265248140] [gazebo_ros_node]: ROS was initialized without arguments.
+[INFO] [1787129381.396736550] [demo.diff_drive]: Wheel pair 1 separation set to [1.250000m]
+[INFO] [1787129381.397476185] [demo.diff_drive]: Wheel pair 1 diameter set to [0.600000m]
+[INFO] [1787129381.405405723] [demo.diff_drive]: Subscribed to [/demo/cmd_demo]
+[INFO] [1787129381.413628636] [demo.diff_drive]: Advertise odometry on [/demo/odom_demo]
+[INFO] [1787129381.418642795] [demo.diff_drive]: Publishing odom transforms between [odom_demo] and [chassis]
+[INFO] [1787129381.418693105] [demo.diff_drive]: Publishing wheel transforms between [chassis], [left_wheel_joint] and [right_wheel_joint]
+[INFO] [1787129402.265900869] [rclcpp]: signal_handler(SIGINT/SIGTERM)

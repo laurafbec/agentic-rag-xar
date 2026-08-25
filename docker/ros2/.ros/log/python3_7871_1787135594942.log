@@ -1,0 +1,3 @@
+[INFO] [1787135595.570644465] [joint_state_broadcaster_spawner]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [1787135616.442882692] [joint_state_broadcaster_spawner]: [94mLoaded [1mjoint_state_broadcaster[0m
+[INFO] [1787135616.998671187] [joint_state_broadcaster_spawner]: [92mConfigured and activated [1mjoint_state_broadcaster[0m
