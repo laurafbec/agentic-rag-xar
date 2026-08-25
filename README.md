@@ -38,7 +38,16 @@ On subsequent container starts, if the workspace has already been initialized, t
 ```text
 [INIT] Workspace already built. Skipping build.
 ```
-
+### Running the hospital scenario
+Once the Docker container is running and the workspace initialization has completed, open a shell in the container:
+```bash
+docker compose exec ros2 bash
+```
+The ROS 2 and workspace environments are sourced automatically.
+To launch the AWS RoboMaker hospital scenario, execute:
+```bash
+ros2 launch rb1_sandbox hospital_door_fullmap.launch.py
+```
 ## Other commands
 
 The following commands can be used to manage and access the Docker environment.
