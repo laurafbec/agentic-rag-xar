@@ -21,6 +21,7 @@ cd agentic-rag-xar/ros2-gazebo-docker
 docker compose build
 docker compose up
 ```
+If your user id is not 1000, add ```bash --build-arg user_id=$(id -u)``` to docker compose build command.
 
 ### First startup
 
