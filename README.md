@@ -22,8 +22,13 @@ docker compose build
 docker compose up
 ```
 If your user id is not 1000, add ``` --build-arg user_id=$(id -u)``` to docker compose build command.
-
-### First startup
+## Script permissions
+Before building or starting the environment, make sure that the shell scripts in the [scripts](https://github.com/laurafbec/agentic-rag-xar/tree/main/ros2-gazebo-docker/scripts) directory have execution permissions:
+```bash
+chmod +x scripts/*.sh
+```
+The scripts are used to build and initialize the ROS 2 environment.
+## First startup
 
 During the first startup, the ROS 2 workspace is initialized automatically. This includes installing the required dependencies with `rosdep` and building the workspace with `colcon`.
 
@@ -38,6 +43,7 @@ On subsequent container starts, if the workspace has already been initialized, t
 ```text
 [INIT] Workspace already built. Skipping build.
 ```
+**Wait for one of these messages before proceeding.** This ensures that the workspace initialization and compilation have completed successfully.
 ### Running the hospital scenario
 Once the Docker container is running and the workspace initialization has completed, open a shell in the container:
 ```bash
@@ -109,6 +115,13 @@ The complete experiment requires five terminals running simultaneously:
 | 5 | Hospital navigation node |
 
 Keep all five terminals running during the experiment, except that the Kafka producer in Terminal 3 is explicitly enabled and disabled using the service calls described above.
+## Rebuilding after modifications
+If any of the ROS 2 projects in ```dev_ws/src``` are modified, the workspace must be rebuilt before running the experiment.
+From a new terminal in the container, execute:
+
+```bash
+~./scripts/build.sh
+```
 ## Other commands
 
 The following commands can be used to manage and access the Docker environment.
@@ -128,8 +141,4 @@ docker compose start
 To stop and remove the container:
 ```bash
 docker compose down
-```
-
-```bash
-docker compose exec ros2 bash
 ```
