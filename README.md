@@ -7,7 +7,7 @@
 
 # ROS 2 Docker Environment
 
-Docker environment for reproducing the ROS 2 and Gazebo experiments associated with the paper.
+Docker environment for reproducing the ROS 2 and Gazebo experiments.
 
 The environment provides a containerized ROS 2 Humble setup with Gazebo, Nav2, and the required dependencies for the experimental ROS 2 workspace.
 
