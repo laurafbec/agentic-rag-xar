@@ -1,3 +1,0 @@
-[INFO] [1787135595.427270731] [head_controller_spawner]: waiting for service /controller_manager/list_controllers to become available...
-[INFO] [1787135616.603794708] [head_controller_spawner]: [94mLoaded [1mhead_controller[0m
-[INFO] [1787135616.931848794] [head_controller_spawner]: [92mConfigured and activated [1mhead_controller[0m
