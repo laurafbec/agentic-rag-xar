@@ -22,6 +22,22 @@ docker compose build
 docker compose up
 ```
 
+### First startup
+
+During the first startup, the ROS 2 workspace is initialized automatically. This includes installing the required dependencies with `rosdep` and building the workspace with `colcon`.
+
+The first startup may take several minutes. **Wait until the initialization process finishes before running the experiment.**
+
+A successful first initialization ends with:
+
+```text
+[INIT] Workspace built successfully.
+```
+On subsequent container starts, if the workspace has already been initialized, the build is skipped and the following message is displayed:
+```text
+[INIT] Workspace already built. Skipping build.
+```
+
 ```bash
-docker compose exec --user root ros2 bash
+docker compose exec ros2 bash
 ```
