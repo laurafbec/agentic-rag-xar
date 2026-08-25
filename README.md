@@ -44,7 +44,7 @@ Once the Docker container is running and the workspace initialization has comple
 docker compose exec ros2 bash
 ```
 The ROS 2 and workspace environments are sourced automatically.
-To launch the AWS RoboMaker hospital scenario, execute:
+To launch the [AWS RoboMaker hospital scenario](https://github.com/aws-robotics/aws-robomaker-hospital-world/tree/ros2), execute:
 ```bash
 ros2 launch rb1_sandbox hospital_door_fullmap.launch.py
 ```
