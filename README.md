@@ -73,7 +73,42 @@ To stop the Kafka producer run:
 ```bash
 ros2 service call /kafka_producer_srv std_srvs/srv/SetBool data:\ false
 ```
+### Running the hospital navigation
 
+The `waypoint_navigation` package provides the navigation component used to autonomously move the robot between three configurable positions in the hospital scenario.
+
+**This step requires an additional terminal. Keep the hospital scenario and the `rt_recorder_explainer` service running in their respective terminals.**
+
+In a new terminal, access the running container:
+
+```bash
+docker compose exec ros2 bash
+```
+First, launch the navigation configuration:
+```bash
+ros2 launch waypoint_navigation waypoint_navigation_hospital.launch.py
+```
+In a new terminal, start the navigation node:
+```bash
+ros2 run waypoint_navigation waypoint_navigation_hospital_node
+```
+The robot will navigate autonomously to the three positions configured for the experiment.
+
+The three target positions can be configured in the corresponding parameter file before launching the navigation.
+
+### Terminal overview
+
+The complete experiment requires five terminals running simultaneously:
+
+| Terminal | Process |
+|---|---|
+| 1 | Hospital scenario and Gazebo |
+| 2 | `rt_recorder_explainer` service |
+| 3 | Kafka producer service activation/deactivation |
+| 4 | Hospital navigation launch |
+| 5 | Hospital navigation node |
+
+Keep all five terminals running during the experiment, except that the Kafka producer in Terminal 3 is explicitly enabled and disabled using the service calls described above.
 ## Other commands
 
 The following commands can be used to manage and access the Docker environment.
