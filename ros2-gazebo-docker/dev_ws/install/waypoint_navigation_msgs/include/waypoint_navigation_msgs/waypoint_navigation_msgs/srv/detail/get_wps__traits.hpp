@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_generator_cpp/waypoint_navigation_msgs/srv/detail/get_wps__traits.hpp

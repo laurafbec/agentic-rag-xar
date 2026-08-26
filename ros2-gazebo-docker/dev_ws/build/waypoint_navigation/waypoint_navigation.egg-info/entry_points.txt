@@ -1,5 +1,0 @@
-[console_scripts]
-waypoint_navigation_hospital_node = waypoint_navigation.waypoint_navigation_hospital_node:main
-waypoint_navigation_hospital_node_status = waypoint_navigation.waypoint_navigation_hospital_node_status:main
-waypoint_navigation_node = waypoint_navigation.waypoint_navigation_node:main
-

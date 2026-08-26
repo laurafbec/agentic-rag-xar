@@ -1,9 +1,0 @@
-source;share/rt_recorder_explainer/hook/pythonpath.ps1
-source;share/rt_recorder_explainer/hook/pythonpath.dsv
-source;share/rt_recorder_explainer/hook/pythonpath.sh
-source;share/rt_recorder_explainer/hook/ament_prefix_path.ps1
-source;share/rt_recorder_explainer/hook/ament_prefix_path.dsv
-source;share/rt_recorder_explainer/hook/ament_prefix_path.sh
-source;../../build/rt_recorder_explainer/share/rt_recorder_explainer/hook/pythonpath_develop.ps1
-source;../../build/rt_recorder_explainer/share/rt_recorder_explainer/hook/pythonpath_develop.dsv
-source;../../build/rt_recorder_explainer/share/rt_recorder_explainer/hook/pythonpath_develop.sh

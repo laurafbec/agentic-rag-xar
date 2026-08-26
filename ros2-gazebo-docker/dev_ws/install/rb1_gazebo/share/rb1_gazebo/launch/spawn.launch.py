@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/src/ros2_rb1/rb1_gazebo/launch/spawn.launch.py

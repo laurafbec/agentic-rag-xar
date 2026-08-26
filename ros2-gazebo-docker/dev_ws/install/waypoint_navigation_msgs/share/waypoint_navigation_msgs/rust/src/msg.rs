@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_generator_rs/waypoint_navigation_msgs/rust/src/msg.rs

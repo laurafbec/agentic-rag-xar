@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/ament_cmake_python/waypoint_navigation_msgs/waypoint_navigation_msgs.egg-info/SOURCES.txt

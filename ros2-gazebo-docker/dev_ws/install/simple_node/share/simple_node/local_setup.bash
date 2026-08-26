@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/simple_node/ament_cmake_environment_hooks/local_setup.bash

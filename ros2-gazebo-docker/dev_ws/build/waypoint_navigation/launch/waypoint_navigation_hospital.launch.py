@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/src/waypoint_navigation/launch/waypoint_navigation_hospital.launch.py

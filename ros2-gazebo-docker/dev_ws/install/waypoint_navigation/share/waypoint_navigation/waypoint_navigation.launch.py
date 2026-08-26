@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/waypoint_navigation/launch/waypoint_navigation.launch.py

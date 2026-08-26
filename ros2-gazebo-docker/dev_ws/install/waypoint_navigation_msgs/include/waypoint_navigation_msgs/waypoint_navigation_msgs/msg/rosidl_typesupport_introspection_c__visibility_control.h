@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h

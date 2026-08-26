@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/rb1_description/ament_cmake_core/rb1_descriptionConfig-version.cmake

@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/ament_cmake_environment_hooks/local_setup.bash

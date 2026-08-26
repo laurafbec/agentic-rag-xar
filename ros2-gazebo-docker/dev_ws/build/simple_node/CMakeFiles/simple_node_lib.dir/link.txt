@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsimple_node_lib.a CMakeFiles/simple_node_lib.dir/src/simple_node/node.cpp.o CMakeFiles/simple_node_lib.dir/src/simple_node/actions/action_client.cpp.o CMakeFiles/simple_node_lib.dir/src/simple_node/actions/action_server.cpp.o
-/usr/bin/ranlib libsimple_node_lib.a

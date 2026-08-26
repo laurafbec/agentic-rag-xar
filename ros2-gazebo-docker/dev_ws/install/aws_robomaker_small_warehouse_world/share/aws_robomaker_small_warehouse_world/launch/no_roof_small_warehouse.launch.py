@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/src/ros2_rb1_sandbox/aws-robomaker-small-warehouse-world/launch/no_roof_small_warehouse.launch.py

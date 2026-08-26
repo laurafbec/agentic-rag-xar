@@ -1,8 +1,0 @@
-source;share/rb1_sandbox/hook/cmake_prefix_path.ps1
-source;share/rb1_sandbox/hook/cmake_prefix_path.dsv
-source;share/rb1_sandbox/hook/cmake_prefix_path.sh
-source;share/rb1_sandbox/local_setup.bash
-source;share/rb1_sandbox/local_setup.dsv
-source;share/rb1_sandbox/local_setup.ps1
-source;share/rb1_sandbox/local_setup.sh
-source;share/rb1_sandbox/local_setup.zsh

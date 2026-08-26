@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/src/ros2_rb1/rb1_navigation/launch/navigation/slam.launch.py

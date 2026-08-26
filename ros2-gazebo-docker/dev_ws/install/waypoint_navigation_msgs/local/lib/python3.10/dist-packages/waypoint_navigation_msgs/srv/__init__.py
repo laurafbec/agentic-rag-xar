@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_generator_py/waypoint_navigation_msgs/srv/__init__.py

@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/aws_robomaker_hospital_world/ament_cmake_environment_hooks/local_setup.sh

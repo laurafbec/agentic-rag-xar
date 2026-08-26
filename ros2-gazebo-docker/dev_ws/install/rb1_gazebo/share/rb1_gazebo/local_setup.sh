@@ -1,1 +1,0 @@
-/home/dockeruser/dev_ws/build/rb1_gazebo/ament_cmake_environment_hooks/local_setup.sh
