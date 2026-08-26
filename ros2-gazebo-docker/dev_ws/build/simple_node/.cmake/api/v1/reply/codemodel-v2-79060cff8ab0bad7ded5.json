@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f8b3c249df9a70c4cdbd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "simple_node",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_simple_node_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_simple_node_egg-9a8242a8a909bca96b97.json",
+					"name" : "ament_cmake_python_build_simple_node_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_simple_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_simple_node-50b4d1166b8282249254.json",
+					"name" : "ament_cmake_python_symlink_simple_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_node_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_node_lib-7f64d47a6e815e95a4e4.json",
+					"name" : "simple_node_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_node_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_node_uninstall-54ad0e38aa151321d782.json",
+					"name" : "simple_node_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c3a2178a168494e6f148.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dockeruser/dev_ws/build/simple_node",
+		"source" : "/home/dockeruser/dev_ws/src/simple_node"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

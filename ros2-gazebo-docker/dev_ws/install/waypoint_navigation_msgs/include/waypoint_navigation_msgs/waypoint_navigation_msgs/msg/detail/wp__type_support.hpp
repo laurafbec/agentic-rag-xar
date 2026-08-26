@@ -1,0 +1,1 @@
+/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_generator_cpp/waypoint_navigation_msgs/msg/detail/wp__type_support.hpp

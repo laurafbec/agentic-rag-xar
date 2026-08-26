@@ -1,0 +1,1 @@
+/home/dockeruser/dev_ws/build/rb1_description/ament_cmake_environment_hooks/local_setup.sh

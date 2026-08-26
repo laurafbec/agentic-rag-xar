@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "waypoint_navigation_msgs__rs",
+		"source" : "/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/waypoint_navigation_msgs__rs"
+	}
+}

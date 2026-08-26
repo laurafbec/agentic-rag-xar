@@ -1,0 +1,1 @@
+/home/dockeruser/dev_ws/build/rb1_navigation/ament_cmake_core/rb1_navigationConfig-version.cmake

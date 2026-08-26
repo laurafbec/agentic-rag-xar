@@ -9,6 +9,15 @@ WS=/home/dockeruser/dev_ws
 mkdir -p "${WS}/src"
 cd "${WS}"
 
+# Initialize rosdep if necessary
+if [ ! -f /etc/ros/rosdep/sources.list.d/20-default.list ]; then
+    echo "[INIT] Initializing rosdep..."
+    sudo rosdep init
+fi
+
+echo "[INIT] Updating rosdep..."
+rosdep update
+
 echo "[INIT] Installing ROS 2 dependencies..."
 
 rosdep install \

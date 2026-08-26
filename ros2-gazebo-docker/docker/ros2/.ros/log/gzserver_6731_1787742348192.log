@@ -1,0 +1,55 @@
+[WARN] [1787735158.776717987] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
+[WARN] [1787735158.783112452] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
+[INFO] [1787735159.731546169] [depth_camera_controller]: Publishing camera info to [/camera/camera_info]
+[INFO] [1787735159.736851240] [depth_camera_controller]: Publishing depth camera info to [/camera/depth/camera_info]
+[INFO] [1787735159.740861719] [depth_camera_controller]: Publishing pointcloud to [/camera/points]
+[INFO] [1787735159.898791908] [diff_base_controller]: Wheel pair 1 separation set to [0.433000m]
+[INFO] [1787735159.898851490] [diff_base_controller]: Wheel pair 1 diameter set to [0.076200m]
+[INFO] [1787735159.911502437] [diff_base_controller]: Subscribed to [/cmd_vel]
+[INFO] [1787735159.937431050] [diff_base_controller]: Advertise odometry on [/odom]
+[INFO] [1787735159.954139899] [diff_base_controller]: Publishing odom transforms between [odom] and [base_footprint]
+[INFO] [1787735159.954194478] [diff_base_controller]: Publishing wheel transforms between [base_footprint], [left_wheel_joint] and [right_wheel_joint]
+[INFO] [1787735160.032015508] [rb1_torso_joint_state]: Going to publish joint [j2_head]
+[INFO] [1787735160.032063569] [rb1_torso_joint_state]: Going to publish joint [j1_head]
+[INFO] [1787735160.032081346] [rb1_torso_joint_state]: Going to publish joint [j1_torso]
+[INFO] [1787735160.119750279] [gazebo_ros2_control]: Loading gazebo_ros2_control plugin
+[INFO] [1787735160.164623456] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in namespace: /
+[INFO] [1787735160.164719738] [gazebo_ros2_control]: Starting gazebo_ros2_control plugin in ros 2 node: gazebo_ros2_control
+[INFO] [1787735160.165824112] [gazebo_ros2_control]: Loading parameter files /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/config/rb1_control.yaml
+[INFO] [1787735160.219217367] [gazebo_ros2_control]: connected to service!! robot_state_publisher
+[INFO] [1787735160.234034837] [gazebo_ros2_control]: Recieved urdf from param server, parsing...
+[INFO] [1787735160.268101696] [gazebo_ros2_control]: Loading joint: j1_torso
+[INFO] [1787735160.268338120] [gazebo_ros2_control]: 	State:
+[INFO] [1787735160.268447260] [gazebo_ros2_control]: 		 position
+[INFO] [1787735160.268902799] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[INFO] [1787735160.268969254] [gazebo_ros2_control]: 		 velocity
+[INFO] [1787735160.269231465] [gazebo_ros2_control]: 		 effort
+[INFO] [1787735160.269319405] [gazebo_ros2_control]: 	Command:
+[INFO] [1787735160.269341952] [gazebo_ros2_control]: 		 position
+[INFO] [1787735160.270760302] [gazebo_ros2_control]: Loading joint: j1_head
+[INFO] [1787735160.270794741] [gazebo_ros2_control]: 	State:
+[INFO] [1787735160.270813123] [gazebo_ros2_control]: 		 position
+[INFO] [1787735160.270831276] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[INFO] [1787735160.270894652] [gazebo_ros2_control]: 		 velocity
+[INFO] [1787735160.270919110] [gazebo_ros2_control]: 		 effort
+[INFO] [1787735160.271004804] [gazebo_ros2_control]: 	Command:
+[INFO] [1787735160.271140409] [gazebo_ros2_control]: 		 position
+[INFO] [1787735160.271341735] [gazebo_ros2_control]: Loading joint: j2_head
+[INFO] [1787735160.271368555] [gazebo_ros2_control]: 	State:
+[INFO] [1787735160.271386502] [gazebo_ros2_control]: 		 position
+[INFO] [1787735160.271404796] [gazebo_ros2_control]: 			 found initial value: 0.000000
+[INFO] [1787735160.271424956] [gazebo_ros2_control]: 		 velocity
+[INFO] [1787735160.271443697] [gazebo_ros2_control]: 		 effort
+[INFO] [1787735160.271468584] [gazebo_ros2_control]: 	Command:
+[INFO] [1787735160.271486794] [gazebo_ros2_control]: 		 position
+[INFO] [1787735160.272203135] [resource_manager]: Initialize hardware 'GazeboSystem' 
+[INFO] [1787735160.278465203] [resource_manager]: Successful initialization of hardware 'GazeboSystem'
+[INFO] [1787735160.280407756] [resource_manager]: 'configure' hardware 'GazeboSystem' 
+[INFO] [1787735160.280440664] [resource_manager]: Successful 'configure' of hardware 'GazeboSystem'
+[INFO] [1787735160.280484254] [resource_manager]: 'activate' hardware 'GazeboSystem' 
+[INFO] [1787735160.280498398] [resource_manager]: Successful 'activate' of hardware 'GazeboSystem'
+[INFO] [1787735160.285529416] [gazebo_ros2_control]: Loading controller_manager
+[INFO] [1787735160.374213996] [controller_manager]: Subscribing to '~/robot_description' topic for robot description file.
+[WARN] [1787735160.385553829] [gazebo_ros2_control]:  Desired controller update period (0.01 s) is slower than the gazebo simulation period (0.001 s).
+[INFO] [1787735160.393707391] [gazebo_ros2_control]: Loaded gazebo_ros2_control.
+[INFO] [1787742567.919031633] [rclcpp]: signal_handler(SIGINT/SIGTERM)

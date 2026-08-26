@@ -1,0 +1,6 @@
+Invoking command in '/home/dockeruser/dev_ws/build/rb1_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dockeruser/dev_ws/src/ros2_rb1/rb1_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dockeruser/dev_ws/install/rb1_navigation
+Invoked command in '/home/dockeruser/dev_ws/build/rb1_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dockeruser/dev_ws/src/ros2_rb1/rb1_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dockeruser/dev_ws/install/rb1_navigation
+Invoking command in '/home/dockeruser/dev_ws/build/rb1_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dockeruser/dev_ws/build/rb1_navigation -- -j4 -l4
+Invoked command in '/home/dockeruser/dev_ws/build/rb1_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dockeruser/dev_ws/build/rb1_navigation -- -j4 -l4
+Invoking command in '/home/dockeruser/dev_ws/build/rb1_navigation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dockeruser/dev_ws/build/rb1_navigation
+Invoked command in '/home/dockeruser/dev_ws/build/rb1_navigation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dockeruser/dev_ws/build/rb1_navigation

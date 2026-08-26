@@ -1,0 +1,1 @@
+/home/dockeruser/dev_ws/src/ros2_rb1/rb1_navigation/launch/navigation/nav2_bringup.launch.py

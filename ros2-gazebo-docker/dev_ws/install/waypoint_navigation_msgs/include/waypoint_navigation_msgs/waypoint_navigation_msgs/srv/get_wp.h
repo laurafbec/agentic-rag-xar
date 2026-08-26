@@ -1,0 +1,1 @@
+/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_generator_c/waypoint_navigation_msgs/srv/get_wp.h

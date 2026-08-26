@@ -1,0 +1,5 @@
+/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_adapter/waypoint_navigation_msgs:action/NavigateToWp.idl
+/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_adapter/waypoint_navigation_msgs:srv/AddWp.idl
+/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_adapter/waypoint_navigation_msgs:srv/GetWp.idl
+/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_adapter/waypoint_navigation_msgs:srv/GetWps.idl
+/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/rosidl_adapter/waypoint_navigation_msgs:msg/Wp.idl

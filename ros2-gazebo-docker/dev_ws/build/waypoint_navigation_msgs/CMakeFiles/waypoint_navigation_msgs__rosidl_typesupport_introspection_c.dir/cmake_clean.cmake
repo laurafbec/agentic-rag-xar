@@ -1,0 +1,29 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/action/detail/navigate_to_wp__type_support.c.o"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/action/detail/navigate_to_wp__type_support.c.o.d"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/msg/detail/wp__type_support.c.o"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/msg/detail/wp__type_support.c.o.d"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/add_wp__type_support.c.o"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/add_wp__type_support.c.o.d"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wp__type_support.c.o"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wp__type_support.c.o.d"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wps__type_support.c.o"
+  "CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wps__type_support.c.o.d"
+  "libwaypoint_navigation_msgs__rosidl_typesupport_introspection_c.pdb"
+  "libwaypoint_navigation_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/action/detail/navigate_to_wp__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/action/detail/navigate_to_wp__type_support.c"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/msg/detail/wp__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/msg/detail/wp__type_support.c"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/add_wp__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/add_wp__type_support.c"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wp__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wp__type_support.c"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wps__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wps__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

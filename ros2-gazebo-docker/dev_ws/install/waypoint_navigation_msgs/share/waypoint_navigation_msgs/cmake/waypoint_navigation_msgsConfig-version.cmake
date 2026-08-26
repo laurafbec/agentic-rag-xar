@@ -1,0 +1,1 @@
+/home/dockeruser/dev_ws/build/waypoint_navigation_msgs/ament_cmake_core/waypoint_navigation_msgsConfig-version.cmake

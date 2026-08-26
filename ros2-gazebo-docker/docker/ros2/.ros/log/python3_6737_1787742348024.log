@@ -1,0 +1,7 @@
+[INFO] [1787742348.249135952] [spawn_entity]: Spawn Entity started
+[INFO] [1787742348.250930374] [spawn_entity]: Loading entity published on topic robot_description
+[INFO] [1787742348.255756406] [spawn_entity]: Waiting for entity xml on robot_description
+[INFO] [1787742348.285997196] [spawn_entity]: Waiting for service /spawn_entity, timeout = 120
+[INFO] [1787742348.291240933] [spawn_entity]: Waiting for service /spawn_entity
+[INFO] [1787735157.419182427] [spawn_entity]: Calling service /spawn_entity
+[INFO] [1787735158.889494232] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [rb1]

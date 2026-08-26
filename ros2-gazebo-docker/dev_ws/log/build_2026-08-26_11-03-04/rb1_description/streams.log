@@ -1,0 +1,192 @@
+[0.011s] Invoking command in '/home/dockeruser/dev_ws/build/rb1_description': AMENT_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/dockeruser/dev_ws/src/ros2_rb1/rb1_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dockeruser/dev_ws/install/rb1_description
+[0.081s] -- The C compiler identification is GNU 11.4.0
+[0.157s] -- The CXX compiler identification is GNU 11.4.0
+[0.170s] -- Detecting C compiler ABI info
+[0.255s] -- Detecting C compiler ABI info - done
+[0.272s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.272s] -- Detecting C compile features
+[0.273s] -- Detecting C compile features - done
+[0.278s] -- Detecting CXX compiler ABI info
+[0.374s] -- Detecting CXX compiler ABI info - done
+[0.391s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.392s] -- Detecting CXX compile features
+[0.393s] -- Detecting CXX compile features - done
+[0.397s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.581s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.665s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.718s] CMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+[0.718s]   The package name passed to `find_package_handle_standard_args` (PkgConfig)
+[0.718s]   does not match the name of the calling package (gazebo).  This can lead to
+[0.718s]   problems in calling code that expects `find_package` result variables
+[0.719s]   (e.g., `_FOUND`) to follow a certain pattern.
+[0.719s] Call Stack (most recent call first):
+[0.719s]   /usr/share/cmake-3.22/Modules/FindPkgConfig.cmake:99 (find_package_handle_standard_args)
+[0.719s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:72 (include)
+[0.719s]   CMakeLists.txt:6 (find_package)
+[0.719s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.719s] 
+[0.719s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.724s] -- Checking for module 'bullet>=2.82'
+[0.738s] --   Found bullet, version 3.05
+[0.858s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.910s] -- Found assimp: /usr/include (found version "5.2.0") 
+[0.943s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.161s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.184s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.192s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.202s] -- Searching for dependencies of ignition-math6
+[1.204s] -- Looking for OGRE...
+[1.204s] -- OGRE_PREFIX_WATCH changed.
+[1.210s] -- Checking for module 'OGRE'
+[1.222s] --   Found OGRE, version 1.9.0
+[1.264s] -- Found Ogre Ghadamon (1.9.0)
+[1.279s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.294s] -- Looking for OGRE_Paging...
+[1.302s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.302s] -- Looking for OGRE_Terrain...
+[1.311s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.311s] -- Looking for OGRE_Property...
+[1.319s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.319s] -- Looking for OGRE_RTShaderSystem...
+[1.327s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.327s] -- Looking for OGRE_Volume...
+[1.338s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.338s] -- Looking for OGRE_Overlay...
+[1.348s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.528s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.532s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.533s] -- Searching for dependencies of ignition-transport8
+[1.557s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.573s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.579s] -- Checking for module 'libzmq >= 4'
+[1.593s] --   Found libzmq , version 4.3.4
+[1.634s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.640s] -- Checking for module 'uuid'
+[1.653s] --   Found uuid, version 2.37.2
+[1.686s] -- Found UUID: TRUE  
+[1.689s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.690s] -- Searching for dependencies of ignition-msgs5
+[1.716s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.722s] -- Checking for module 'tinyxml2'
+[1.735s] --   Found tinyxml2, version 9.0.0
+[1.774s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.778s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.779s] -- Searching for dependencies of ignition-common3
+[1.779s] -- Looking for dlfcn.h - found
+[1.781s] -- Looking for libdl - found
+[1.783s] -- Found DL: TRUE  
+[1.798s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[1.799s] -- Searching for <ignition-common3> component [graphics]
+[1.802s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.803s] -- Searching for dependencies of ignition-common3-graphics
+[1.804s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.808s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.809s] -- Searching for dependencies of ignition-fuel_tools4
+[1.900s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[1.911s] -- Checking for module 'jsoncpp'
+[1.924s] --   Found jsoncpp, version 1.9.5
+[1.957s] -- Found JSONCPP: TRUE  
+[1.965s] -- Checking for module 'libzip'
+[1.979s] --   Found libzip, version 1.7.3
+[2.011s] -- Found ZIP: TRUE  
+[2.011s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.012s] -- Looking for ignition-math6 -- found version 6.16.0
+[2.013s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.019s] -- Found gazebo_ros2_control: 0.4.2 (/home/dockeruser/dev_ws/install/gazebo_ros2_control/share/gazebo_ros2_control/cmake)
+[2.099s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.109s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.124s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.177s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.584s] -- Found rmw_implementation_cmake: 6.1.3 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.589s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.636s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.694s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.699s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.715s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.721s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.736s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.748s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.765s] -- Found Threads: TRUE  
+[2.952s] -- Gazebo version: 11.10
+[2.953s] -- Checking for module 'tbb'
+[2.967s] --   Found tbb, version 2021.5.0
+[3.028s] -- Found gazebo_ros_pkgs: 3.9.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[3.030s] -- Found gazebo_plugins: 3.9.0 (/opt/ros/humble/share/gazebo_plugins/cmake)
+[3.095s] -- Found joint_state_broadcaster: 2.53.3 (/opt/ros/humble/share/joint_state_broadcaster/cmake)
+[3.154s] -- Found position_controllers: 2.53.3 (/opt/ros/humble/share/position_controllers/cmake)
+[3.273s] -- Configuring done
+[3.284s] -- Generating done
+[3.289s] -- Build files have been written to: /home/dockeruser/dev_ws/build/rb1_description
+[3.304s] Invoked command in '/home/dockeruser/dev_ws/build/rb1_description' returned '0': AMENT_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/dockeruser/dev_ws/src/ros2_rb1/rb1_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dockeruser/dev_ws/install/rb1_description
+[3.305s] Invoking command in '/home/dockeruser/dev_ws/build/rb1_description': AMENT_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dockeruser/dev_ws/build/rb1_description -- -j4 -l4
+[3.358s] Invoked command in '/home/dockeruser/dev_ws/build/rb1_description' returned '0': AMENT_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/dockeruser/dev_ws/build/rb1_description -- -j4 -l4
+[3.359s] Invoking command in '/home/dockeruser/dev_ws/build/rb1_description': AMENT_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/dockeruser/dev_ws/build/rb1_description
+[3.366s] -- Install configuration: ""
+[3.367s] -- Execute custom install script
+[3.367s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/config/rb1_control.yaml
+[3.377s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/bases/base.dae
+[3.386s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/bases/base.stl
+[3.395s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/heads/head1.dae
+[3.403s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/heads/head1.stl
+[3.414s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/heads/head2.dae
+[3.423s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/heads/head2.stl
+[3.433s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/others/kinova_base-v1.dae
+[3.441s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/others/kinova_base-v1.stl
+[3.450s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/others/tayg_box_6415.stl
+[3.460s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/asus_xtion/asus_xtion_pro_live.dae
+[3.472s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/asus_xtion/asus_xtion_pro_live.png
+[3.482s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo.png
+[3.492s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo3d.dae
+[3.501s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo3d.jpg
+[3.511s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo3d.stl
+[3.520s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo_urg_04lx.dae
+[3.530s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo_urg_04lx.stl
+[3.540s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo_ust_10lx.dae
+[3.550s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo_ust_20lx.dae
+[3.558s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo_utm_30lx.dae
+[3.568s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/sensors/hokuyo/hokuyo_utm_30lx.stl
+[3.577s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/torsos/lower.dae
+[3.586s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/torsos/lower.stl
+[3.594s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/torsos/superior2.dae
+[3.603s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/torsos/superior2.stl
+[3.612s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/torsos/torso_base_arm.dae
+[3.621s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/torsos/upper.dae
+[3.631s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/torsos/upper.stl
+[3.640s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/wheels/wheel_omni_4inch.dae
+[3.650s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/wheels/wheel_omni_4inch.stl
+[3.659s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/wheels/wheel_rubber_6inch.dae
+[3.668s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/meshes/wheels/wheel_rubber_6inch.stl
+[3.677s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/robots/rb1_base.urdf.xacro
+[3.686s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/robots/rb1_robot.urdf.xacro
+[3.695s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/robots/rb1_torso.urdf.xacro
+[3.704s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/bases/base.gazebo.xacro
+[3.713s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/bases/base.urdf.xacro
+[3.722s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/others/kinova_base.urdf.xacro
+[3.731s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/others/speak_external.urdf.xacro
+[3.740s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/others/tayg_box_6415.urdf.xacro
+[3.750s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/sensors/all_sensors.urdf.xacro
+[3.759s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/sensors/asus_xtion.urdf.xacro
+[3.769s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/sensors/hokuyo.urdf.xacro
+[3.779s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/sensors/imu.urdf.xacro
+[3.789s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/torsos/torso_3dof.gazebo.xacro
+[3.813s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/torsos/torso_3dof.urdf.xacro
+[3.822s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/torsos/torso_base_arm.urdf.xacro
+[3.831s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/wheels/omni_wheel.urdf.xacro
+[3.840s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/urdf/wheels/rubber_wheel.urdf.xacro
+[3.849s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/ament_index/resource_index/package_run_dependencies/rb1_description
+[3.858s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/ament_index/resource_index/parent_prefix_path/rb1_description
+[3.868s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/environment/ament_prefix_path.sh
+[3.877s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/environment/ament_prefix_path.dsv
+[3.885s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/environment/path.sh
+[3.894s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/environment/path.dsv
+[3.902s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/local_setup.bash
+[3.911s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/local_setup.sh
+[3.920s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/local_setup.zsh
+[3.930s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/local_setup.dsv
+[3.939s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/package.dsv
+[3.947s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/ament_index/resource_index/packages/rb1_description
+[3.956s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/cmake/rb1_descriptionConfig.cmake
+[3.965s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/cmake/rb1_descriptionConfig-version.cmake
+[3.974s] -- Symlinking: /home/dockeruser/dev_ws/install/rb1_description/share/rb1_description/package.xml
+[3.984s] Invoked command in '/home/dockeruser/dev_ws/build/rb1_description' returned '0': AMENT_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control:/opt/ros/humble LD_LIBRARY_PATH=/home/dockeruser/dev_ws/install/gazebo_ros2_control/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/dockeruser/dev_ws/build/rb1_description

@@ -1,0 +1,334 @@
+[0.008s] Invoking command in '/home/dockeruser/dev_ws/build/waypoint_navigation_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dockeruser/dev_ws/src/waypoint_navigation_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dockeruser/dev_ws/install/waypoint_navigation_msgs
+[0.081s] -- The C compiler identification is GNU 11.4.0
+[0.169s] -- The CXX compiler identification is GNU 11.4.0
+[0.180s] -- Detecting C compiler ABI info
+[0.272s] -- Detecting C compiler ABI info - done
+[0.286s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.287s] -- Detecting C compile features
+[0.287s] -- Detecting C compile features - done
+[0.293s] -- Detecting CXX compiler ABI info
+[0.395s] -- Detecting CXX compiler ABI info - done
+[0.414s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.414s] -- Detecting CXX compile features
+[0.415s] -- Detecting CXX compile features - done
+[0.420s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.616s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.701s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.755s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.827s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.836s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.854s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.879s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.914s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.013s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.135s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.634s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.334s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.608s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.635s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.638s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.675s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.675s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.675s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.675s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.702s] -- Found PythonExtra: .so  
+[2.973s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.977s] -- Added test 'lint_cmake' to check CMake code style
+[2.979s] -- Added test 'xmllint' to check XML markup files
+[2.990s] -- Configuring done
+[3.074s] -- Generating done
+[3.096s] -- Build files have been written to: /home/dockeruser/dev_ws/build/waypoint_navigation_msgs
+[3.107s] Invoked command in '/home/dockeruser/dev_ws/build/waypoint_navigation_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dockeruser/dev_ws/src/waypoint_navigation_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dockeruser/dev_ws/install/waypoint_navigation_msgs
+[3.108s] Invoking command in '/home/dockeruser/dev_ws/build/waypoint_navigation_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dockeruser/dev_ws/build/waypoint_navigation_msgs -- -j4 -l4
+[3.164s] [  1%] Generating C code for ROS interfaces
+[3.177s] [  3%] Generating C++ code for ROS interfaces
+[3.182s] [  4%] Generating Rust code for ROS interfaces
+[3.188s] [  4%] Built target ament_cmake_python_symlink_waypoint_navigation_msgs
+[3.663s] running egg_info
+[3.664s] creating waypoint_navigation_msgs.egg-info
+[3.665s] writing waypoint_navigation_msgs.egg-info/PKG-INFO
+[3.666s] writing dependency_links to waypoint_navigation_msgs.egg-info/dependency_links.txt
+[3.666s] writing top-level names to waypoint_navigation_msgs.egg-info/top_level.txt
+[3.666s] writing manifest file 'waypoint_navigation_msgs.egg-info/SOURCES.txt'
+[3.670s] reading manifest file 'waypoint_navigation_msgs.egg-info/SOURCES.txt'
+[3.670s] writing manifest file 'waypoint_navigation_msgs.egg-info/SOURCES.txt'
+[3.711s] [  4%] Built target ament_cmake_python_build_waypoint_navigation_msgs_egg
+[4.190s] [  4%] Built target waypoint_navigation_msgs__rs
+[5.122s] [  4%] Built target waypoint_navigation_msgs__cpp
+[5.138s] [  6%] Generating C++ type support for eProsima Fast-RTPS
+[5.151s] [  7%] Generating C++ introspection for ROS interfaces
+[5.179s] [  9%] Generating C++ type support dispatch for ROS interfaces
+[5.194s] [ 10%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation_msgs/action/detail/navigate_to_wp__functions.c.o
+[5.420s] [ 12%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation_msgs/srv/detail/add_wp__functions.c.o
+[5.527s] [ 14%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation_msgs/srv/detail/get_wp__functions.c.o
+[5.639s] [ 15%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation_msgs/srv/detail/get_wps__functions.c.o
+[5.753s] [ 17%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_c.dir/rosidl_generator_c/waypoint_navigation_msgs/msg/detail/wp__functions.c.o
+[5.839s] [ 18%] Linking C shared library libwaypoint_navigation_msgs__rosidl_generator_c.so
+[5.912s] [ 18%] Built target waypoint_navigation_msgs__rosidl_generator_c
+[5.929s] [ 20%] Generating C type support for eProsima Fast-RTPS
+[6.378s] [ 21%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation_msgs/action/navigate_to_wp__type_support.cpp.o
+[6.712s] [ 23%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation_msgs/action/detail/navigate_to_wp__type_support.cpp.o
+[6.992s] [ 25%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation_msgs/action/detail/dds_fastrtps/navigate_to_wp__type_support.cpp.o
+[7.181s] [ 26%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation_msgs/srv/add_wp__type_support.cpp.o
+[7.669s] [ 28%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation_msgs/srv/get_wp__type_support.cpp.o
+[7.742s] [ 29%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation_msgs/action/detail/navigate_to_wp__type_support_c.cpp.o
+[7.762s] [ 31%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation_msgs/srv/detail/add_wp__type_support.cpp.o
+[7.977s] [ 32%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation_msgs/srv/detail/dds_fastrtps/add_wp__type_support.cpp.o
+[8.165s] [ 34%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation_msgs/srv/get_wps__type_support.cpp.o
+[8.483s] [ 35%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation_msgs/srv/detail/add_wp__type_support_c.cpp.o
+[8.507s] [ 37%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation_msgs/srv/detail/get_wp__type_support.cpp.o
+[8.659s] [ 39%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/waypoint_navigation_msgs/msg/wp__type_support.cpp.o
+[8.704s] [ 40%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation_msgs/srv/detail/dds_fastrtps/get_wp__type_support.cpp.o
+[9.154s] [ 42%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation_msgs/srv/detail/get_wp__type_support_c.cpp.o
+[9.159s] [ 43%] Linking CXX shared library libwaypoint_navigation_msgs__rosidl_typesupport_cpp.so
+[9.240s] [ 43%] Built target waypoint_navigation_msgs__rosidl_typesupport_cpp
+[9.247s] [ 45%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation_msgs/srv/detail/get_wps__type_support.cpp.o
+[9.256s] [ 46%] Generating C introspection for ROS interfaces
+[9.452s] [ 48%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation_msgs/srv/detail/dds_fastrtps/get_wps__type_support.cpp.o
+[9.825s] [ 50%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation_msgs/srv/detail/get_wps__type_support_c.cpp.o
+[10.059s] [ 51%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/waypoint_navigation_msgs/msg/detail/wp__type_support.cpp.o
+[10.292s] [ 53%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/waypoint_navigation_msgs/msg/detail/dds_fastrtps/wp__type_support.cpp.o
+[10.508s] [ 54%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/waypoint_navigation_msgs/msg/detail/wp__type_support_c.cpp.o
+[10.800s] [ 56%] Linking CXX shared library libwaypoint_navigation_msgs__rosidl_typesupport_introspection_cpp.so
+[10.950s] [ 56%] Built target waypoint_navigation_msgs__rosidl_typesupport_introspection_cpp
+[10.974s] [ 57%] Generating C type support dispatch for ROS interfaces
+[11.003s] [ 59%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/action/detail/navigate_to_wp__type_support.c.o
+[11.056s] [ 60%] Linking CXX shared library libwaypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp.so
+[11.097s] [ 62%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/add_wp__type_support.c.o
+[11.166s] [ 64%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wp__type_support.c.o
+[11.199s] [ 64%] Built target waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp
+[11.210s] [ 65%] Linking CXX shared library libwaypoint_navigation_msgs__rosidl_typesupport_fastrtps_c.so
+[11.213s] [ 67%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/srv/detail/get_wps__type_support.c.o
+[11.238s] [ 68%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/waypoint_navigation_msgs/msg/detail/wp__type_support.c.o
+[11.303s] [ 70%] Linking C shared library libwaypoint_navigation_msgs__rosidl_typesupport_introspection_c.so
+[11.346s] [ 70%] Built target waypoint_navigation_msgs__rosidl_typesupport_fastrtps_c
+[11.364s] [ 70%] Built target waypoint_navigation_msgs__rosidl_typesupport_introspection_c
+[11.951s] [ 75%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation_msgs/srv/get_wps__type_support.cpp.o
+[11.951s] [ 73%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation_msgs/srv/add_wp__type_support.cpp.o
+[11.951s] [ 76%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation_msgs/action/navigate_to_wp__type_support.cpp.o
+[11.951s] [ 76%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation_msgs/srv/get_wp__type_support.cpp.o
+[11.998s] [ 78%] Building CXX object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/waypoint_navigation_msgs/msg/wp__type_support.cpp.o
+[12.044s] [ 79%] Linking CXX shared library libwaypoint_navigation_msgs__rosidl_typesupport_c.so
+[12.109s] [ 79%] Built target waypoint_navigation_msgs__rosidl_typesupport_c
+[12.135s] [ 79%] Built target waypoint_navigation_msgs
+[12.161s] [ 81%] Generating Python code for ROS interfaces
+[14.993s] [ 81%] Built target waypoint_navigation_msgs__py
+[15.020s] [ 84%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation_msgs/action/_navigate_to_wp_s.c.o
+[15.020s] [ 84%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation_msgs/srv/_add_wp_s.c.o
+[15.020s] [ 85%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation_msgs/srv/_get_wp_s.c.o
+[15.021s] [ 87%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation_msgs/srv/_get_wps_s.c.o
+[15.210s] [ 89%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_generator_py.dir/rosidl_generator_py/waypoint_navigation_msgs/msg/_wp_s.c.o
+[15.421s] [ 90%] Linking C shared library rosidl_generator_py/waypoint_navigation_msgs/libwaypoint_navigation_msgs__rosidl_generator_py.so
+[15.505s] [ 90%] Built target waypoint_navigation_msgs__rosidl_generator_py
+[15.541s] [ 93%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/waypoint_navigation_msgs/_waypoint_navigation_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
+[15.541s] [ 95%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/waypoint_navigation_msgs/_waypoint_navigation_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[15.541s] [ 95%] Building C object CMakeFiles/waypoint_navigation_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/waypoint_navigation_msgs/_waypoint_navigation_msgs_s.ep.rosidl_typesupport_c.c.o
+[15.822s] [ 96%] Linking C shared library rosidl_generator_py/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[15.822s] [ 98%] Linking C shared library rosidl_generator_py/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[15.833s] [100%] Linking C shared library rosidl_generator_py/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[15.926s] [100%] Built target waypoint_navigation_msgs__rosidl_typesupport_introspection_c__pyext
+[15.926s] [100%] Built target waypoint_navigation_msgs__rosidl_typesupport_fastrtps_c__pyext
+[15.926s] [100%] Built target waypoint_navigation_msgs__rosidl_typesupport_c__pyext
+[15.949s] Invoked command in '/home/dockeruser/dev_ws/build/waypoint_navigation_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dockeruser/dev_ws/build/waypoint_navigation_msgs -- -j4 -l4
+[15.950s] Invoking command in '/home/dockeruser/dev_ws/build/waypoint_navigation_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dockeruser/dev_ws/build/waypoint_navigation_msgs
+[15.964s] -- Install configuration: ""
+[15.966s] -- Execute custom install script
+[15.966s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/ament_index/resource_index/rosidl_interfaces/waypoint_navigation_msgs
+[15.982s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__functions.h
+[15.996s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__struct.h
+[16.010s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__type_support.h
+[16.024s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/navigate_to_wp.h
+[16.037s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__functions.h
+[16.051s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__struct.h
+[16.069s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__type_support.h
+[16.082s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/rosidl_generator_c__visibility_control.h
+[16.095s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/wp.h
+[16.108s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/add_wp.h
+[16.119s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__functions.h
+[16.132s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__struct.h
+[16.144s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__type_support.h
+[16.156s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__functions.h
+[16.168s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__struct.h
+[16.179s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__type_support.h
+[16.191s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__functions.h
+[16.202s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__struct.h
+[16.214s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__type_support.h
+[16.225s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/get_wp.h
+[16.235s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/get_wps.h
+[16.246s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/environment/library_path.sh
+[16.258s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/environment/library_path.dsv
+[16.270s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__rosidl_typesupport_fastrtps_c.h
+[16.280s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__rosidl_typesupport_fastrtps_c.h
+[16.291s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[16.301s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__rosidl_typesupport_fastrtps_c.h
+[16.312s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__rosidl_typesupport_fastrtps_c.h
+[16.322s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__rosidl_typesupport_fastrtps_c.h
+[16.333s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__builder.hpp
+[16.344s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__struct.hpp
+[16.354s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__traits.hpp
+[16.364s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__type_support.hpp
+[16.375s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/navigate_to_wp.hpp
+[16.385s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__builder.hpp
+[16.395s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__struct.hpp
+[16.405s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__traits.hpp
+[16.415s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__type_support.hpp
+[16.425s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[16.435s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/wp.hpp
+[16.449s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/add_wp.hpp
+[16.456s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__builder.hpp
+[16.466s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__struct.hpp
+[16.476s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__traits.hpp
+[16.486s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__type_support.hpp
+[16.496s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__builder.hpp
+[16.506s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__struct.hpp
+[16.516s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__traits.hpp
+[16.525s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__type_support.hpp
+[16.535s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__builder.hpp
+[16.544s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__struct.hpp
+[16.554s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__traits.hpp
+[16.564s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__type_support.hpp
+[16.574s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/get_wp.hpp
+[16.584s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/get_wps.hpp
+[16.595s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__rosidl_typesupport_fastrtps_cpp.hpp
+[16.604s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__rosidl_typesupport_fastrtps_cpp.hpp
+[16.613s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[16.623s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__rosidl_typesupport_fastrtps_cpp.hpp
+[16.634s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__rosidl_typesupport_fastrtps_cpp.hpp
+[16.644s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__rosidl_typesupport_fastrtps_cpp.hpp
+[16.655s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__rosidl_typesupport_introspection_c.h
+[16.664s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__rosidl_typesupport_introspection_c.h
+[16.674s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[16.683s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__rosidl_typesupport_introspection_c.h
+[16.693s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__rosidl_typesupport_introspection_c.h
+[16.702s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__rosidl_typesupport_introspection_c.h
+[16.711s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/action/detail/navigate_to_wp__rosidl_typesupport_introspection_cpp.hpp
+[16.721s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/msg/detail/wp__rosidl_typesupport_introspection_cpp.hpp
+[16.730s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/add_wp__rosidl_typesupport_introspection_cpp.hpp
+[16.740s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wp__rosidl_typesupport_introspection_cpp.hpp
+[16.749s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/include/waypoint_navigation_msgs/waypoint_navigation_msgs/srv/detail/get_wps__rosidl_typesupport_introspection_cpp.hpp
+[16.758s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/environment/pythonpath.sh
+[16.768s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/environment/pythonpath.dsv
+[16.778s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[16.788s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[16.798s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[16.808s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[16.819s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/__init__.py
+[16.828s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/_waypoint_navigation_msgs_s.ep.rosidl_typesupport_c.c
+[16.837s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/_waypoint_navigation_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[16.847s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/_waypoint_navigation_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[16.858s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/action/__init__.py
+[16.867s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/action/_navigate_to_wp.py
+[16.877s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/action/_navigate_to_wp_s.c
+[16.887s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/libwaypoint_navigation_msgs__rosidl_generator_py.so
+[16.897s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/msg/__init__.py
+[16.907s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/msg/_wp.py
+[16.916s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/msg/_wp_s.c
+[16.927s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/__init__.py
+[16.936s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_add_wp.py
+[16.946s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_add_wp_s.c
+[16.955s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_get_wp.py
+[16.966s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_get_wp_s.c
+[16.975s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_get_wps.py
+[16.985s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_get_wps_s.c
+[16.994s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.005s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.014s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.024s] -- Up-to-date symlink: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[17.025s] -- Up-to-date symlink: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[17.025s] -- Up-to-date symlink: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/waypoint_navigation_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[17.025s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/ament_index/resource_index/rust_packages/waypoint_navigation_msgs
+[17.036s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/Cargo.toml
+[17.045s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/build.rs
+[17.059s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/src/action.rs
+[17.069s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/src/action/rmw.rs
+[17.079s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/src/lib.rs
+[17.089s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/src/msg.rs
+[17.100s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/src/msg/rmw.rs
+[17.110s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/src/srv.rs
+[17.120s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/rust/src/srv/rmw.rs
+[17.130s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/action/NavigateToWp.idl
+[17.140s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/AddWp.idl
+[17.149s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/GetWp.idl
+[17.158s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/GetWps.idl
+[17.168s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/msg/Wp.idl
+[17.178s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/action/NavigateToWp.action
+[17.187s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/AddWp.srv
+[17.196s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/AddWp_Request.msg
+[17.206s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/AddWp_Response.msg
+[17.216s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/GetWp.srv
+[17.226s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/GetWp_Request.msg
+[17.235s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/GetWp_Response.msg
+[17.245s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/GetWps.srv
+[17.254s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/GetWps_Request.msg
+[17.263s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/srv/GetWps_Response.msg
+[17.272s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/msg/Wp.msg
+[17.282s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/ament_index/resource_index/package_run_dependencies/waypoint_navigation_msgs
+[17.291s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/ament_index/resource_index/parent_prefix_path/waypoint_navigation_msgs
+[17.301s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/environment/ament_prefix_path.sh
+[17.310s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/environment/ament_prefix_path.dsv
+[17.319s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/environment/path.sh
+[17.328s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/environment/path.dsv
+[17.337s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/local_setup.bash
+[17.346s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/local_setup.sh
+[17.355s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/local_setup.zsh
+[17.364s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/local_setup.dsv
+[17.373s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/package.dsv
+[17.383s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/ament_index/resource_index/packages/waypoint_navigation_msgs
+[17.392s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/rosidl_cmake-extras.cmake
+[17.401s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.410s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.419s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[17.428s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[17.437s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[17.446s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[17.455s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[17.464s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgsConfig.cmake
+[17.473s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgsConfig-version.cmake
+[17.482s] -- Symlinking: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/package.xml
+[17.492s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_generator_c.so
+[17.492s] -- Set runtime path of "/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_generator_c.so" to ""
+[17.492s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_fastrtps_c.so
+[17.493s] -- Set runtime path of "/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[17.493s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp.so
+[17.494s] -- Set runtime path of "/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[17.494s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_introspection_c.so
+[17.495s] -- Set runtime path of "/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_introspection_c.so" to ""
+[17.495s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_c.so
+[17.495s] -- Set runtime path of "/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_c.so" to ""
+[17.495s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_introspection_cpp.so
+[17.496s] -- Set runtime path of "/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[17.496s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_cpp.so
+[17.497s] -- Set runtime path of "/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_typesupport_cpp.so" to ""
+[17.539s] Listing '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs'...
+[17.539s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/__init__.py'...
+[17.540s] Listing '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/action'...
+[17.540s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/action/__init__.py'...
+[17.541s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/action/_navigate_to_wp.py'...
+[17.549s] Listing '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/msg'...
+[17.550s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/msg/__init__.py'...
+[17.550s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/msg/_wp.py'...
+[17.551s] Listing '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv'...
+[17.551s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/__init__.py'...
+[17.551s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_add_wp.py'...
+[17.553s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_get_wp.py'...
+[17.555s] Compiling '/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/local/lib/python3.10/dist-packages/waypoint_navigation_msgs/srv/_get_wps.py'...
+[17.563s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_generator_py.so
+[17.563s] -- Set runtime path of "/home/dockeruser/dev_ws/install/waypoint_navigation_msgs/lib/libwaypoint_navigation_msgs__rosidl_generator_py.so" to ""
+[17.564s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_generator_cExport.cmake
+[17.564s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_generator_cExport-noconfig.cmake
+[17.564s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[17.564s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[17.564s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_generator_cppExport.cmake
+[17.565s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[17.565s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[17.565s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgs__rosidl_typesupport_introspection_cExport.cmake
+[17.565s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[17.566s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgs__rosidl_typesupport_cExport.cmake
+[17.566s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[17.566s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[17.566s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[17.566s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgs__rosidl_typesupport_cppExport.cmake
+[17.567s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/waypoint_navigation_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[17.567s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_generator_pyExport.cmake
+[17.567s] -- Installing: /home/dockeruser/dev_ws/install/waypoint_navigation_msgs/share/waypoint_navigation_msgs/cmake/export_waypoint_navigation_msgs__rosidl_generator_pyExport-noconfig.cmake
+[17.571s] Invoked command in '/home/dockeruser/dev_ws/build/waypoint_navigation_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dockeruser/dev_ws/build/waypoint_navigation_msgs

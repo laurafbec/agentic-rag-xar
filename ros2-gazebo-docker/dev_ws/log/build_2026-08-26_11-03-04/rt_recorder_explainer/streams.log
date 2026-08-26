@@ -1,0 +1,34 @@
+[1.219s] Invoking command in '/home/dockeruser/dev_ws/build/rt_recorder_explainer': PYTHONPATH=/home/dockeruser/dev_ws/build/rt_recorder_explainer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dockeruser/dev_ws/install/rt_recorder_explainer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dockeruser/dev_ws/build/rt_recorder_explainer/build --no-deps symlink_data
+[1.571s] running develop
+[1.783s] running egg_info
+[1.783s] creating rt_recorder_explainer.egg-info
+[1.784s] writing rt_recorder_explainer.egg-info/PKG-INFO
+[1.784s] writing dependency_links to rt_recorder_explainer.egg-info/dependency_links.txt
+[1.784s] writing entry points to rt_recorder_explainer.egg-info/entry_points.txt
+[1.785s] writing requirements to rt_recorder_explainer.egg-info/requires.txt
+[1.785s] writing top-level names to rt_recorder_explainer.egg-info/top_level.txt
+[1.787s] writing manifest file 'rt_recorder_explainer.egg-info/SOURCES.txt'
+[1.788s] reading manifest file 'rt_recorder_explainer.egg-info/SOURCES.txt'
+[1.789s] writing manifest file 'rt_recorder_explainer.egg-info/SOURCES.txt'
+[1.791s] running build_ext
+[1.792s] Creating /home/dockeruser/dev_ws/install/rt_recorder_explainer/lib/python3.10/site-packages/rt-recorder-explainer.egg-link (link to .)
+[1.793s] Installing kafka_producer_node script to /home/dockeruser/dev_ws/install/rt_recorder_explainer/lib/rt_recorder_explainer
+[1.793s] Installing kafka_producer_srv script to /home/dockeruser/dev_ws/install/rt_recorder_explainer/lib/rt_recorder_explainer
+[1.794s] 
+[1.794s] Installed /home/dockeruser/dev_ws/build/rt_recorder_explainer
+[1.794s] running symlink_data
+[1.795s] creating /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/ament_index
+[1.795s] creating /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/ament_index/resource_index
+[1.795s] creating /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/ament_index/resource_index/packages
+[1.795s] symbolically linking /home/dockeruser/dev_ws/build/rt_recorder_explainer/resource/rt_recorder_explainer -> /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/ament_index/resource_index/packages
+[1.795s] symbolically linking /home/dockeruser/dev_ws/build/rt_recorder_explainer/package.xml -> /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer
+[1.795s] creating /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/launch
+[1.795s] symbolically linking /home/dockeruser/dev_ws/build/rt_recorder_explainer/launch/rt_recorder_explainer.launch.py -> /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/launch
+[1.795s] symbolically linking /home/dockeruser/dev_ws/build/rt_recorder_explainer/launch/rt_recorder_explainer_srv.launch.py -> /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/launch
+[1.797s] creating /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/config
+[1.797s] symbolically linking /home/dockeruser/dev_ws/build/rt_recorder_explainer/config/bc_rates.yaml -> /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/config
+[1.797s] creating /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/certs
+[1.797s] symbolically linking /home/dockeruser/dev_ws/build/rt_recorder_explainer/certs/CARoot.pem -> /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/certs
+[1.797s] symbolically linking /home/dockeruser/dev_ws/build/rt_recorder_explainer/certs/producer_key.pem -> /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/certs
+[1.797s] symbolically linking /home/dockeruser/dev_ws/build/rt_recorder_explainer/certs/producer.pem -> /home/dockeruser/dev_ws/install/rt_recorder_explainer/share/rt_recorder_explainer/certs
+[1.823s] Invoked command in '/home/dockeruser/dev_ws/build/rt_recorder_explainer' returned '0': PYTHONPATH=/home/dockeruser/dev_ws/build/rt_recorder_explainer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dockeruser/dev_ws/install/rt_recorder_explainer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dockeruser/dev_ws/build/rt_recorder_explainer/build --no-deps symlink_data

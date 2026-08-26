@@ -1,0 +1,9 @@
+/home/dockeruser/dev_ws/src/gazebo_ros2_control/src/gazebo_system.cpp: In member function ‘virtual hardware_interface::return_type gazebo_ros2_control::GazeboSystem::perform_command_mode_switch(const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<std::__cxx11::basic_string<char> >&)’:
+/home/dockeruser/dev_ws/src/gazebo_ros2_control/src/gazebo_system.cpp:515:77: warning: implicitly-declared ‘constexpr gazebo_ros2_control::SafeEnum<gazebo_ros2_control::GazeboSystemInterface::ControlMethod_>& gazebo_ros2_control::SafeEnum<gazebo_ros2_control::GazeboSystemInterface::ControlMethod_>::operator=(const gazebo_ros2_control::SafeEnum<gazebo_ros2_control::GazeboSystemInterface::ControlMethod_>&)’ is deprecated [-Wdeprecated-copy]
+  515 |       this->dataPtr->joint_control_methods_[mimic_joint.mimicked_joint_index];
+      |                                                                             ^
+In file included from /home/dockeruser/dev_ws/src/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system.hpp:25,
+                 from /home/dockeruser/dev_ws/src/gazebo_ros2_control/src/gazebo_system.cpp:22:
+/home/dockeruser/dev_ws/src/gazebo_ros2_control/include/gazebo_ros2_control/gazebo_system_interface.hpp:43:3: note: because ‘gazebo_ros2_control::SafeEnum<gazebo_ros2_control::GazeboSystemInterface::ControlMethod_>’ has user-provided ‘gazebo_ros2_control::SafeEnum<ENUM, UNDERLYING>::SafeEnum(const gazebo_ros2_control::SafeEnum<ENUM, UNDERLYING>&) [with ENUM = gazebo_ros2_control::GazeboSystemInterface::ControlMethod_; UNDERLYING = unsigned int]’
+   43 |   SafeEnum(const SafeEnum & original)
+      |   ^~~~~~~~

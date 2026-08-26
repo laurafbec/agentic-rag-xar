@@ -16,11 +16,15 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y sudo \
     ros-${ROS_DISTRO}-gazebo-* \
     python-is-python3 \
+    python3-pip \
     python3-rosdep \
     nano \
     less \
     xterm
     #&& rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m pip install --no-cache-dir \
+    confluent-kafka==2.5.3
 
 # Create non-root user with passwordless sudo
 RUN useradd -m --uid ${user_id} dockeruser \

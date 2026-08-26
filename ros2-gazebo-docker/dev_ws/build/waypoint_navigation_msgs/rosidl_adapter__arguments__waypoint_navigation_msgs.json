@@ -1,0 +1,10 @@
+{
+  "package_name": "waypoint_navigation_msgs",
+  "non_idl_tuples": [
+    "/home/dockeruser/dev_ws/src/waypoint_navigation_msgs:action/NavigateToWp.action",
+    "/home/dockeruser/dev_ws/src/waypoint_navigation_msgs:srv/AddWp.srv",
+    "/home/dockeruser/dev_ws/src/waypoint_navigation_msgs:srv/GetWp.srv",
+    "/home/dockeruser/dev_ws/src/waypoint_navigation_msgs:srv/GetWps.srv",
+    "/home/dockeruser/dev_ws/src/waypoint_navigation_msgs:msg/Wp.msg"
+  ]
+}

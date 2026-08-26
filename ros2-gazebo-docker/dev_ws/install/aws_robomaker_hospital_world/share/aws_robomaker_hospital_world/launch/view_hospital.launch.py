@@ -1,0 +1,1 @@
+/home/dockeruser/dev_ws/src/ros2_rb1_sandbox/aws-robomaker-hospital-world/launch/view_hospital.launch.py

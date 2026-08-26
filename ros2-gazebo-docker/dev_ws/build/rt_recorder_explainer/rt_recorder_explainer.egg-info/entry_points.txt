@@ -1,0 +1,4 @@
+[console_scripts]
+kafka_producer_node = rt_recorder_explainer.kafka_producer_node:main
+kafka_producer_srv = rt_recorder_explainer.kafka_producer_srv:main
+
