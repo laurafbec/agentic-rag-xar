@@ -1,7 +1,7 @@
 ## Requirements
 
-- Docker
-- Docker Compose
+- Docker (version 29.7.2)
+- Docker Compose (version 5.5.0)
 
 - git clone https://github.com/laurafbec/agentic-rag-xar.git
 
