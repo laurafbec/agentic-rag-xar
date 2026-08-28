@@ -29,11 +29,11 @@ The experiments are conducted in a hospital environment using an RB-1 robot simu
 
 The following images show the floor plan of the scenario used in the experiments. The second image illustrates an obstacle introduced into the initially calculated route to the goal, forcing the navigation system to replan the path.
 
-<img src="https://user-images.githubusercontent.com/13176052/227868761-7df42f3d-9043-4b07-af27-2b843806be0e.png" width="400">
-
-<img src="https://user-images.githubusercontent.com/13176052/227868841-21b6f0e0-1017-4136-94aa-396ba1205a6b.png" width="400">
-
-<img src="https://github.com/laurafbec/immutable_explainable_BBR/assets/13176052/d2e9f52a-9366-4bf8-b0d1-4b439fc1947b" width="400">
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/13176052/227868761-7df42f3d-9043-4b07-af27-2b843806be0e.png" width="250">
+  <img src="https://user-images.githubusercontent.com/13176052/227868841-21b6f0e0-1017-4136-94aa-396ba1205a6b.png" width="250">
+  <img src="https://github.com/laurafbec/immutable_explainable_BBR/assets/13176052/d2e9f52a-9366-4bf8-b0d1-4b439fc1947b" width="250">
+</p>
 
 ## Repository structure
 
