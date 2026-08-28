@@ -1,6 +1,10 @@
 # Accountability-Explainability Architecture with LLM Agents
 This repository contains the code for an accountability and explainability architecture developed for ROS 2-based robots. It leverages Kafka as an event streaming platform to ensure the reliable recording of accountable data, which serves as the foundation for an Agentic RAG-based system that generates natural language explanations.
 
+The experimental environment integrates a ROS 2 and Gazebo-based robotic simulation with Apache Kafka, MongoDB Atlas, and an agentic RAG-based Explainer. ROS 2 messages generated during the robot's operation are processed and transmitted through Kafka, stored in MongoDB Atlas, and subsequently retrieved by the Explainer to generate context-aware explanations.
+
+The repository provides the required components and configuration instructions to deploy the complete experimental environment and reproduce the experimental workflow.
+
 # Software artifacts
 ROS 2 Humble
 
@@ -31,3 +35,33 @@ langgraph v0.2.66
 langchain-openai v 0.3.7
 
 ragas v0.2.12
+
+Additional requirements and configuration steps for each component are described in their corresponding sections.
+
+
+## Repository structure
+
+The repository is organized according to the order required to configure and deploy the experimental environment:
+
+```text
+agentic-rag-xar/
+├── mongodb/
+├── kafka-docker/
+├── explainer-docker/
+├── ros2-gazebo-docker/
+└── README.md
+
+mongodb/ contains the configuration and instructions required to set up the MongoDB Atlas components used by the system.
+kafka-docker/ contains the Kafka infrastructure required for real-time ROS 2 message streaming.
+explainer-dokcer/ contains the containerized Explainer implementing the agentic RAG architecture.
+ros2-gazebo-docker/ contains the Docker environment for ROS 2 Humble, Gazebo, Nav2, and the robotic simulation.
+
+## Deployment workflow
+
+Follow the component-specific instructions in the following order:
+
+1. [Configure MongoDB Atlas](./mongodb/README.md)
+2. [Deploy Kafka](./kafka-docker/README.md)
+3. [Deploy the Explainer](./explainer-docker/README.md)
+4. [Set up the ROS 2 and Gazebo environment](./ros2-gazebo-docker/README.md)
+5. Run the complete experiment
