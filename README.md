@@ -29,10 +29,11 @@ The experiments are conducted in a hospital environment using an RB-1 robot simu
 
 The following images show the floor plan of the scenario used in the experiments. The second image illustrates an obstacle introduced into the initially calculated route to the goal, forcing the navigation system to replan the path.
 
-![imagen](https://user-images.githubusercontent.com/13176052/227868761-7df42f3d-9043-4b07-af27-2b843806be0e.png)
+<img src="https://user-images.githubusercontent.com/13176052/227868761-7df42f3d-9043-4b07-af27-2b843806be0e.png" width="400">
 
-![imagen](https://user-images.githubusercontent.com/13176052/227868841-21b6f0e0-1017-4136-94aa-396ba1205a6b.png)
-![Screenshot from 2024-02-19 17-45-53](https://github.com/laurafbec/immutable_explainable_BBR/assets/13176052/d2e9f52a-9366-4bf8-b0d1-4b439fc1947b)
+<img src="https://user-images.githubusercontent.com/13176052/227868841-21b6f0e0-1017-4136-94aa-396ba1205a6b.png" width="400">
+
+<img src="https://github.com/laurafbec/immutable_explainable_BBR/assets/13176052/d2e9f52a-9366-4bf8-b0d1-4b439fc1947b" width="400">
 
 ## Repository structure
 
@@ -50,16 +51,17 @@ mongodb/ contains the configuration and instructions required to set up the Mong
 
 kafka-docker/ contains the Kafka infrastructure required for real-time ROS 2 message streaming.
 
-explainer-dokcer/ contains the containerized Explainer implementing the agentic RAG architecture.
+explainer-docker/ contains the containerized Explainer implementing the agentic RAG architecture.
 
 [ros2-gazebo-docker/](https://github.com/laurafbec/agentic-rag-xar/tree/main/ros2-gazebo-docker) contains the Docker environment for ROS 2 Humble, Gazebo, Nav2, and the robotic simulation.
 
 ## Deployment workflow
-
-Follow the component-specific instructions in the following order:
+To reproduce the experimental environment, follow the instructions provided in each component's README in the order listed below:
 
 1. [Configure MongoDB Atlas](./mongodb/README.md)
 2. [Deploy Kafka](./kafka-docker/README.md)
 3. [Deploy the Explainer](./explainer-docker/README.md)
 4. [Set up the ROS 2 and Gazebo environment](./ros2-gazebo-docker/README-ros2-docker.md)
 5. Run the complete experiment
+
+The Kafka infrastructure and the Explainer must be available before starting the autonomous navigation experiment. MongoDB Atlas must be configured beforehand so that the messages generated during the experiment can be stored and retrieved by the Explainer.
