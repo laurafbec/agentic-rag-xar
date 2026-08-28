@@ -50,7 +50,7 @@ agentic-rag-xar/
 ├── explainer-docker/
 ├── ros2-gazebo-docker/
 └── README.md
-
+´´´
 mongodb/ contains the configuration and instructions required to set up the MongoDB Atlas components used by the system.
 kafka-docker/ contains the Kafka infrastructure required for real-time ROS 2 message streaming.
 explainer-dokcer/ contains the containerized Explainer implementing the agentic RAG architecture.
