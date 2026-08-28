@@ -50,11 +50,11 @@ agentic-rag-xar/
 ├── explainer-docker/
 ├── ros2-gazebo-docker/
 └── README.md
-´´´
+```
 mongodb/ contains the configuration and instructions required to set up the MongoDB Atlas components used by the system.
 kafka-docker/ contains the Kafka infrastructure required for real-time ROS 2 message streaming.
 explainer-dokcer/ contains the containerized Explainer implementing the agentic RAG architecture.
-ros2-gazebo-docker/ contains the Docker environment for ROS 2 Humble, Gazebo, Nav2, and the robotic simulation.
+[ros2-gazebo-docker/](https://github.com/laurafbec/agentic-rag-xar/tree/main/ros2-gazebo-docker) contains the Docker environment for ROS 2 Humble, Gazebo, Nav2, and the robotic simulation.
 
 ## Deployment workflow
 
@@ -63,5 +63,5 @@ Follow the component-specific instructions in the following order:
 1. [Configure MongoDB Atlas](./mongodb/README.md)
 2. [Deploy Kafka](./kafka-docker/README.md)
 3. [Deploy the Explainer](./explainer-docker/README.md)
-4. [Set up the ROS 2 and Gazebo environment](./ros2-gazebo-docker/README.md)
+4. [Set up the ROS 2 and Gazebo environment](./ros2-gazebo-docker/README-ros2-docker.md)
 5. Run the complete experiment
