@@ -36,6 +36,7 @@ A successful first initialization ends with:
 On subsequent container starts, if the workspace has already been initialized, the build is skipped and the following message is displayed:
 ```text
 [INIT] Workspace already built. Skipping build.
+[ENTRYPOINT] Workspace ready.
 ```
 **Wait for one of these messages before proceeding.** This ensures that the workspace initialization and compilation have completed successfully.
 ### Running the hospital scenario
