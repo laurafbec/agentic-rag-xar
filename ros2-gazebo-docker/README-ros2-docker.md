@@ -3,6 +3,12 @@
 Docker environment for reproducing the ROS 2 and Gazebo experiments.
 
 The environment provides a containerized ROS 2 Humble setup with Gazebo, Nav2, and the required dependencies for the experimental ROS 2 workspace.
+## Script permissions
+Before building or starting the environment, make sure that the shell scripts in the [scripts](https://github.com/laurafbec/agentic-rag-xar/tree/main/ros2-gazebo-docker/scripts) directory have execution permissions:
+```bash
+chmod +x scripts/*.sh
+```
+The scripts are used to build and initialize the ROS 2 environment.
 
 ## Getting started
 
@@ -15,12 +21,7 @@ docker compose build
 docker compose up
 ```
 If your user id is not 1000, add ``` --build-arg user_id=$(id -u)``` to docker compose build command.
-## Script permissions
-Before building or starting the environment, make sure that the shell scripts in the [scripts](https://github.com/laurafbec/agentic-rag-xar/tree/main/ros2-gazebo-docker/scripts) directory have execution permissions:
-```bash
-chmod +x scripts/*.sh
-```
-The scripts are used to build and initialize the ROS 2 environment.
+
 ## First startup
 
 During the first startup, the ROS 2 workspace is initialized automatically. This includes installing the required dependencies with `rosdep` and building the workspace with `colcon`.
