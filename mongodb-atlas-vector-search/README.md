@@ -152,15 +152,7 @@ The Trigger must execute the Function corresponding to the selected embedding se
 
 The Function must use the same cluster, database, and collection configured for the application.
 
-Replace:
-
-```text
-<CLUSTER_NAME>
-<DATABASE_NAME>
-<COLLECTION_NAME>
-```
-
-with the corresponding MongoDB Atlas values.
+Replace ```<CLUSTER_NAME>, <DATABASE_NAME>, <COLLECTION_NAME>``` with the corresponding MongoDB Atlas values.
 
 ## Hybrid retrieval
 
