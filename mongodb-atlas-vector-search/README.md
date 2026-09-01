@@ -1,4 +1,4 @@
-# MongoDB Atlas Configuration
+# MongoDB Atlas Vector Search Configuration
 
 The software uses **MongoDB Atlas** to store ROS 2 messages and their corresponding vector embeddings.
 
