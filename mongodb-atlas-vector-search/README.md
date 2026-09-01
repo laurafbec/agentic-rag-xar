@@ -155,7 +155,7 @@ The Function must use the same cluster, database, and collection configured for 
 Replace:
 
 ```text
-<SERVICE_NAME>
+<CLUSTER_NAME>
 <DATABASE_NAME>
 <COLLECTION_NAME>
 ```
