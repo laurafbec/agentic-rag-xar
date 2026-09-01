@@ -50,7 +50,7 @@ explainer-docker/ contains the containerized Explainer implementing the agentic 
 ## Deployment workflow
 To reproduce the experimental environment, follow the instructions provided in each component's README in the order listed below:
 
-1. [Configure MongoDB Atlas](./mongodb/README.md)
+1. [Configure MongoDB Atlas Vector Search](./mongodb-atlas-vector-search/README.md)
 2. [Deploy Kafka](./kafka-docker/README.md)
 3. [Deploy the Explainer](./explainer-docker/README.md)
 4. [Set up the ROS 2 and Gazebo environment](./ros2-gazebo-docker/README.md)
