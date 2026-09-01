@@ -109,49 +109,27 @@ The generated embedding is stored in the `log_message_embedding` field.
 
 ### OpenAI
 
-The OpenAI implementation uses the OpenAI Embeddings API with:
+The OpenAI implementation uses the OpenAI Embeddings API with the `text-embedding-ada-002` model, which was used in the experiments.
 
-```text
-text-embedding-ada-002
-```
-
-The API key must be stored as a MongoDB Atlas Secret.
-
-A corresponding Atlas Value must be created and linked to the Secret using the following name:
+The OpenAI API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret must then be created with the following name:
 
 ```text
 OPENAI_VALUE
 ```
 
-The Trigger Function retrieves the contents of the `log_message` field, sends them to the OpenAI Embeddings API, and stores the resulting vector in:
-
-```text
-log_message_embedding
-```
+The Trigger Function retrieves the text from the `log_message` field, sends them to the OpenAI Embeddings API, and stores the resulting vector in the ```log_message_embedding``` field.
 
 ### Hugging Face
 
-An alternative implementation is provided using:
+The repository also provides an alternative implementation based on the
+Hugging Face Inference API. The provide configuration uses the ```intfloat/multilingual-e5-large``` model.
 
-```text
-intfloat/multilingual-e5-large
-```
+The Hugging Face API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret must then be created with the following name ```HUGGINGFACE_VALUE```.
 
-The Hugging Face API key must be stored as a MongoDB Atlas Secret.
+The Trigger Function sends the text from `log_message` field, sends it to the Hugging Face Inference API, and stores the resulting embedding in ```log_message_embedding``` field.
 
-A corresponding Atlas Value must be created and linked to the Secret using:
-
-```text
-HUGGINGFACE_VALUE
-```
-
-The Trigger Function sends the contents of `log_message` to the Hugging Face inference service and stores the resulting embedding in:
-
-```text
-log_message_embedding
-```
-
-When a different embedding model is used, the dimensionality configured in the Atlas Vector Search index must be updated accordingly.
+The provided implementations can be adapted to other embedding models or services. When using a different model, the corresponding Trigger Function must be updated and the ```numDimensions``` value in the Atlas Vector Search
+index must match the dimensionality of the generated embeddings.
 
 ## Trigger configuration
 
@@ -177,7 +155,7 @@ The Function must use the same cluster, database, and collection configured for 
 Replace:
 
 ```text
-<CLUSTER_NAME>
+<SERVICE_NAME>
 <DATABASE_NAME>
 <COLLECTION_NAME>
 ```
