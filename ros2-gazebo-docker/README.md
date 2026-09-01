@@ -71,7 +71,7 @@ Then launch the service:
 ```bash
 ros2 launch rt_recorder_explainer rt_recorder_explainer_srv.launch.py
 ```
-Once the service has been started, the Kafka producer can be enabled by calling in a new terminal:
+Once the service has been started, the Kafka producer can be enabled by calling in a new terminal from the container:
 ```bash
 ros2 service call /kafka_producer_srv std_srvs/srv/SetBool data:\ true
 ```
@@ -94,7 +94,7 @@ First, launch the navigation configuration:
 ```bash
 ros2 launch waypoint_navigation waypoint_navigation_hospital.launch.py
 ```
-In a new terminal, start the navigation node:
+In a new terminal from the container, start the navigation node:
 ```bash
 ros2 run waypoint_navigation waypoint_navigation_hospital_node
 ```
