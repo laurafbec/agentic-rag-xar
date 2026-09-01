@@ -119,7 +119,7 @@ OPENAI_VALUE
 
 The Trigger Function retrieves the text from the `log_message` field, sends it to the OpenAI Embeddings API, and stores the resulting vector in the ```log_message_embedding``` field.
 
-The complete OpenAI Trigger Function is available (here)[https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/triggers/OpenAITrigger.js].
+The complete OpenAI Trigger Function is available [here](https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/triggers/OpenAITrigger.js).
 
 ### Hugging Face
 
