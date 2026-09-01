@@ -110,11 +110,7 @@ The generated embedding is stored in the `log_message_embedding` field.
 
 The OpenAI implementation uses the OpenAI Embeddings API with the `text-embedding-ada-002` model, which was used in the experiments.
 
-The OpenAI API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret must then be created with the following name:
-
-```text
-OPENAI_VALUE
-```
+The OpenAI API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret can be created with the name ```OPENAI_VALUE```
 
 The Trigger Function retrieves the text from the `log_message` field, sends it to the OpenAI Embeddings API, and stores the resulting vector in the ```log_message_embedding``` field.
 
@@ -125,7 +121,7 @@ The complete OpenAI Trigger Function is available [here](https://github.com/laur
 The repository also provides an alternative implementation based on the
 Hugging Face Inference API. The provided configuration uses the ```intfloat/multilingual-e5-large``` model.
 
-The Hugging Face API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret must then be created with the following name ```HUGGINGFACE_VALUE```.
+The Hugging Face API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret can be created with the name ```HUGGINGFACE_VALUE```.
 
 The Trigger Function sends the text from ```log_message``` field to the Hugging Face Inference API, and stores the resulting embedding in ```log_message_embedding``` field.
 
