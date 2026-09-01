@@ -50,21 +50,6 @@ log_message_embedding
 ```
 ```log_message``` contains the ROS 2 message text, while ```log_message_embedding``` contains its corresponding vector representation.
 
-## Database and collection
-
-Create the database and collection used by the application.
-
-The collection stores ROS messages together with their corresponding vector embeddings.
-
-The fields used by the retrieval component are:
-
-```text
-log_message
-log_message_embedding
-```
-
-`log_message` contains the ROS message text, while `log_message_embedding` contains its corresponding vector representation.
-
 ## Atlas Search index
 
 Create an Atlas Search index named:
