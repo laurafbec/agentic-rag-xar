@@ -117,12 +117,12 @@ The OpenAI API key must be stored securely as a MongoDB Atlas Secret. An Atlas V
 OPENAI_VALUE
 ```
 
-The Trigger Function retrieves the text from the `log_message` field, sends them to the OpenAI Embeddings API, and stores the resulting vector in the ```log_message_embedding``` field.
+The Trigger Function retrieves the text from the `log_message` field, sends it to the OpenAI Embeddings API, and stores the resulting vector in the ```log_message_embedding``` field.
 
 ### Hugging Face
 
 The repository also provides an alternative implementation based on the
-Hugging Face Inference API. The provide configuration uses the ```intfloat/multilingual-e5-large``` model.
+Hugging Face Inference API. The provided configuration uses the ```intfloat/multilingual-e5-large``` model.
 
 The Hugging Face API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret must then be created with the following name ```HUGGINGFACE_VALUE```.
 
