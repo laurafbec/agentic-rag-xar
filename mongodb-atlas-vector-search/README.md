@@ -114,7 +114,7 @@ The OpenAI API key must be stored securely as a MongoDB Atlas Secret. An Atlas V
 
 The Trigger Function retrieves the text from the `log_message` field, sends it to the OpenAI Embeddings API, and stores the resulting vector in the ```log_message_embedding``` field.
 
-The complete OpenAI Trigger Function is available [here](https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/triggers/OpenAITrigger.js).
+The complete OpenAI Trigger Function is available [here](./triggers/OpenAITrigger.js).
 
 ### Hugging Face
 
@@ -125,7 +125,7 @@ The Hugging Face API key must be stored securely as a MongoDB Atlas Secret. An A
 
 The Trigger Function sends the text from ```log_message``` field to the Hugging Face Inference API, and stores the resulting embedding in ```log_message_embedding``` field.
 
-The complete Hugging Face Trigger Function is available [here](https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/triggers/HuggingFaceTrigger.js).
+The complete Hugging Face Trigger Function is available [here](./triggers/HuggingFaceTrigger.js).
 
 The provided implementations can be adapted to other embedding models or services. When using a different model, the corresponding Trigger Function must be updated and the ```numDimensions``` value in the Atlas Vector Search
 index must match the dimensionality of the generated embeddings.
