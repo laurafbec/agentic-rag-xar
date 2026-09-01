@@ -29,11 +29,11 @@ The following components must be configured:
 7. API credentials for the selected embedding service.
 8. MongoDB Atlas Trigger for automatic embedding generation.
 
-## Database connection
+## Database configuration
 
-Create a MongoDB Atlas database user and configure the required username, password, and database access privileges.
+Create a MongoDB Atlas database user with the required username, password, and database access privileges. Network access must also be enabled for the machine from which the application connects to MongoDB Atlas.
 
-Network access must also be enabled for the machine from which the application connects to MongoDB Atlas.
+Create the database and collection used by the application. The collection stores the ROS 2 messages together with their corresponding vector embeddings.
 
 The MongoDB connection string follows the format:
 
@@ -43,7 +43,12 @@ mongodb+srv://<username>:<db_password>@cluster0.XXXXXX.mongodb.net/
 
 Replace `<username>` and `<db_password>` with the credentials of the database user.
 
-> Do not commit database credentials or API keys to the repository.
+The retrieval component uses the following fields:
+```text
+log_message
+log_message_embedding
+```
+```log_message``` contains the ROS 2 message text, while ```log_message_embedding``` contains its corresponding vector representation.
 
 ## Database and collection
 
