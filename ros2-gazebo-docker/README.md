@@ -9,7 +9,7 @@ The Docker environment has been tested and validated on Ubuntu 22.04 LTS.
 Ubuntu 22.04 LTS is required as the host operating system to reproduce the experiments described in this repository. Other host operating systems or Ubuntu versions have not been validated and may present compatibility issues with the ROS 2 and Gazebo components.
 
 ## Script permissions
-Before building or starting the environment, make sure that the shell scripts in the [scripts](https://github.com/laurafbec/agentic-rag-xar/tree/main/ros2-gazebo-docker/scripts) directory have execution permissions:
+Before building or starting the environment, make sure that the shell scripts in the [scripts](./scripts) directory have execution permissions:
 ```bash
 chmod +x scripts/*.sh
 ```
