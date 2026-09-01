@@ -33,13 +33,13 @@ The repository is organized according to the order required to configure and dep
 
 ```text
 agentic-rag-xar/
-├── mongodb/
+├── mongodb-atlas-vector-search/
 ├── kafka-docker/
 ├── explainer-docker/
 ├── ros2-gazebo-docker/
 └── README.md
 ```
-mongodb/ contains the configuration and instructions required to set up the MongoDB Atlas components used by the system.
+[mongodb-atlas-vector-search/](https://github.com/laurafbec/agentic-rag-xar/tree/main/mongodb-atlas-vector-search) contains the configuration and instructions required to set up the MongoDB Atlas components used by the system.
 
 kafka-docker/ contains the Kafka infrastructure required for real-time ROS 2 message streaming.
 
