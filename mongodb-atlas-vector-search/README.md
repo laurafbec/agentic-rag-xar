@@ -52,13 +52,7 @@ log_message_embedding
 
 ## Atlas Search index
 
-Create an Atlas Search index named:
-
-```text
-search_index
-```
-
-using the following configuration:
+Create an Atlas Search index named ```search_index``` using the following configuration:
 
 ```json
 {
@@ -79,13 +73,7 @@ This index enables lexical retrieval over the `log_message` field using BM25.
 
 ## Atlas Vector Search index
 
-Create an Atlas Vector Search index named:
-
-```text
-vector_index
-```
-
-using the following configuration:
+Create an Atlas Vector Search index named ```vector_index``` using the following configuration:
 
 ```json
 {
