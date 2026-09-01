@@ -10,7 +10,6 @@ The retrieval component follows a hybrid search strategy that combines:
 
 This document summarizes the MongoDB Atlas configuration required to run the software.
 
-> For detailed step-by-step instructions, screenshots, and the complete MongoDB Atlas Trigger functions, see the [MongoDB Atlas Vector Search setup guide](https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/MongoDB%20Atlas%20Vector%20Search.pdf).
 
 ## Requirements
 
@@ -128,7 +127,7 @@ Hugging Face Inference API. The provided configuration uses the ```intfloat/mult
 
 The Hugging Face API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret must then be created with the following name ```HUGGINGFACE_VALUE```.
 
-The Trigger Function sends the text from `log_message` field, sends it to the Hugging Face Inference API, and stores the resulting embedding in ```log_message_embedding``` field.
+The Trigger Function sends the text from ```log_message``` field to the Hugging Face Inference API, and stores the resulting embedding in ```log_message_embedding``` field.
 
 The complete Hugging Face Trigger Function is available [here](https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/triggers/HuggingFaceTrigger.js).
 
@@ -162,8 +161,8 @@ Replace ```<CLUSTER_NAME>, <DATABASE_NAME>, <COLLECTION_NAME>``` with the corres
 
 The retrieval component combines two independent searches:
 
-1. **Lexical search**, performed over `log_message` using MongoDB Atlas Search and BM25.
-2. **Vector search**, performed over `log_message_embedding` using MongoDB Atlas Vector Search.
+1. **Lexical search**, performed over ```log_message``` using MongoDB Atlas Search and BM25.
+2. **Vector search**, performed over ```log_message_embedding``` using MongoDB Atlas Vector Search.
 
 The rankings obtained from both retrieval methods are combined using **Reciprocal Rank Fusion (RRF)**.
 
