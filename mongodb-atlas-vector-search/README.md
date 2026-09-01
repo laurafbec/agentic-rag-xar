@@ -119,6 +119,8 @@ OPENAI_VALUE
 
 The Trigger Function retrieves the text from the `log_message` field, sends it to the OpenAI Embeddings API, and stores the resulting vector in the ```log_message_embedding``` field.
 
+The complete OpenAI Trigger Function is available (here)[https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/triggers/OpenAITrigger.js].
+
 ### Hugging Face
 
 The repository also provides an alternative implementation based on the
@@ -127,6 +129,8 @@ Hugging Face Inference API. The provided configuration uses the ```intfloat/mult
 The Hugging Face API key must be stored securely as a MongoDB Atlas Secret. An Atlas Value linked to this Secret must then be created with the following name ```HUGGINGFACE_VALUE```.
 
 The Trigger Function sends the text from `log_message` field, sends it to the Hugging Face Inference API, and stores the resulting embedding in ```log_message_embedding``` field.
+
+The complete Hugging Face Trigger Function is available [here](https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/triggers/HuggingFaceTrigger.js).
 
 The provided implementations can be adapted to other embedding models or services. When using a different model, the corresponding Trigger Function must be updated and the ```numDimensions``` value in the Atlas Vector Search
 index must match the dimensionality of the generated embeddings.
