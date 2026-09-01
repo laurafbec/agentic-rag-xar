@@ -183,7 +183,7 @@ A successfully processed document should contain both fields:
   "log_message_embedding": [...]
 }
 ```
-![Example of a MongoDB document containing a ROS 2 message and its generated vector embedding](https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/images/document.png)
+![Example of a MongoDB document containing a ROS 2 message and its generated vector embedding](./images/document.png)
 
 **Figure X.** Example of a MongoDB document after successful embedding generation by the Atlas Trigger.
 
