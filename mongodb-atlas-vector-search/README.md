@@ -93,15 +93,20 @@ The `numDimensions` value must match the dimensionality of the embeddings genera
 The configuration above corresponds to the OpenAI embedding model used in the experiments, which generates vectors with 1536 dimensions.
 
 ## Embedding generation
+## Embedding generation
 
 MongoDB Atlas Triggers are used to automatically generate vector embeddings when new ROS 2 messages are inserted into the collection.
 
-The implementation provides two alternatives:
+The repository provides two example implementations for embedding generation:
 
-- OpenAI embeddings.
-- Hugging Face embeddings.
+- **OpenAI**, using the `text-embedding-ada-002` model employed in the experiments;
+- **Hugging Face**, using `intfloat/multilingual-e5-large` as an alternative for users who do not want to use the OpenAI API.
 
-Only the Trigger Function corresponding to the embedding model selected by the application should be enabled.
+These implementations are provided as examples and can be adapted to other embedding models or external embedding services. When using a different model, the corresponding embedding generation Function and API configuration must be updated accordingly, and the dimensionality of the generated embeddings must match the `numDimensions` configured in the MongoDB Atlas Vector Search index.
+
+Only the embedding Function corresponding to the selected embedding model should be associated with the Database Trigger.
+
+The generated embedding is stored in the `log_message_embedding` field.
 
 ### OpenAI
 
