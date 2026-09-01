@@ -53,7 +53,7 @@ To reproduce the experimental environment, follow the instructions provided in e
 1. [Configure MongoDB Atlas](./mongodb/README.md)
 2. [Deploy Kafka](./kafka-docker/README.md)
 3. [Deploy the Explainer](./explainer-docker/README.md)
-4. [Set up the ROS 2 and Gazebo environment](./ros2-gazebo-docker/README-ros2-docker.md)
+4. [Set up the ROS 2 and Gazebo environment](./ros2-gazebo-docker/README.md)
 5. Run the complete experiment
 
 The Kafka infrastructure and the Explainer must be available before starting the autonomous navigation experiment. MongoDB Atlas must be configured beforehand so that the messages generated during the experiment can be stored and retrieved by the Explainer.
