@@ -10,7 +10,7 @@ The retrieval component follows a hybrid search strategy that combines:
 
 This document summarizes the MongoDB Atlas configuration required to run the software.
 
-> For detailed step-by-step instructions, screenshots, and the complete MongoDB Atlas Trigger functions, see the [MongoDB Atlas Vector Search setup guide](MongoDB_Atlas_Vector_Search.pdf).
+> For detailed step-by-step instructions, screenshots, and the complete MongoDB Atlas Trigger functions, see the [MongoDB Atlas Vector Search setup guide]([MongoDB_Atlas_Vector_Search.pdf](https://github.com/laurafbec/agentic-rag-xar/blob/main/mongodb-atlas-vector-search/MongoDB%20Atlas%20Vector%20Search.pdf)).
 
 ## Requirements
 
