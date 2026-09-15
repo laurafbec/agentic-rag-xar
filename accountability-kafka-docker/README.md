@@ -132,23 +132,3 @@ The embedding generation is performed by the MongoDB Atlas Trigger and is not pa
 ## Data flow
 
 The overall data flow provided by this component is:
-
-```text
-ROS 2
-  |
-  v
-Kafka
-  |
-  | ROSMessagesTopic
-  v
-Kafka Connect
-  |
-  v
-MongoDB Atlas
-  |
-  | Atlas Trigger
-  v
-log_message_embedding
-```
-
-This component provides the messaging and persistence infrastructure required to transfer ROS 2 information from the robotic environment to MongoDB Atlas, where the resulting documents can be indexed and retrieved by the explainability components.
