@@ -107,3 +107,48 @@ A typical document stored in MongoDB Atlas contains the ROS 2 topic together wit
 }
 ```
 The ```log_message``` field contains the textual information that is used to generate the vector embedding.
+
+## MongoDB Atlas embeddings
+After a document is stored in MongoDB Atlas, an Atlas Trigger generates an embedding for the ```log_message``` field using the configured embedding service.
+
+The resulting embedding is stored in the ```log_message_embedding``` field.
+
+After embedding generation, the document has the following structure:
+```
+{
+  "goal_id": "unique_identifier_msgs.msg.UUID(...)",
+  "goal_number": 1,
+  "topic_name": "navigate_to_pose/_action/status",
+  "log_message": "1739992463.762627821 Navigation to the goal number 1 is in progress.",
+  "log_message_embedding": [
+    "...",
+    "...",
+    "..."
+  ]
+}
+```
+The embedding generation is performed by the MongoDB Atlas Trigger and is not part of the Kafka message itself.
+
+## Data flow
+
+The overall data flow provided by this component is:
+
+```text
+ROS 2
+  |
+  v
+Kafka
+  |
+  | ROSMessagesTopic
+  v
+Kafka Connect
+  |
+  v
+MongoDB Atlas
+  |
+  | Atlas Trigger
+  v
+log_message_embedding
+```
+
+This component provides the messaging and persistence infrastructure required to transfer ROS 2 information from the robotic environment to MongoDB Atlas, where the resulting documents can be indexed and retrieved by the explainability components.
