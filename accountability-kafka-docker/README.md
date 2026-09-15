@@ -94,3 +94,16 @@ broker1    | [2026-09-15 10:05:44,114] DEBUG [Controller id=1] Topics not in pre
 
 broker1    | [2026-09-15 10:05:44,115] TRACE [Controller id=1] Leader imbalance ratio for broker 1 is 0.0 (kafka.controller.KafkaController)
 ```
+## ROS 2 messages
+The messages stored in Kafka originate from the ROS 2 environment used by the accountability architecture.
+
+A typical document stored in MongoDB Atlas contains the ROS 2 topic together with the textual representation of the corresponding message.
+```
+{
+  "goal_id": "unique_identifier_msgs.msg.UUID(...)",
+  "goal_number": 1,
+  "topic_name": "navigate_to_pose/_action/status",
+  "log_message": "1739992463.762627821 Navigation to the goal number 1 is in progress."
+}
+```
+The ```log_message``` field contains the textual information that is used to generate the vector embedding.
