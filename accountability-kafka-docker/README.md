@@ -54,8 +54,29 @@ The ROS 2 messages are published to the following Kafka topic ```ROSMessagesTopi
 Kafka Connect consumes messages from this topic and stores them in MongoDB Atlas.
 
 ## Verifying the environment
+The running containers can be checked with:
+```
+docker ps -a
+```
+The expected services are:
+```broker1``` for the Kafka broker
+```connect``` for Kafka Connect
+```zookeeper``` for Apache Zookeeper
 
+Kafka broker logs can be inspected with:
+```
+docker logs broker1
+```
 
+Kafka Connect logs can be inspected with:
+```
+docker logs connect
+```
+Zookeeper logs can be inspected with:
+```
+docker logs zookeeper
+```
+A successful startup should show that the Kafka broker is running and that Kafka Connect has joined the corresponding consumer group:
 ```
 broker1    | [2026-09-15 10:01:00,675] TRACE [Broker id=1] Cached leader info UpdateMetadataPartitionState(topicName='ROSMessagesTopic', partitionIndex=0, controllerEpoch=1, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) for partition ROSMessagesTopic-0 in response to UpdateMetadata request sent by controller 1 epoch 1 with correlation id 10 (state.change.logger)
 
