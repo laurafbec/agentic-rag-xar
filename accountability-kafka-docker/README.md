@@ -38,14 +38,24 @@ mongodb+srv://user:password@cluster0.ecipx.mongodb_uri.net/admin?ssl=true
 
 The environment can be deployed by running
 ```
-docker-compose -f docker-compose-tls-atlas.yml up
+docker-compose -f docker-compose-tls-atlas-vector.yml up
 ```
 To start the environment in detached mode:
 ```
-docker-compose -f docker-compose-tls-atlas.yml up -d
+docker-compose -f docker-compose-tls-atlas-vector.yml up -d
 ```
+To stop the environment:
+```
+docker-compose -f docker-compose-tls-atlas-vector.yml down
+```
+## Kafka topic
+The ROS 2 messages are published to the following Kafka topic ```ROSMessagesTopic```.
 
-Environment startup ends with
+Kafka Connect consumes messages from this topic and stores them in MongoDB Atlas.
+
+## Verifying the environment
+
+
 ```
 broker1    | [2026-09-15 10:01:00,675] TRACE [Broker id=1] Cached leader info UpdateMetadataPartitionState(topicName='ROSMessagesTopic', partitionIndex=0, controllerEpoch=1, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) for partition ROSMessagesTopic-0 in response to UpdateMetadata request sent by controller 1 epoch 1 with correlation id 10 (state.change.logger)
 
@@ -63,9 +73,3 @@ broker1    | [2026-09-15 10:05:44,114] DEBUG [Controller id=1] Topics not in pre
 
 broker1    | [2026-09-15 10:05:44,115] TRACE [Controller id=1] Leader imbalance ratio for broker 1 is 0.0 (kafka.controller.KafkaController)
 ```
-
-To stop the environment:
-```
-docker-compose -f docker-compose-tls-atlas.yml down
-```
-
