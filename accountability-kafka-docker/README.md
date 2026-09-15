@@ -20,3 +20,23 @@ and undeployed with
 ```
 docker-compose -f docker-compose-tls-atlas.yml down
 ```
+
+Environment startup ends with
+```
+broker1    | [2026-09-15 10:01:00,675] TRACE [Broker id=1] Cached leader info UpdateMetadataPartitionState(topicName='ROSMessagesTopic', partitionIndex=0, controllerEpoch=1, leader=1, leaderEpoch=0, isr=[1], zkVersion=0, replicas=[1], offlineReplicas=[]) for partition ROSMessagesTopic-0 in response to UpdateMetadata request sent by controller 1 epoch 1 with correlation id 10 (state.change.logger)
+
+broker1    | [2026-09-15 10:01:00,675] INFO [Broker id=1] Add 1 partitions and deleted 0 partitions from metadata cache in response to UpdateMetadata request sent by controller 1 epoch 1 with correlation id 10 (state.change.logger)
+
+broker1    | [2026-09-15 10:01:00,678] TRACE [Controller id=1 epoch=1] Received response UpdateMetadataResponseData(errorCode=0) for request UPDATE_METADATA with correlation id 10 sent to broker broker1:19093 (id: 1 rack: null) (state.change.logger)
+
+broker1    | [2026-09-15 10:01:00,754] INFO [GroupCoordinator 1]: Assignment received from leader connector-consumer-mongo-sink-0-6aff7184-be1c-4c1f-9a95-fc83ef3b5fc5 for group connect-mongo-sink for generation 1. The group has 1 members, 0 of which are static. (kafka.coordinator.group.GroupCoordinator)
+
+broker1    | [2026-09-15 10:05:44,109] INFO [Controller id=1] Processing automatic preferred replica leader election (kafka.controller.KafkaController)
+
+broker1    | [2026-09-15 10:05:44,110] TRACE [Controller id=1] Checking need to trigger auto leader balancing (kafka.controller.KafkaController)
+
+broker1    | [2026-09-15 10:05:44,114] DEBUG [Controller id=1] Topics not in preferred replica for broker 1 HashMap() (kafka.controller.KafkaController)
+
+broker1    | [2026-09-15 10:05:44,115] TRACE [Controller id=1] Leader imbalance ratio for broker 1 is 0.0 (kafka.controller.KafkaController)
+```
+
