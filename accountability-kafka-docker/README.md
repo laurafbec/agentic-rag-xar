@@ -123,7 +123,7 @@ A correctly running connector should report both the connector and its task with
 
 This confirms that the `mongo-sink` connector is running and that its task is active.
 
-## ROS 2 messages
+## Verifying message processing
 The messages stored in Kafka originate from the ROS 2 environment used by the accountability architecture.
 
 A typical document stored in MongoDB Atlas contains the ROS 2 topic together with the textual representation of the corresponding message.
@@ -137,10 +137,11 @@ A typical document stored in MongoDB Atlas contains the ROS 2 topic together wit
 ```
 The ```log_message``` field contains the textual information that is used to generate the vector embedding.
 
-## MongoDB Atlas embeddings
-After a document is stored in MongoDB Atlas, an Atlas Trigger generates an embedding for the ```log_message``` field using the configured embedding service.
+After publishing a ROS 2 message to the `ROSMessagesTopic` Kafka topic, the corresponding document should be stored in MongoDB Atlas.
 
-The resulting embedding is stored in the ```log_message_embedding``` field.
+The document should contain the `log_message` field. An Atlas Trigger uses this field to generate the corresponding vector embedding, which is stored in the `log_message_embedding` field.
+
+A successfully processed message therefore results in a MongoDB Atlas document containing both the original `log_message` and its generated `log_message_embedding`.
 
 After embedding generation, the document has the following structure:
 ```
