@@ -5,6 +5,13 @@ The experimental environment integrates a ROS 2 and Gazebo-based robotic simulat
 
 The repository provides the required software components, configuration files, and instructions to deploy the complete experimental environment and reproduce the experimental workflow.
 
+## Requirements
+
+- Ubuntu 22.04 LTS (host operating system, required for the ROS 2 Humble / Gazebo environment)
+- Docker and Docker Compose
+- A MongoDB Atlas account (M0 free-tier is sufficient)
+- API credentials for OpenAI and OpenRouter (or compatible alternative providers, see `explainer-docker/README.md`)
+
 ## Software artifacts
 The main software components and versions used in the experimental environment are:
 
@@ -35,7 +42,7 @@ The repository is organized according to the order required to configure and dep
 ```text
 agentic-rag-xar/
 ├── mongodb-atlas-vector-search/
-├── kafka-docker/
+├── accountability-kafka-docker/
 ├── explainer-docker/
 ├── ros2-gazebo-docker/
 └── README.md
