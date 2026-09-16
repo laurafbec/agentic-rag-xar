@@ -25,7 +25,8 @@ The main software components and versions used in the experimental environment a
 The AWS RoboMaker Hospital World is used as the simulation environment. The ROS 2 version of the world is available [here](https://github.com/jmguerreroh/aws-robomaker-hospital-world/tree/ros2).
 
 ## Configuration
-The `broker1` hostname must resolve to the Kafka server's IP address from the host where the accountable service is launched.
+
+The `broker1` hostname must resolve to the IP address of the Kafka server from the host where the accountable service is launched.
 
 ## Repository structure
 
