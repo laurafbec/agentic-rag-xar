@@ -4,7 +4,7 @@
   <name>rt_recorder_explainer</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="laurafbec@gmail.com">lfernandez</maintainer>
+  <maintainer email="laurafbec@gmail.com">lfernandezbecerra</maintainer>
   <license>TODO: License declaration</license>
 
   <depend>rclpy</depend>
