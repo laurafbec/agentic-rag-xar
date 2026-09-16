@@ -24,8 +24,7 @@ The MongoDB Atlas connection URI must be configured in the `connection.uri` prop
 Replace the placeholder credentials and cluster information with the connection details of the MongoDB Atlas deployment.
 
 For example:
-```text
-mongodb+srv://<username>:<password>@<cluster-url>/admin?ssl=true ```
+```text mongodb+srv://<username>:<password>@<cluster-url>/admin?ssl=true ```
 
 ## Deployment
 
