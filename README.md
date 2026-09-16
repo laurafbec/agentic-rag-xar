@@ -42,7 +42,7 @@ agentic-rag-xar/
 ```
 [mongodb-atlas-vector-search/](./mongodb-atlas-vector-search) contains the configuration and instructions required to set up the MongoDB Atlas components used by the system.
 
-kafka-docker/ contains the Kafka infrastructure required for real-time ROS 2 message streaming.
+[accountability-kafka-docker/](./accountability-kafka-docker) contains the Kafka infrastructure required for real-time ROS 2 message streaming.
 
 explainer-docker/ contains the containerized Explainer implementing the agentic RAG architecture.
 
