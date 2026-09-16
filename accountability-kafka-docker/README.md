@@ -3,20 +3,7 @@ Docker-based Kafka environment for the accountability and explainability archite
 
 This component provides the Kafka infrastructure used to receive ROS 2 messages and forward them to MongoDB Atlas, where the messages can be stored and enriched with vector embeddings for subsequent retrieval.
 
- ## System requirements
- The environment requires:
-
-- Docker
-- Docker Compose
-- A host system where the Kafka broker can be reached by the ROS 2 and Kafka clients.
-
-The hostname `broker1` must be resolvable to the IP address of the machine running Kafka. This can be achieved by adding an entry to the `/etc/hosts` file if DNS resolution is not available.
-
-For example:
-
-```text
-<HOST_IP> broker1
-```
+ ## Configuration
  
  Host IP must be set in the Docker environment variable ```BROKER_KAFKA_ADVERTISED_HOST_NAME```, defined in [.env](https://github.com/laurafbec/agentic-rag-xar/blob/main/accountability-kafka-docker/.env#L13).
 
