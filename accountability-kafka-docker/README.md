@@ -1,7 +1,7 @@
 # Kafka environment for accountability
 Docker-based Kafka environment for the accountability and explainability architecture of autonomous robots.
 
-This component provides the Kafka infrastructure used to receive ROS 2 messages and forward them to MongoDB Atlas, where the messages can be stored and enriched with vector embeddings for subsequent retrieval.
+This component provides the Kafka infrastructure used to receive ROS 2 messages and forward them to MongoDB Atlas Vector, where the messages can be stored and enriched with vector embeddings for subsequent retrieval.
 ## Configuration
 
 The hostname `broker1` must be resolvable to the IP address of the machine running Kafka. If DNS resolution is not available, an entry can be added to the `/etc/hosts` file.
