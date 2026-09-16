@@ -94,6 +94,35 @@ broker1    | [2026-09-15 10:05:44,114] DEBUG [Controller id=1] Topics not in pre
 
 broker1    | [2026-09-15 10:05:44,115] TRACE [Controller id=1] Leader imbalance ratio for broker 1 is 0.0 (kafka.controller.KafkaController)
 ```
+### Verifying the MongoDB Sink Connector
+The status of the MongoDB Sink Connector can be checked using the Kafka Connect REST API:
+
+```bash
+curl http://localhost:8083/connectors/mongo-sink/status | jq
+```
+
+A correctly running connector should report both the connector and its task with state `RUNNING`:
+
+```json
+{
+  "name": "mongo-sink",
+  "connector": {
+    "state": "RUNNING",
+    "worker_id": "connect:8083"
+  },
+  "tasks": [
+    {
+      "id": 0,
+      "state": "RUNNING",
+      "worker_id": "connect:8083"
+    }
+  ],
+  "type": "sink"
+}
+```
+
+This confirms that the `mongo-sink` connector is running and that its task is active.
+
 ## ROS 2 messages
 The messages stored in Kafka originate from the ROS 2 environment used by the accountability architecture.
 
