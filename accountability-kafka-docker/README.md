@@ -19,12 +19,9 @@ The generated security files are used by the Kafka and Kafka Connect services.
 
 ## MongoDB Atlas configuration
 
-MongoDB connection URI value must be assigned to the connection.uri property in [MongoSinkConnector.properties](./mongodb-kafka-connect/etc/MongoSinkConnector.properties) from Kafka connect, and in [sink-connect.sh](./kafka/scripts/sink-connect.sh) for the Kafka-MongoDB connector creation. 
+The MongoDB Atlas connection URI must be configured in the `connection.uri` property of [MongoSinkConnector.properties](./mongodb-kafka-connect/etc/MongoSinkConnector.properties) and in the Kafka Connect configuration used by [kafka/scripts/sink-connect.sh](./kafka/scripts/sink-connect.sh).
+
 Replace the placeholder credentials and cluster information with the connection details of the MongoDB Atlas deployment.
-For example:
-```
-mongodb+srv://user:password@cluster0.ecipx.mongodb_uri.net/admin?ssl=true
-```
 
 ## Deployment
 
