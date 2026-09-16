@@ -12,8 +12,8 @@ curl -s \
         "tasks.max": "1",
         "topics": "ROSMessagesTopic",
         "connection.uri":"mongodb+srv://user:password@cluster0.cluster_uri.mongodb.net",
-        "database": "langchain_demo",
-        "collection": "collection_of_text_blobs3",
+        "database": "RealTimeRAG",
+        "collection": "RealTimeRAG",
         "key.converter": "org.apache.kafka.connect.storage.StringConverter",
         "value.converter": "org.apache.kafka.connect.json.JsonConverter",
         "value.converter.schemas.enable": "false"
