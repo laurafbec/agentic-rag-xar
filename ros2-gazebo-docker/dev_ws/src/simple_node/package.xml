@@ -4,7 +4,7 @@
   <name>simple_node</name>
   <version>0.0.0</version>
   <description>Simple node for ROS 2</description>
-  <maintainer email="laurafbec@gmail.com">lfernandez</maintainer>
+  <maintainer email="laurafbec@gmail.com">lfernandezbecerra</maintainer>
   <license>GPL-3</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
