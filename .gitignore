@@ -15,3 +15,5 @@ docker/ros2/.gazebo/*
 __pycache__/
 *.py[cod]
 .pytest_cache/
+
+**/.env
