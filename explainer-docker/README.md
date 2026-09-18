@@ -10,3 +10,19 @@ The explainer processes accountable robot data stored in MongoDB Atlas Vector an
 ## Configuration
 Create a ```.env``` file in this directory with the credentials and configuration required by the explainer.
 The configuration includes the connection parameters for MongoDB Atlas and the API credentials required by the language model services.
+
+## Input questions
+The default execution mode processes a predefined set of questions without requiring manual interaction.
+
+The questions are provided in [questions_answers.json](./questions_answers.json).
+
+Each entry contains two files:
+
+```
+{
+  "user_input": "How many goals were successfully achieved by the robot?",
+  "reference": "The robot successfully achieved 3 goals."
+}
+```
+
+
