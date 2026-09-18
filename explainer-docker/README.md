@@ -7,6 +7,6 @@ The explainer processes accountable robot data stored in MongoDB Atlas Vector an
 - Access to the MongoDB Atlas database containing the accountable robot data.
 - API credentials for the configured language model services.
 
-## configuration
-Create a ```.env```` file in this directory with the credentials and configuration required by the explainer.
+## Configuration
+Create a ```.env``` file in this directory with the credentials and configuration required by the explainer.
 The configuration includes the connection parameters for MongoDB Atlas and the API credentials required by the language model services.
