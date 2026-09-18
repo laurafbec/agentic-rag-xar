@@ -16,7 +16,7 @@ The default execution mode processes a predefined set of questions without requi
 
 The questions are provided in [questions_answers.json](./questions_answers.json).
 
-Each entry contains two files:
+Each entry contains two files. For example:
 
 ```
 {
@@ -24,5 +24,15 @@ Each entry contains two files:
   "reference": "The robot successfully achieved 3 goals."
 }
 ```
+The ```user_input``` field contains the question submitted to the Agentic RAG workflow. The ```reference``` field contains the corresponding reference answer used for subsequent evaluation.
+
+The reference answers are not provided to the Agentic RAG workflow when generating the explanations. They are retained to support the evaluation of the generated responses.
+
+The file is mounted into the container as read-only:
+
+-v "$(pwd)/questions_answers.json:/app/questions_answers.json:ro"
+
+The questions correspond to those used in the evaluation of the associated study, allowing the same queries to be processed again in an unattended execution.
+
 
 
