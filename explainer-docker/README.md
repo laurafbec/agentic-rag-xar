@@ -159,3 +159,25 @@ Agentic RAG Explainer
                   v
           RAGAS evaluation
 ```
+
+## Reproducibility
+The Docker image provides an isolated environment for executing the Agentic RAG explainer with the software dependencies required by the application.
+
+To reproduce an execution:
+1. Configure the required credentials in ```.env```.
+2. Ensure that the MongoDB Atlas database containing the accountable robot data is accessible.
+3. Provide the ```questions_answers.json``` file.
+4. Build the Docker image.
+5. Run the container using the command described above.
+
+## Relation to the complete architecture
+This component corresponds to the explainability stage of the accountability and explainability architecture described in the associated publication.
+
+The complete architecture integrates:
+- ROS 2 for robot operation and data generation.
+- Apache Kafka for accountable data streaming.
+- MongoDB Atlas for storing and retrieving accountable data.
+- An Agentic RAG workflow for evidence retrieval and answer generation.
+
+The Docker components required for the other stages of the architecture are provided in the corresponding directories of the main repository.
+
