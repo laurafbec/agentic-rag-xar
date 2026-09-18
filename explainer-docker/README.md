@@ -30,7 +30,7 @@ The reference answers are not provided to the Agentic RAG workflow when generati
 
 The file is mounted into the container as read-only:
 
--v "$(pwd)/questions_answers.json:/app/questions_answers.json:ro"
+```-v "$(pwd)/questions_answers.json:/app/questions_answers.json:ro"```
 
 The questions correspond to those used in the evaluation of the associated study, allowing the same queries to be processed again in an unattended execution.
 
