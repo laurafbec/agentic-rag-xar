@@ -109,30 +109,7 @@ Evaluates whether the generated answer is supported by the retrieved evidence.
 Evaluates the generated answer with respect to the question.
 
 The workflow is implemented using LangGraph and LangChain.
-## Data flow
 
-The explainer constitutes the explainability stage of the complete architecture:
-
-```text
-ROS 2 robot
-    |
-    v
-Apache Kafka
-    |
-    v
-Accountable robot data
-    |
-    v
-MongoDB Atlas
-    |
-    v
-Agentic RAG Explainer
-    |
-    v
-Context-aware answer
-
-```
-MongoDB Atlas provides the accountable data used as the evidence source for the Agentic RAG workflow.
 
 ## Execution and evaluation workflow
 The relationship between execution and evaluation can be summarized as follows:
