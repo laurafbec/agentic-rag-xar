@@ -74,7 +74,6 @@ docker build -t explainer-docker .
 ## Run the explainer
 Run the explainer using the configuration in ```.env```:
 
-
 ```
 docker run --rm \
  --env-file .env \
@@ -85,3 +84,30 @@ docker run --rm \
 The explainer reads each user_input from questions_answers.json, retrieves relevant evidence from MongoDB Atlas, and executes the Agentic RAG workflow to generate an answer.
 
 The execution is unattended and processes the predefined questions automatically.
+
+## Agentic RAG workflow
+The explainer implements an Agentic RAG workflow in which the retrieved evidence is evaluated and the query can be reformulated when the retrieved information is insufficient.
+
+The workflow includes the following components:
+
+1. Retriever
+Retrieves relevant evidence using hybrid search (RRF) from the accountable robot data stored in MongoDB Atlas.
+
+2. Retrieval Grader
+Evaluates whether the retrieved evidence is relevant to the question.
+
+3. Query Rewriter
+Reformulates the query when the retrieved evidence is not considered sufficient.
+
+4. Answer Generator
+Generates an answer based on the retrieved evidence.
+
+5. Hallucination Grader
+Evaluates whether the generated answer is supported by the retrieved evidence.
+
+6. Answer Grader
+Evaluates the generated answer with respect to the question.
+
+The workflow is implemented using LangGraph and LangChain.
+
+## Data flow
