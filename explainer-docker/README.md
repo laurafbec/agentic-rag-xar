@@ -66,4 +66,22 @@ This directory can be mounted into the container when required for evaluation-re
 
 ## Build the Docker image
 From the ```explainer-docker``` directory, build the Docker image:
-```docker build -t explainer-docker .```
+
+```
+docker build -t explainer-docker .
+```
+
+## Run the explainer
+Run the explainer using the configuration in ```.env```:
+
+
+```
+docker run --rm \
+ --env-file .env \
+ -v "$(pwd)/questions_answers.json:/app/questions_answers.json:ro" \
+ -v "$(pwd)/evaluation/datasets:/app/evaluation/datasets" \
+ explainer-docker
+```
+The explainer reads each user_input from questions_answers.json, retrieves relevant evidence from MongoDB Atlas, and executes the Agentic RAG workflow to generate an answer.
+
+The execution is unattended and processes the predefined questions automatically.
