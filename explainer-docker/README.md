@@ -106,9 +106,11 @@ Generates an answer based on the retrieved evidence.
 Evaluates whether the generated answer is supported by the retrieved evidence.
 
 6. Answer Grader
-Evaluates the generated answer with respect to the question.
+Checks whether the generated answer addresses the user question.
 
-The workflow is implemented using LangGraph and LangChain.
+If the retrieved documents are not relevant, the query is transformed and the retrieval process is repeated. If the generated answer is not grounded in the retrieved evidence, it is regenerated. If the answer does not adequately address the question, the query is transformed and the retrieval process is repeated.
+
+The workflow is implemented using LangGraph and maintains the conversation state during execution.
 
 
 ## Execution and evaluation workflow
