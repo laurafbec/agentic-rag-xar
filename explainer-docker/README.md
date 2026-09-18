@@ -137,4 +137,25 @@ MongoDB Atlas provides the accountable data used as the evidence source for the 
 ## Execution and evaluation workflow
 The relationship between execution and evaluation can be summarized as follows:
 ```text
+
+questions_answers.json
+        |
+        v
+   user_input
+        |
+        v
+Agentic RAG Explainer
+        |
+        +--------------------+
+        |                    |
+        v                    v
+ retrieved_contexts       response
+        |                    |
+        +---------+----------+
+                  |
+                  v
+              reference
+                  |
+                  v
+          RAGAS evaluation
 ```
