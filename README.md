@@ -63,3 +63,27 @@ To reproduce the experimental environment, follow the instructions provided in e
 5. Run the complete experiment
 
 The Kafka infrastructure and the Explainer must be available before starting the autonomous navigation experiment. MongoDB Atlas must be configured beforehand so that the messages generated during the experiment can be stored and retrieved by the Explainer.
+
+## Architecture and data flow
+
+The complete accountability and explainability architecture integrates ROS 2, Apache Kafka, MongoDB Atlas, and an Agentic RAG workflow:
+
+```text
+ROS 2 robot
+    |
+    v
+Apache Kafka
+    |
+    v
+Accountable robot data
+    |
+    v
+MongoDB Atlas
+    |
+    v
+Agentic RAG Explainer
+    |
+    v
+Context-aware answer
+
+The robot generates ROS 2 data that is streamed through Apache Kafka and stored as accountable data. MongoDB Atlas provides the stored data used as the evidence source for the Agentic RAG explainer, which retrieves relevant evidence and generates context-aware answers.
