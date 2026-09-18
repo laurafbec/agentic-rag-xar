@@ -80,10 +80,24 @@ Accountable robot data
     v
 MongoDB Atlas
     |
+    |  Document insertion
+    v
+Atlas Trigger
+    |
+    |  Embedding generation
+    v
+MongoDB Atlas
+    |
     v
 Agentic RAG Explainer
     |
+    |  Full-text + vector search
+    |  Reciprocal Rank Fusion (RRF)
     v
 Context-aware answer
 
-The robot generates ROS 2 data that is streamed through Apache Kafka and stored as accountable data. MongoDB Atlas provides the stored data used as the evidence source for the Agentic RAG explainer, which retrieves relevant evidence and generates context-aware answers.
+The robot generates ROS 2 data that is streamed through Apache Kafka and stored as accountable data in MongoDB Atlas.
+
+When a new document is inserted into MongoDB Atlas, an Atlas Trigger is automatically activated to generate its corresponding embedding. The embedding is stored together with the document and is subsequently used for vector search.
+
+The Agentic RAG Explainer retrieves evidence from MongoDB Atlas using hybrid search, combining full-text and vector search. The Retriever applies Reciprocal Rank Fusion (RRF) to combine the results from both retrieval methods before passing the retrieved evidence to the subsequent stages of the Agentic RAG workflow. The workflow then uses the retrieved evidence to generate context-aware answers.
