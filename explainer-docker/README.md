@@ -61,6 +61,7 @@ If the retrieved documents are not relevant, the query is transformed and the re
 
 The workflow is implemented using LangGraph and maintains the conversation state during execution.
 
+<img width="861" height="782" alt="graph" src="https://github.com/user-attachments/assets/76c35584-2c51-4e42-b1e3-5625f8985975" />
 
 
 ## Run with Docker
