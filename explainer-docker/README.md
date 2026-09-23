@@ -61,6 +61,113 @@ If the retrieved documents are not relevant, the query is transformed and the re
 
 The workflow is implemented using LangGraph and maintains the conversation state during execution.
 
+
+
+## Run with Docker
+### Build the Docker image
+From the ```explainer-docker``` directory, build the Docker image:
+
+```
+docker build -t explainer-docker .
+```
+
+### Run the explainer
+Run the explainer using the configuration in ```.env```:
+
+```
+docker run --rm \
+ --env-file .env \
+ -v "$(pwd)/questions_answers.json:/app/questions_answers.json:ro" \
+ -v "$(pwd)/evaluation/datasets:/app/evaluation/datasets" \
+ explainer-docker
+```
+The explainer reads each user_input from questions_answers.json, retrieves relevant evidence from MongoDB Atlas, and executes the Agentic RAG workflow to generate an answer.
+
+The execution is unattended and processes the predefined questions automatically.
+
+## Run locally
+The explainer can also be executed directly in a Python environment without Docker.
+### First deployment
+Create and activate the Conda environment and install the required dependencies:
+```
+conda create -n rt_explainer python=3.12.0
+conda activate rt_explainer
+pip install -r requirements.txt
+```
+Configure the required environment variables in ```.env``` and ensure that the MongoDB Atlas database containing the accountable robot data is accessible.
+
+### Subsequent executions
+Activate the environment and run the application:
+```
+conda activate rt_explainer
+python3 main.py
+```
+## Example output
+A typical execution reports the main stages of the workflow:
+```
+When did the robot complete the navigation task?
+---RETRIEVE---
+'Finished running: retrieve:'
+---CHECK DOCUMENT RELEVANCE TO QUESTION---
+---GRADE: DOCUMENT RELEVANT---
+---GRADE: DOCUMENT NOT RELEVANT---
+---GRADE: DOCUMENT RELEVANT---
+---GRADE: DOCUMENT NOT RELEVANT---
+---GRADE: DOCUMENT RELEVANT---
+---ASSESS GRADED DOCUMENTS---
+---- Loop step-----: 1
+---DECISION: GENERATE---
+'Finished running: grade_documents:'
+---GENERATE---
+---CHECK HALLUCINATIONS---
+---- Conversation History-----:
+Why did the robot replan the route?
+The robot replanned the route because there was an obstacle blocking the original planned path when attempting to reach **goal pose number 2**. To successfully achieve this goal, the trajectory was dynamically adjusted to avoid the obstacle. No other reasons for replanning are mentioned in the provided context.
+Which topic publish the position and orientation of the robot?
+The topic that publishes the position and orientation of the robot is **`amcl_pose`**. This is explicitly stated in the `topic_name` field of all the provided context documents, which include entries for position (x, y) and orientation (z, w) values.
+What was the linear velocity of the robot when navigating to goal pose number 2?
+The linear velocity of the robot when navigating to **goal pose number 2** was **0.26 m/s in the x-direction** (with y-component 0.0). This is derived from the `cmd_vel` topic data in the context, specifically the document with `rank: 2`, which corresponds to the velocity command during navigation to this goal. No other linear velocities are explicitly tied to goal 2 in the provided context.
+---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---
+---GRADE GENERATION vs QUESTION---
+---DECISION: GENERATION ADDRESSES QUESTION---
+'Finished running: generate:'
+Documents content: ['1739117071.817763065 Navigation to the goal number 1 has been aborted.', '1739117156.635998838 Navigation to the goal number 2 has succeeded.', '1739117199.73031389 Navigation to the goal number 3 has succeeded.']
+('The robot ended navigation tasks at the following timestamps:  \n'
+ '- **Goal 1 (aborted)**: Ended at **2025-02-09 16:04:31**.  \n'
+ '- **Goal 2 (succeeded)**: Ended at **2025-02-09 16:05:56**.  \n'
+ '- **Goal 3 (succeeded)**: Ended at **2025-02-09 16:06:39**.  \n'
+ '\n'
+ 'These timestamps correspond to the completion (success or abortion) of each '
+ 'navigation goal as recorded in the provided context. The final navigation '
+ 'task concluded with goal 3 succeeding at the latest timestamp.')
+```
+
+## Execution and evaluation workflow
+The relationship between execution and evaluation can be summarized as follows:
+```text
+
+questions_answers.json
+        |
+        v
+   user_input
+        |
+        v
+Agentic RAG Explainer
+        |
+        +--------------------+
+        |                    |
+        v                    v
+ retrieved_contexts       response
+        |                    |
+        +---------+----------+
+                  |
+                  v
+              reference
+                  |
+                  v
+          RAGAS evaluation
+```
+
 ## Evaluation data
 The evaluation process uses the generated responses together with the reference answers and the retrieved evidence.
 
@@ -89,54 +196,6 @@ The resulting evaluation data can be used to assess retrieval and answer quality
 The evaluation datasets are located in [evaluation/datasets/](./evaluation/datasets/)
 
 This directory can be mounted into the container when required for evaluation-related processing.
-
-## Build the Docker image
-From the ```explainer-docker``` directory, build the Docker image:
-
-```
-docker build -t explainer-docker .
-```
-
-## Run the explainer
-Run the explainer using the configuration in ```.env```:
-
-```
-docker run --rm \
- --env-file .env \
- -v "$(pwd)/questions_answers.json:/app/questions_answers.json:ro" \
- -v "$(pwd)/evaluation/datasets:/app/evaluation/datasets" \
- explainer-docker
-```
-The explainer reads each user_input from questions_answers.json, retrieves relevant evidence from MongoDB Atlas, and executes the Agentic RAG workflow to generate an answer.
-
-The execution is unattended and processes the predefined questions automatically.
-
-
-## Execution and evaluation workflow
-The relationship between execution and evaluation can be summarized as follows:
-```text
-
-questions_answers.json
-        |
-        v
-   user_input
-        |
-        v
-Agentic RAG Explainer
-        |
-        +--------------------+
-        |                    |
-        v                    v
- retrieved_contexts       response
-        |                    |
-        +---------+----------+
-                  |
-                  v
-              reference
-                  |
-                  v
-          RAGAS evaluation
-```
 
 ## Reproducibility
 The Docker image provides an isolated environment for executing the Agentic RAG explainer with the software dependencies required by the application.
