@@ -34,6 +34,32 @@ The file is mounted into the container as read-only:
 
 The questions correspond to those used in the evaluation of the associated study, allowing the same queries to be processed again in an unattended execution.
 
+## Agentic RAG workflow
+The explainer implements an Agentic RAG workflow in which the retrieved evidence is evaluated and the query can be reformulated when the retrieved information is insufficient.
+
+The workflow includes the following components:
+
+1. Retriever
+Retrieves relevant evidence using hybrid search (RRF) from the accountable robot data stored in MongoDB Atlas.
+
+2. Retrieval Grader
+Evaluates whether the retrieved evidence is relevant to the question.
+
+3. Query Rewriter
+Reformulates the query when the retrieved evidence is not considered sufficient.
+
+4. Answer Generator
+Generates an answer based on the retrieved evidence.
+
+5. Hallucination Grader
+Evaluates whether the generated answer is supported by the retrieved evidence.
+
+6. Answer Grader
+Checks whether the generated answer addresses the user question.
+
+If the retrieved documents are not relevant, the query is transformed and the retrieval process is repeated. If the generated answer is not grounded in the retrieved evidence, it is regenerated. If the answer does not adequately address the question, the query is transformed and the retrieval process is repeated.
+
+The workflow is implemented using LangGraph and maintains the conversation state during execution.
 
 ## Evaluation data
 The evaluation process uses the generated responses together with the reference answers and the retrieved evidence.
@@ -84,33 +110,6 @@ docker run --rm \
 The explainer reads each user_input from questions_answers.json, retrieves relevant evidence from MongoDB Atlas, and executes the Agentic RAG workflow to generate an answer.
 
 The execution is unattended and processes the predefined questions automatically.
-
-## Agentic RAG workflow
-The explainer implements an Agentic RAG workflow in which the retrieved evidence is evaluated and the query can be reformulated when the retrieved information is insufficient.
-
-The workflow includes the following components:
-
-1. Retriever
-Retrieves relevant evidence using hybrid search (RRF) from the accountable robot data stored in MongoDB Atlas.
-
-2. Retrieval Grader
-Evaluates whether the retrieved evidence is relevant to the question.
-
-3. Query Rewriter
-Reformulates the query when the retrieved evidence is not considered sufficient.
-
-4. Answer Generator
-Generates an answer based on the retrieved evidence.
-
-5. Hallucination Grader
-Evaluates whether the generated answer is supported by the retrieved evidence.
-
-6. Answer Grader
-Checks whether the generated answer addresses the user question.
-
-If the retrieved documents are not relevant, the query is transformed and the retrieval process is repeated. If the generated answer is not grounded in the retrieved evidence, it is regenerated. If the answer does not adequately address the question, the query is transformed and the retrieval process is repeated.
-
-The workflow is implemented using LangGraph and maintains the conversation state during execution.
 
 
 ## Execution and evaluation workflow
