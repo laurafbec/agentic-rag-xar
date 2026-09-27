@@ -59,6 +59,7 @@ def grade_generation_grounded_in_documents_and_question(state: GraphState) -> st
     if hallucination_grade := score.binary_score:
         print("---DECISION: GENERATION IS GROUNDED IN DOCUMENTS---")
         print("---GRADE GENERATION vs QUESTION---")
+
         score = answer_grader.invoke({"question": question, "generation": generation, "history": conversation_history})
         if answer_grade := score.binary_score:
             print("---DECISION: GENERATION ADDRESSES QUESTION---")
@@ -104,5 +105,3 @@ workflow.add_conditional_edges(
 
 
 app = workflow.compile(checkpointer=memory)
-
-#app.get_graph().draw_mermaid_png(output_file_path="graph.png")

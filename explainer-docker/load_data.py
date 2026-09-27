@@ -51,7 +51,7 @@ def initialize_vector_store():
     return MongoDBAtlasHybridSearchRetriever(
         vectorstore=vector_store,
         search_index_name="search_index",
-        top_k=3,
+        top_k=7,
         fulltext_penalty=75,
         vector_penalty=25
     )

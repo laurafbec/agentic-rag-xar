@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -31,7 +31,7 @@ def convert_timestamp(timestamp_str):
   """
   try:
       timestamp = float(timestamp_str)
-      readable_timestamp = datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
+      readable_timestamp = datetime.fromtimestamp(timestamp, timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
       return readable_timestamp
   except ValueError:
       print(f"Error: Invalid timestamp value: {timestamp_str}")

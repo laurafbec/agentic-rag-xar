@@ -21,9 +21,9 @@ with open(DATASET_FILE, "r", encoding="utf-8") as file:
     dataset = json.load(file)
 
 
-llm = ChatOpenAI(model="gpt-4o-mini")
+#llm = ChatOpenAI(model="gpt-4o-mini")
 #llm = ChatOpenAI(model="gpt-4")
-#llm = ChatOpenAI(model="gpt-4o")
+llm = ChatOpenAI(model="gpt-4o")
 evaluator_llm = LangchainLLMWrapper(llm)
 
 
