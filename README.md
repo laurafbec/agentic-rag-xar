@@ -49,7 +49,7 @@ agentic-rag-xar/
 
 [accountability-kafka-docker/](./accountability-kafka-docker) contains the Kafka infrastructure required for real-time ROS 2 message streaming.
 
-explainer-docker/ contains the containerized Explainer implementing the agentic RAG architecture.
+[explainer-docker/](./explainer-docker) contains the containerized Explainer implementing the agentic RAG architecture.
 
 [ros2-gazebo-docker/](./ros2-gazebo-docker) contains the Docker environment for ROS 2 Humble, Gazebo, Nav2, and the robotic simulation.
 
