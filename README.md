@@ -27,7 +27,7 @@ The main software components and versions used in the experimental environment a
 | LangChain OpenAI | 0.3.7 |
 | RAGAS | 0.2.12 |
 
-The AWS RoboMaker Hospital World is used as the simulation environment. The ROS 2 version of the world is available [here](https://github.com/jmguerreroh/aws-robomaker-hospital-world/tree/ros2).
+The AWS RoboMaker Hospital World is used as the simulation environment. The ROS 2 version of the world is available [here](https://github.com/aws-robotics/aws-robomaker-hospital-world/tree/ros2).
 
 ## Configuration
 
