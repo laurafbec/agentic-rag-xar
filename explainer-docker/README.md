@@ -168,6 +168,17 @@ Agentic RAG Explainer
                   v
           RAGAS evaluation
 ```
+## Explainability evaluation
+The repository includes scripts to evaluate the generated explanations using RAGAS. The evaluation scripts use the generated responses, reference answers, and retrieved evidence to assess answer correctness and other quality criteria.
+
+Run the evaluation scripts from the `explainer-docker` directory in the configured Python environment:
+
+```
+python3 evaluation/eval_ragas_correctness.py
+python3 evaluation/eval_ragas_metrics.py
+python3 evaluation/eval_ragas_criteria.py
+```
+
 
 ## Evaluation data
 The evaluation process uses the generated responses together with the reference answers and the retrieved evidence.
