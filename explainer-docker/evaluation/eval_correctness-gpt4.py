@@ -38,7 +38,7 @@ predictions = [
 output_file = f"results/correctness_evaluation_{SCENARIOID}_{RUNID}.csv"
 
 
-llm = ChatOpenAI(model="gpt-4o-mini", request_timeout=120)
+llm = ChatOpenAI(model="gpt-4o", request_timeout=120)
 #llm = ChatOpenAI(model="gpt-4", request_timeout=120)
 eval_chain = QAEvalChain.from_llm(llm)
 
