@@ -198,25 +198,6 @@ The evaluation datasets are located in [evaluation/datasets/](./evaluation/datas
 
 This directory can be mounted into the container when required for evaluation-related processing.
 
-## Explainability evaluation
-GPT-4o/GPT-4 evaluation can be executed by running
-```
-python3 evaluation/eval_ragas_correctness.py
-python3 evaluation/eval_ragas_metrics.py
-python3 evaluation/eval_ragas_criteria.py
-```
-Ouput example
-```
-python3 eval_ragas_correctness.py
-Evaluating: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 14/14 [00:02<00:00,  5.19it/s]
-{'correctness': 1.0000}
-{'single_turn_aspect_critic_prompt': {'input': AspectCriticInput(user_input='How many goals were successfully achieved by the robot?', response='The robot successfully achieved 3 goals. The context provided indicates that navigation to goal numbers 1, 2, and 3 all succeeded.', retrieved_contexts=['1739992528.310764723 Navigation to the goal number 1 has succeeded.', '1739992586.876368179 Navigation to the goal number 2 has succeeded.', '1739992628.958597736 Navigation to the goal number 3 has succeeded.'], reference_contexts=None, reference='The robot successfully achieved 3 goals.'), 'output': AspectCriticOutput(reason='The response is factually similar to the reference as both state that the robot successfully achieved 3 goals, which is supported by the retrieved contexts.', verdict=1)}}
-Reason 0: The response is factually similar to the reference as both state that the robot successfully achieved 3 goals, which is supported by the retrieved contexts.
-Verdict 0: 1
-Reason 1: The response is factually similar to the reference as it states that the robot successfully achieved goals numbered 1, 2, and 3, which matches the reference statement.
-Verdict 1: 1
-...
-
 ## Reproducibility
 The Docker image provides an isolated environment for executing the Agentic RAG explainer with the software dependencies required by the application.
 
